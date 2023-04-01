@@ -9,6 +9,7 @@
 <div class="container">
     <div class="login-box">
         <h1>Login</h1>
+        <h3 th:text="${loginMessage}">输入账户密码</h3>
         <form th:action="@{/test/login}" method="post">
             <div class="form-group">
                 <label for="username">Username:</label>
