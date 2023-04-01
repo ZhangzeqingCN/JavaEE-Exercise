@@ -18,3 +18,4 @@ graphql:
     cors-enabled: true
     enabled: true
     mapping: /graphql
+

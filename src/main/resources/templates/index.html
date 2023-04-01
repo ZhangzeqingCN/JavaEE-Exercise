@@ -31,6 +31,16 @@
             border-radius: 2vmin;
         }
     </style>
+
+    <script>
+        function fetchTest() {
+            fetch("http://localhost:8080/testMessage", {
+                credentials: "include"
+            }).then(response => response.json()).then(function (data) {
+                console.log(data)
+            })
+        }
+    </script>
 </head>
 <body>
 <div id="background">
@@ -41,6 +51,7 @@
             <div><label>Hello<input/></label></div>
         </form>
     </div>
+    <button onclick="fetchTest()">Fetch Test</button>
 </div>
 </body>
 </html>
