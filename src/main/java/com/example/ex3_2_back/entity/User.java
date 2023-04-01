@@ -12,6 +12,7 @@ import lombok.*;
 @NoArgsConstructor
 public class User {
     @Id
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
     @Column(name = "user_id")
     Integer id;
     String name;
