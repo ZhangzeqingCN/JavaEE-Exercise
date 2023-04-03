@@ -8,7 +8,7 @@ spring:
       ddl-auto: update
     database-platform:
   datasource:
-    url: jdbc:mysql://bj-cynosdbmysql-grp-og8zp5ro.sql.tencentcdb.com:26956/movie_test
+    url: jdbc:mysql://bj-cynosdbmysql-grp-og8zp5ro.sql.tencentcdb.com:26956/ship
     name: movie_share
     password: Movie123456
     username: movie_share
