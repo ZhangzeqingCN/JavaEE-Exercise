@@ -2,3 +2,12 @@ spring:
   profiles:
     active: h2dev
 
+  sql:
+    init:
+      mode: always
+
+graphql:
+  servlet:
+    cors-enabled: true
+    enabled: true
+    mapping: /graphql
