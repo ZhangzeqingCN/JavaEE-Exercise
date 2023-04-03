@@ -11,6 +11,7 @@ import lombok.*;
 @Getter
 @AllArgsConstructor
 @NoArgsConstructor
+@ToString
 public class Movie {
     @Id
     @Column(name = "movie_id")

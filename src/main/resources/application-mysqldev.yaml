@@ -13,9 +13,5 @@ spring:
     password: Movie123456
     username: movie_share
 
-graphql:
-  servlet:
-    cors-enabled: true
-    enabled: true
-    mapping: /graphql
+
 

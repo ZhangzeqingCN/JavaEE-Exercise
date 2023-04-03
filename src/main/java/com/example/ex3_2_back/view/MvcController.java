@@ -1,11 +1,14 @@
 package com.example.ex3_2_back.view;
 
+import com.example.ex3_2_back.entity.Movie;
 import com.example.ex3_2_back.entity.User;
+import com.example.ex3_2_back.repository.MovieRepository;
 import com.example.ex3_2_back.repository.UserRepository;
 import com.example.ex3_2_back.security.MySecurity;
 import jakarta.servlet.http.Cookie;
 import jakarta.servlet.http.HttpServletResponse;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -14,12 +17,21 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
+import java.util.List;
+
 @Controller
 @RequestMapping("/test")
 public class MvcController {
     MySecurity mySecurity;
 
     UserRepository userRepository;
+
+    MovieRepository movieRepository;
+
+    @Autowired
+    public void setMovieRepository(MovieRepository movieRepository) {
+        this.movieRepository = movieRepository;
+    }
 
     @Autowired
     public void setUserRepository(UserRepository userRepository) {
@@ -31,7 +43,7 @@ public class MvcController {
         this.mySecurity = mySecurity;
     }
 
-    @GetMapping({"/index", "/", ""})
+    @GetMapping({"/index"})
     public String getIndex(Model model) {
         model.addAttribute("testMessage", "Back Server Test");
         return "index";
@@ -40,6 +52,11 @@ public class MvcController {
     @GetMapping("/login")
     public String getLoginPage(Model model) {
         return "login";
+    }
+
+    @GetMapping("/shipment")
+    public String getShipmentPage(Model model) {
+        return "shipment";
     }
 
     @GetMapping("/register")
@@ -59,7 +76,7 @@ public class MvcController {
 
             model.addAttribute("loginMessage", "登录成功");
 
-            return "login";
+            return "redirect:/test/shipment";
         } else {
             model.addAttribute("loginMessage", "登录失败");
             return "login";
@@ -82,4 +99,12 @@ public class MvcController {
         return "login";
     }
 
+    @GetMapping({"/", "/home"})
+    public String home(Model model) {
+        List<Movie> movies = movieRepository.findByOrderByVoteAverage(PageRequest.of(0, 10));
+        List<Movie> newMovies = movies;
+        model.addAttribute("movies", movies);
+        model.addAttribute("newMovies", newMovies);
+        return "home";
+    }
 }

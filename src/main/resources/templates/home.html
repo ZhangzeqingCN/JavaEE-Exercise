@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>电影网站主页</title>
+    <style>
+        body {
+            background-color: #f2f2f2;
+            font-family: Arial, sans-serif;
+            color: #333;
+        }
+
+        h1, h2 {
+            font-weight: normal;
+            margin-top: 0;
+            margin-bottom: 1rem;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        a {
+            color: #333;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #666;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 1rem;
+            box-sizing: border-box;
+        }
+
+        .movie-list {
+            display: flex;
+            flex-wrap: wrap;
+            margin: -0.5rem;
+        }
+
+        .movie-item {
+            flex-basis: calc(33.33% - 1rem);
+            margin: 0.5rem;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .movie-item:hover {
+            box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        .movie-image {
+            width: 100%;
+            height: 200px;
+            background-color: #ccc;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .movie-title {
+            font-weight: bold;
+            margin: 0.5rem;
+        }
+
+        .movie-description {
+            margin: 0.5rem;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>欢迎来到电影网站！</h1>
+
+    <h2>热门电影</h2>
+    <ul class="movie-list">
+        <li class="movie-item" th:each="movie : ${movies}">
+            <a th:href="@{/test/movies}">
+                <div class="movie-image" th:style="'background-image: url(\'' + ${movie.originalLanguage} + '\')'"></div>
+                <div class="movie-title" th:text="${movie.title}"></div>
+                <div class="movie-description" th:text="${movie.originalTitle}"></div>
+            </a>
+        </li>
+    </ul>
+
+    <h2>最新电影</h2>
+    <ul class="movie-list">
+        <li class="movie-item" th:each="movie : ${newMovies}">
+            <a th:href="@{/test/movies/{id}(id=${movie.id})}">
+                <div class="movie-image" th:style="'background-image: url(\'' + ${movie.originalLanguage} + '\')'"></div>
+                <div class="movie-title" th:text="${movie.title}"></div>
+                <div class="movie-description" th:text="${movie.originalLanguage}"></div>
+            </a>
+        </li>
+    </ul>
+</div>
+
+</body>
+</html>
