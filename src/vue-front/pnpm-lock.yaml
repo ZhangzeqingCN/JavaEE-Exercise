@@ -1,6 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@element-plus/icons-vue': ^2.1.0
   '@jridgewell/sourcemap-codec': ^1.4.15
   '@types/jest': ^27.5.2
   '@vue/cli-plugin-babel': ~5.0.8
@@ -22,6 +23,7 @@ specifiers:
   vuex: ^4.1.0
 
 dependencies:
+  '@element-plus/icons-vue': registry.npmmirror.com/@element-plus/icons-vue/2.1.0_vue@3.2.47
   core-js: registry.npmmirror.com/core-js/3.30.0
   element-plus: registry.npmmirror.com/element-plus/2.3.3_vue@3.2.47
   vue: registry.npmmirror.com/vue/3.2.47
