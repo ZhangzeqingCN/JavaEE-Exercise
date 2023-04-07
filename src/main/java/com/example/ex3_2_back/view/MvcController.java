@@ -64,15 +64,13 @@ public class MvcController {
         return "register";
     }
 
-    @GetMapping({"/", "/home"})
-    public String home(Model model) {
-//        List<Movie> movies = movieRepository.findByOrderByVoteAverage(PageRequest.of(0, 10));
-//        List<Movie> newMovies = movies;
-//        model.addAttribute("movies", movies);
-//        model.addAttribute("newMovies", newMovies);
-//        return "home";
-        return null;
-    }
+    @GetMapping("/home")
+    public String getHome(Model model) { return "home"; }
+
+    //订单追踪
+    @GetMapping("/trace")
+    public String getTrace(Model model) { return "trace";}
+
 
     @PostMapping("/login")
     public String login(Model model, @RequestParam String username, @RequestParam String password, HttpServletResponse response) {
@@ -86,7 +84,7 @@ public class MvcController {
 
             model.addAttribute("loginMessage", "登录成功");
 
-            return "redirect:/test/shipment";
+            return "redirect:/test/home";
         } else {
             model.addAttribute("loginMessage", "登录失败");
             return "login";

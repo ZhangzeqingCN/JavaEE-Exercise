@@ -1,45 +1,41 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
-<head>
+<head th:replace="common::commonHeader('主页')">
     <meta charset="UTF-8">
-    <title>Login</title>
-    <link rel="stylesheet" href="/css/home.css">
 </head>
 <body>
-<div class="container">
-    <div class="li">
-        <a class="active" href="/templates/sent.html">我要寄件</a>
-        <a href="/templates/">运单追踪</a>
-        <a href="/templates/">联系</a>
-        <a href="/templates/">关于</a>
-    </div>
-</div>
-
-<!--<div class="container">-->
-<!--    <h1>欢迎来到电影网站！</h1>-->
-
-<!--    <h2>热门电影</h2>-->
-<!--    <ul class="movie-list">-->
-<!--        <li class="movie-item" th:each="movie : ${movies}">-->
-<!--            <a th:href="@{/test/movies}">-->
-<!--                <div class="movie-image" th:style="'background-image: url(\'' + ${movie.originalLanguage} + '\')'"></div>-->
-<!--                <div class="movie-title" th:text="${movie.title}"></div>-->
-<!--                <div class="movie-description" th:text="${movie.originalTitle}"></div>-->
-<!--            </a>-->
-<!--        </li>-->
-<!--    </ul>-->
-
-<!--    <h2>最新电影</h2>-->
-<!--    <ul class="movie-list">-->
-<!--        <li class="movie-item" th:each="movie : ${newMovies}">-->
-<!--            <a th:href="@{/test/movies/{id}(id=${movie.id})}">-->
-<!--                <div class="movie-image" th:style="'background-image: url(\'' + ${movie.originalLanguage} + '\')'"></div>-->
-<!--                <div class="movie-title" th:text="${movie.title}"></div>-->
-<!--                <div class="movie-description" th:text="${movie.originalLanguage}"></div>-->
-<!--            </a>-->
-<!--        </li>-->
-<!--    </ul>-->
-<!--</div>-->
-
+<div th:include="common::commonNav('0')"></div>
+<h1>寄件页面<span class="glyphicon glyphicon-user"></span></h1>
+<div th:include="common::commonFooter"></div>
 </body>
 </html>
+
+
+<!--&lt;!&ndash;<div class="container">&ndash;&gt;-->
+<!--&lt;!&ndash;    <h1>欢迎来到电影网站！</h1>&ndash;&gt;-->
+
+<!--&lt;!&ndash;    <h2>热门电影</h2>&ndash;&gt;-->
+<!--&lt;!&ndash;    <ul class="movie-list">&ndash;&gt;-->
+<!--&lt;!&ndash;        <li class="movie-item" th:each="movie : ${movies}">&ndash;&gt;-->
+<!--&lt;!&ndash;            <a th:href="@{/test/movies}">&ndash;&gt;-->
+<!--&lt;!&ndash;                <div class="movie-image" th:style="'background-image: url(\'' + ${movie.originalLanguage} + '\')'"></div>&ndash;&gt;-->
+<!--&lt;!&ndash;                <div class="movie-title" th:text="${movie.title}"></div>&ndash;&gt;-->
+<!--&lt;!&ndash;                <div class="movie-description" th:text="${movie.originalTitle}"></div>&ndash;&gt;-->
+<!--&lt;!&ndash;            </a>&ndash;&gt;-->
+<!--&lt;!&ndash;        </li>&ndash;&gt;-->
+<!--&lt;!&ndash;    </ul>&ndash;&gt;-->
+
+<!--&lt;!&ndash;    <h2>最新电影</h2>&ndash;&gt;-->
+<!--&lt;!&ndash;    <ul class="movie-list">&ndash;&gt;-->
+<!--&lt;!&ndash;        <li class="movie-item" th:each="movie : ${newMovies}">&ndash;&gt;-->
+<!--&lt;!&ndash;            <a th:href="@{/test/movies/{id}(id=${movie.id})}">&ndash;&gt;-->
+<!--&lt;!&ndash;                <div class="movie-image" th:style="'background-image: url(\'' + ${movie.originalLanguage} + '\')'"></div>&ndash;&gt;-->
+<!--&lt;!&ndash;                <div class="movie-title" th:text="${movie.title}"></div>&ndash;&gt;-->
+<!--&lt;!&ndash;                <div class="movie-description" th:text="${movie.originalLanguage}"></div>&ndash;&gt;-->
+<!--&lt;!&ndash;            </a>&ndash;&gt;-->
+<!--&lt;!&ndash;        </li>&ndash;&gt;-->
+<!--&lt;!&ndash;    </ul>&ndash;&gt;-->
+<!--&lt;!&ndash;</div>&ndash;&gt;-->
+
+<!--</body>-->
+<!--</html>-->
