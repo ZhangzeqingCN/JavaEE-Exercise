@@ -1,9 +1,11 @@
 package com.example.ex3_2_back.view;
 
 import com.example.ex3_2_back.entity.Movie;
+import com.example.ex3_2_back.entity.Shipment;
 import com.example.ex3_2_back.entity.User;
 import com.example.ex3_2_back.repository.MovieRepository;
 import com.example.ex3_2_back.repository.UserRepository;
+import com.example.ex3_2_back.repository.ShipmentRepository;
 import com.example.ex3_2_back.security.MySecurity;
 import jakarta.servlet.http.Cookie;
 import jakarta.servlet.http.HttpServletResponse;
@@ -17,7 +19,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
+import jakarta.servlet.http.HttpServletRequest;
 import java.util.List;
+import java.util.Optional;
 
 @Controller
 @RequestMapping("/test")
@@ -27,6 +31,8 @@ public class MvcController {
     UserRepository userRepository;
 
     MovieRepository movieRepository;
+
+    ShipmentRepository shipmentRepository;
 
     @Autowired
     public void setMovieRepository(MovieRepository movieRepository) {
@@ -42,6 +48,10 @@ public class MvcController {
     public void setMySecurity(MySecurity mySecurity) {
         this.mySecurity = mySecurity;
     }
+
+    @Autowired
+    public void setShipmentRepository(ShipmentRepository shipmentRepository) { this.shipmentRepository = shipmentRepository; }
+
 
     @GetMapping({"/index"})
     public String getIndex(Model model) {
@@ -69,8 +79,18 @@ public class MvcController {
 
     //订单追踪
     @GetMapping("/trace")
-    public String getTrace(Model model) { return "trace";}
+    public String getTrace(Model model) {
+       // model.addAttribute("emps", employees);
+        List<Shipment> shipList = shipmentRepository.findByFromUser("lisa");
+        model.addAttribute("shipList", shipList);
+        return "trace";
+    }
 
+    @PostMapping("/trace")
+    public String trace(Model model, @RequestParam String ID, HttpServletResponse response, HttpServletRequest request){
+        //获取cookie，得到token并验证
+        return "trace";
+    }
 
     @PostMapping("/login")
     public String login(Model model, @RequestParam String username, @RequestParam String password, HttpServletResponse response) {
@@ -78,8 +98,8 @@ public class MvcController {
         if (userRepository.existsByNameAndPassword(username, password)) {
             String newToken = mySecurity.genToken(new User());
             var tokenCookie = new Cookie("token", newToken);
-            tokenCookie.setMaxAge(36000);
-            response.addCookie(tokenCookie);
+            tokenCookie.setMaxAge(36000);//过期时间
+            response.addCookie(tokenCookie);//保存cookie到客户端（会自动保存以及自动携带？）
             response.addHeader("Access-Control-Allow-Credentials", String.valueOf(true));
 
             model.addAttribute("loginMessage", "登录成功");
