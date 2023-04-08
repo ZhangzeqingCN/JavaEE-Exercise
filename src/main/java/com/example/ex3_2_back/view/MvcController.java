@@ -74,6 +74,7 @@ public class MvcController {
         return "register";
     }
 
+    //寄件页面
     @GetMapping("/home")
     public String getHome(Model model) { return "home"; }
 
@@ -127,5 +128,16 @@ public class MvcController {
         return "login";
     }
 
+    // 接收寄件信息
+    @PostMapping("/home")
+    public String home(Model model, @RequestParam String sender, @RequestParam String sender_phone, @RequestParam String sender_address,
+                                    @RequestParam String receiver, @RequestParam String receiver_phone, @RequestParam String receiver_address) {
+        System.err.println("Sender:" + sender + " " + sender_phone + " " + sender_address);
+        System.err.println("Receiver" + receiver + " " + receiver_phone + " " + receiver_address);
+        // 生成订单号
+
+
+        return "home";
+    }
 
 }
