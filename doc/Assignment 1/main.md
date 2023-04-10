@@ -4,34 +4,52 @@
 
 > 简要介绍你要设计的系统，包括系统的目的、目标用户、使用场景、系统需求等等。
 
++ 用户账户管理系统：用户注册、登录、密码重置、个人信息维护等功能。
++ 运输服务管理系统：包括运输方式、物流方案、配送区域等信息的管理。
+
 # 2. 系统架构
 
 > 描述系统的整体架构，包括系统的分层、组成部分、组件之间的关系、系统流程等等。使用图表、图示等方式展示系统的架构，方便读者理解。
 
 ```mermaid
 ---
-title: Component
+title: Components Relation
 ---
-graph LR
+graph RL
+    Entity --- JpaRepository
+    Entity --- Database
+    JpaRepository --- Database[(Database)]
     UserRepository --> |Extends|JpaRepository
     ShipmentRepository --> |Extends| JpaRepository
-    JpaRepository --- Entity
-    Controller --- Interceptor --- AuthInterceptor
+    Interceptor --> Controller
+    AuthInterceptor --> |Extends| Interceptor
     Controller --> |Contains| JpaRepository
-    Browser -->|Request| Controller
-    Controller --> ServiceLogic{ServiceLogic} --> Thymeleaf -->|Response| Browser
+    Browser -->|Request| Interceptor
+    Controller --> ServiceLogic{ServiceLogic}
+    ServiceLogic{ServiceLogic} --> Thymeleaf
+    Thymeleaf -->|Response| Browser
     User(User) --- Browser
-    Entity --- Database[(Database)]
 ```
 
 ```mermaid
-graph LR
-%%这是一条注释，在渲染图中不可见
-    A[Hard edge] -->|Link text| B(Round edge)
-    B --> C{Decision}
-    C -->|One| D[Result one]
-    C -->|Two| E[Result two]
+---
+title: Frame
+---
+graph
+    subgraph Data/Persistence
+        JPA[Spring Data JPA]
+    end
+    subgraph Reactive
+        MVC[Spring MVC Controller]
+        Thymeleaf[Thymeleaf Template]
+    end
+    subgraph Auth
+        Interceptor
+        Token
+        Session
+    end
 ```
+
 # 3. 技术选型
 
 > 列出你在系统设计中使用的技术和工具，包括数据库、编程语言、框架等等。解释你选择这些技术的原因和优势。
