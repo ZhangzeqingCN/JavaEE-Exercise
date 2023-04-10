@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
-<head th:replace="common::commonHeader('主页')">
+<head th:replace="~{common::commonHeader('主页')}">
     <meta charset="UTF-8">
 </head>
 <body>
-<div th:include="common::commonNav('0')"></div>
+<div th:include="~{common::commonNav('0')}"></div>
 <h1>寄件页面<span class="glyphicon glyphicon-user"></span></h1>
-<div th:include="common::commonFooter"></div>
+<div th:include="~{common::commonFooter}"></div>
 </body>
 </html>
 
