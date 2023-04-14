@@ -36,7 +36,7 @@ public class AuthInterceptor implements HandlerInterceptor {
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
 
         String token = null;
-//        System.out.println("---enter---");
+        System.out.println("---enter---");
         var cookies = request.getCookies();
         if (cookies != null) {
             for (var cookie : cookies) {
@@ -49,7 +49,7 @@ public class AuthInterceptor implements HandlerInterceptor {
 
         if (token == null) {
             response.setStatus(HttpServletResponse.SC_UNAUTHORIZED);
-//            System.out.println("nonToken");
+            System.out.println("nonToken");
             return false;
         }
 

@@ -15,6 +15,7 @@ public class User {
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     @Column(name = "user_id")
     Integer id;
+    @Column(unique = true)
     String name;
     String password;
     Gender gender = Gender.Unknown;
