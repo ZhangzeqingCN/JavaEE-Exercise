@@ -21,6 +21,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 import jakarta.servlet.http.HttpServletRequest;
 import java.util.List;
+import java.util.Objects;
 import java.util.Optional;
 
 @Controller
@@ -80,16 +81,32 @@ public class MvcController {
 
     //订单追踪
     @GetMapping("/trace")
-    public String getTrace(Model model) {
-       // model.addAttribute("emps", employees);
-        List<Shipment> shipList = shipmentRepository.findByFromUser("lisa");
-        model.addAttribute("shipList", shipList);
+    public String getTrace(Model model, HttpServletRequest request) {
+        String token = null;
+        var cookies = request.getCookies();
+        if (cookies != null) {
+            for (var cookie : cookies) {
+                if (Objects.equals(cookie.getName(), "token")) {
+                    token = cookie.getValue();
+                    Optional<User> optionalUser = mySecurity.decToken(token);
+                    if (optionalUser.isPresent()){
+                        Optional<User> temp = userRepository.findById(optionalUser.get().getId());
+                        List<Shipment> shipList = shipmentRepository.findByFromUser(temp.get());
+                        if (!shipList.isEmpty()){
+                            model.addAttribute("shipList", shipList);
+                        }
+                    }
+
+                    break;
+                }
+            }
+        }
+
         return "trace";
     }
 
     @PostMapping("/trace")
     public String trace(Model model, @RequestParam String ID, HttpServletResponse response, HttpServletRequest request){
-        //获取cookie，得到token并验证
         return "trace";
     }
 
