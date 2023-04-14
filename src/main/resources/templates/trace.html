@@ -43,11 +43,11 @@
         <tbody>
         <tr th:each="shipList:${shipList}">
             <td th:text="${shipList.getId()}"></td>
-            <td th:text="${shipList.getFromUser()}"></td>
+            <td th:text="${shipList.getFromUser().getName()}"></td>
             <td th:text="${shipList.getFromPhone()}"></td>
             <td th:text="${shipList.getFromAddress()}"></td>
 
-            <td th:text="${shipList.getToUser()}"></td>
+            <td th:text="${shipList.getToUser().getName()}"></td>
             <td th:text="${shipList.getToPhone()}"></td>
             <td th:text="${shipList.getToAddress()}"></td>
             <td th:text="${shipList.getParcelTrace()}"></td>
