@@ -2,19 +2,46 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head th:replace="common::commonHeader('物流追踪')">
     <meta charset="UTF-8">
+    <style>
+        button {
+            background-color: #007bff;
+            color: #fff;
+            border-radius: 10px;
+            border: none;
+            height: 40px;
+            width: 50px;
+        }
+        input {
+            width: 200px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            outline: none;
+        }
+        label {
+            height: 40px;
+        }
+        .form-group {
+            margin-left: 30%;
+        }
+        table {
+            background-color:  #d6eafc;
+        }
+
+    </style>
 </head>
 <body>
 <div class="ship">
     <div th:include="~{common::commonNav('1')}"></div>
-<!--    <h3 th:text="${traceMessage}"></h3>-->
     </br>
     <form th:action="@{/test/trace}" method="post">
         <div class="form-group">
             <label for="ID">订单号:</label>
             <input type="text" id="ID" name="ID"/>
             <button type="submit">查询</button>
+            <h3 th:text="${testMessage}"></h3>
         </div>
-
     </form>
     </br>
     <table class="layui-table">
