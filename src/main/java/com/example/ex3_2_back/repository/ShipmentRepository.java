@@ -11,13 +11,19 @@ import java.util.List;
 import java.util.Optional;
 
 public interface ShipmentRepository extends JpaRepository<Shipment, Integer> {
-    Optional<Shipment> findById(String id);
+    Optional<Shipment> findById(Integer id);
 
     boolean existsByFromUser(User user);
 
     boolean existsByToUser(User user);
 
+    boolean existsById(Integer id);
+
     List<Shipment> findByFromUser(User fromUser);
+
+    List<Shipment> findByIdAndFromUserOrToUser(Integer id, User fromUser, User ToUser);
+
+
 
     List<Shipment> findByToUser(User toUser);
 

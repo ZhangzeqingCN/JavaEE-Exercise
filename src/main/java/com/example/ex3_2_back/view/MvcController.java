@@ -1,6 +1,5 @@
 package com.example.ex3_2_back.view;
 
-import com.example.ex3_2_back.entity.Movie;
 import com.example.ex3_2_back.entity.Shipment;
 import com.example.ex3_2_back.entity.User;
 import com.example.ex3_2_back.repository.MovieRepository;
@@ -10,18 +9,17 @@ import com.example.ex3_2_back.security.MySecurity;
 import jakarta.servlet.http.Cookie;
 import jakarta.servlet.http.HttpServletResponse;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.servlet.ModelAndView;
 
 import jakarta.servlet.http.HttpServletRequest;
+
+import java.util.ArrayList;
 import java.util.List;
-import java.util.Objects;
 import java.util.Optional;
 
 @Controller
@@ -82,24 +80,29 @@ public class MvcController {
     //订单追踪
     @GetMapping("/trace")
     public String getTrace(Model model, HttpServletRequest request) {
-        String token = null;
-        var cookies = request.getCookies();
-        if (cookies != null) {
-            for (var cookie : cookies) {
-                if (Objects.equals(cookie.getName(), "token")) {
-                    token = cookie.getValue();
-                    Optional<User> optionalUser = mySecurity.decToken(token);
-                    if (optionalUser.isPresent()){
-                        Optional<User> temp = userRepository.findById(optionalUser.get().getId());
-                        List<Shipment> shipList = shipmentRepository.findByFromUser(temp.get());
-                        if (!shipList.isEmpty()){
-                            model.addAttribute("shipList", shipList);
-                        }
-                    }
-
-                    break;
-                }
-            }
+//        String token = null;
+//        var cookies = request.getCookies();
+//        if (cookies != null) {
+//            for (var cookie : cookies) {
+//                if (Objects.equals(cookie.getName(), "token")) {
+//                    token = cookie.getValue();
+//                    Optional<User> optionalUser = mySecurity.decToken(token);
+//                    if (optionalUser.isPresent()){
+//                        Optional<User> temp = userRepository.findById(optionalUser.get().getId());
+//                        List<Shipment> shipList = shipmentRepository.findByFromUser(temp.get());
+//                        if (!shipList.isEmpty()){
+//                            model.addAttribute("shipList", shipList);
+//                        }
+//                    }
+//
+//                    break;
+//                }
+//            }
+//        }
+        Optional<User> temp = userRepository.findByNameAndPassword("hyt","123");
+        List<Shipment> shipList = shipmentRepository.findByFromUser(temp.get());
+        if (!shipList.isEmpty()){
+            model.addAttribute("shipList", shipList);
         }
 
         return "trace";
@@ -107,6 +110,17 @@ public class MvcController {
 
     @PostMapping("/trace")
     public String trace(Model model, @RequestParam String ID, HttpServletResponse response, HttpServletRequest request){
+        //若订单号存在
+        if (shipmentRepository.existsById(Integer.valueOf(ID))){
+            System.out.print(ID);
+            Optional<Shipment> shipList = shipmentRepository.findById(Integer.valueOf(ID));
+            List<Shipment> result = new ArrayList<>();
+            result.add(shipList.get());
+            model.addAttribute("shipList", result);
+            model.addAttribute("checkResult", "查询成功");
+        }else { //订单号不存在
+            model.addAttribute("checkResult", "查询失败");
+        }
         return "trace";
     }
 
