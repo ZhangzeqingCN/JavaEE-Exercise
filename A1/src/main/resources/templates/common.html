@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<!--导航栏模板-->
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:fragment="commonHeader(title)">
+  <meta charset="UTF-8">
+  <title th:text="${title}"></title>
+  <link rel="stylesheet" href="/css/common.css">
+  <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+<div th:fragment="commonNav(active)">
+  <nav class="navbar navbar-default" role="navigation">
+    <div class="container-fluid">
+      <ul class="nav navbar-nav" >
+        <li class=""th:classappend="${active=='0'} ? 'active' : '' " ><a href="home">寄件</a></li>
+        <li class=""th:classappend="${active=='1'} ? 'active' : '' " ><a href="trace">物流跟踪</a></li>
+        <li class=""th:classappend="${active=='2'} ? 'active' : '' "><a href="#">联系</a></li>
+        <li class=""th:classappend="${active=='3'} ? 'active' : '' "><a href="#">关于</a></li>
+      </ul>
+      <a>Hello</a>
+    </div>
+  </nav>
+</div>
+<footer th:fragment="commonFooter">
+  <script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+  <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</footer>
+</body>
+</html>
