@@ -10,7 +10,7 @@
     </parent>
 
     <groupId>pl.piomin.services</groupId>
-    <artifactId>sample-spring-microservices-new</artifactId>
+    <artifactId>a3</artifactId>
     <version>1.1-SNAPSHOT</version>
     <packaging>pom</packaging>
 
