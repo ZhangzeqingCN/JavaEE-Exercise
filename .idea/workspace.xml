@@ -76,13 +76,6 @@
     </option>
   </component>
   <component name="RunManager" selected="Spring Boot.GatewayApplication">
-    <configuration name="EurekaGatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="database" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.gateway.EurekaGatewayApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="EurekaServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="eureka-server" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.eureka_server.EurekaServerApplication" />
