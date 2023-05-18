@@ -5,104 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1b9ba0e7-95fe-4fb6-8a31-6e13de2ee518" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/A3/common/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A3/common/src/main/java/com/example/common/dto/Result.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A3/common/src/main/java/com/example/common/entity/Order.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A3/common/src/main/java/com/example/common/entity/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A3/common/src/main/resources/application.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A3/common/src/test/java/com/example/common/OrderServiceApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A3/database/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A3/database/src/main/java/com/example/gateway/EurekaGatewayApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A3/database/src/main/resources/application.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A3/database/src/test/java/com/example/gateway/EurekaGatewayApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A3/eureka-server/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A3/eureka-server/src/main/java/com/example/eureka_server/EurekaServerApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A3/eureka-server/src/main/resources/application.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A3/eureka-server/src/test/java/com/example/eureka-server/EurekaServerApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A3/gateway/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A3/gateway/src/main/java/com/example/gateway/GatewayApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A3/gateway/src/main/resources/application.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A3/gateway/src/test/java/com/example/gateway/GatewayApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A3/order-service/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A3/order-service/src/main/java/com/example/order_service/MyRestTemplateConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A3/order-service/src/main/java/com/example/order_service/OrderController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A3/order-service/src/main/java/com/example/order_service/OrderServiceApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A3/order-service/src/main/resources/application.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A3/order-service/src/test/java/com/example/order_service/OrderServiceApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A3/user-service/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A3/user-service/src/main/java/com/example/user_service/MyRestTemplateConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A3/user-service/src/main/java/com/example/user_service/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A3/user-service/src/main/java/com/example/user_service/UserServiceApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A3/user-service/src/main/resources/application.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A3/user-service/src/test/java/com/example/user_service/UserServiceApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/A3/.circleci/config.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A3/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A3/config-service/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A3/config-service/Dockerfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A3/config-service/Jenkinsfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A3/config-service/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A3/config-service/src/main/java/pl/piomin/services/config/ConfigApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A3/config-service/src/main/resources/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A3/config-service/src/main/resources/config/department-service-docker.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A3/config-service/src/main/resources/config/department-service.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A3/config-service/src/main/resources/config/discovery-service-docker.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A3/config-service/src/main/resources/config/discovery-service.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A3/config-service/src/main/resources/config/employee-service-docker.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A3/config-service/src/main/resources/config/employee-service-instance2.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A3/config-service/src/main/resources/config/employee-service.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A3/config-service/src/main/resources/config/gateway-service-docker.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A3/config-service/src/main/resources/config/gateway-service.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A3/config-service/src/main/resources/config/organization-service-docker.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A3/config-service/src/main/resources/config/organization-service.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A3/department-service/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A3/department-service/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A3/department-service/src/main/java/pl/piomin/services/department/DepartmentApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A3/department-service/src/main/java/pl/piomin/services/department/client/EmployeeClient.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A3/department-service/src/main/java/pl/piomin/services/department/controller/DepartmentController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A3/department-service/src/main/java/pl/piomin/services/department/model/Department.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A3/department-service/src/main/java/pl/piomin/services/department/model/Employee.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A3/department-service/src/main/java/pl/piomin/services/department/repository/DepartmentRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A3/department-service/src/main/resources/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A3/department-service/src/test/java/pl/piomin/services/department/DepartmentAppTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A3/department-service/src/test/java/pl/piomin/services/department/DepartmentRepositoryTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A3/discovery-service/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A3/discovery-service/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A3/discovery-service/src/main/java/pl/piomin/services/discovery/DiscoveryApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A3/discovery-service/src/main/resources/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A3/docker-compose.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A3/employee-service/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A3/employee-service/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A3/employee-service/src/main/java/pl/piomin/services/employee/EmployeeApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A3/employee-service/src/main/java/pl/piomin/services/employee/controller/EmployeeController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A3/employee-service/src/main/java/pl/piomin/services/employee/model/Employee.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A3/employee-service/src/main/java/pl/piomin/services/employee/repository/EmployeeRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A3/employee-service/src/main/resources/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A3/employee-service/src/test/java/pl/piomin/services/employee/EmployeeAppTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A3/employee-service/src/test/java/pl/piomin/services/employee/EmployeeRepositoryTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A3/gateway-service/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A3/gateway-service/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A3/gateway-service/src/main/java/pl/piomin/services/gateway/GatewayApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A3/gateway-service/src/main/resources/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A3/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A3/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A3/organization-service/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A3/organization-service/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A3/organization-service/src/main/java/pl/piomin/services/organization/OrganizationApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A3/organization-service/src/main/java/pl/piomin/services/organization/client/DepartmentClient.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A3/organization-service/src/main/java/pl/piomin/services/organization/client/EmployeeClient.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A3/organization-service/src/main/java/pl/piomin/services/organization/controller/OrganizationController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A3/organization-service/src/main/java/pl/piomin/services/organization/model/Department.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A3/organization-service/src/main/java/pl/piomin/services/organization/model/Employee.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A3/organization-service/src/main/java/pl/piomin/services/organization/model/Organization.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A3/organization-service/src/main/java/pl/piomin/services/organization/repository/OrganizationRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A3/organization-service/src/main/resources/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A3/organization-service/src/test/java/pl/piomin/services/organization/OrganizationControllerTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A3/organization-service/src/test/java/pl/piomin/services/organization/OrganizationRepositoryTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A3/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/A3/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/A3/readme.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A3/renovate.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -148,6 +51,7 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.2",
@@ -248,9 +152,9 @@
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.GatewayApplication" />
+        <item itemvalue="Spring Boot.OrderServiceApplication" />
         <item itemvalue="Spring Boot.UserServiceApplication (2)" />
         <item itemvalue="Spring Boot.UserServiceApplication (1)" />
-        <item itemvalue="Spring Boot.OrderServiceApplication" />
         <item itemvalue="Spring Boot.EurekaServerApplication" />
       </list>
     </recent_temporary>
@@ -269,12 +173,35 @@
       <workItem from="1684124882211" duration="267000" />
       <workItem from="1684166263285" duration="186000" />
       <workItem from="1684412159785" duration="172000" />
-      <workItem from="1684412355337" duration="800000" />
+      <workItem from="1684412355337" duration="1123000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
