@@ -13,10 +13,10 @@ target/
 .sts4-cache
 
 ### IntelliJ IDEA ###
-#.idea
-#*.iws
-#*.iml
-#*.ipr
+.idea
+*.iws
+*.iml
+*.ipr
 
 ### NetBeans ###
 /nbproject/private/
