@@ -1,4 +1,4 @@
-package com.example.common.dto;
+package com.example.order_service.dto;
 
 import lombok.*;
 

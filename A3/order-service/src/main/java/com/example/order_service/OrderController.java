@@ -1,7 +1,7 @@
 package com.example.order_service;
 
-import com.example.common.dto.Result;
-import com.example.common.entity.Order;
+import com.example.order_service.dto.Result;
+import com.example.order_service.entity.Order;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
