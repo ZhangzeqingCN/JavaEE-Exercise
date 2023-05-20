@@ -1,5 +1,7 @@
-package com.example.common.entity;
+package com.example.user_service.entity;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
 import lombok.*;
 
 @Builder
@@ -8,7 +10,10 @@ import lombok.*;
 @NoArgsConstructor
 @Setter
 @Getter
-public class Order {
+@Entity(name = "t_User")
+public class User {
+    @Id
+    String id;
     String name;
     Integer age;
     String address;
@@ -16,5 +21,4 @@ public class Order {
     String phone;
     String password;
     String role;
-    String id;
 }

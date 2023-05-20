@@ -9,8 +9,6 @@
         <outputRelativeToContentRoot value="true" />
         <module name="A1" />
         <module name="A2" />
-        <module name="database" />
-        <module name="common" />
         <module name="order-service" />
         <module name="user-service" />
         <module name="eureka-server" />
@@ -19,7 +17,9 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="a3" target="17" />
+      <module name="common" target="17" />
       <module name="config-service" target="1.5" />
+      <module name="database" target="17" />
       <module name="department-service" target="1.5" />
       <module name="discovery-service" target="1.5" />
       <module name="employee-service" target="1.5" />
