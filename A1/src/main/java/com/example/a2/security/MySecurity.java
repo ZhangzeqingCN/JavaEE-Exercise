@@ -24,7 +24,9 @@ public class MySecurity {
         try {
             var verifier = JWT.require(algorithm).build();
             var jwt = verifier.verify(token);
+           // var id = jwt.getClaim("id").asInt();
             var id = jwt.getClaim("id").asInt();
+            System.err.println("id="+id);
             return Optional.of(User.builder().id(id).build());
         } catch (Exception e) {
             return Optional.empty();
@@ -32,6 +34,7 @@ public class MySecurity {
     }
 
     public String genExpiredToken(User user, int calendarField, int amount) {
+        System.err.println("账户id"+user.getId());
         var calendar = Calendar.getInstance();
         var currentTime = calendar.getTime();
         calendar.add(calendarField, amount);
