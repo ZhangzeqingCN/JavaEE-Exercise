@@ -88,31 +88,32 @@ public class MvcController {
     //订单追踪
     @GetMapping("/trace")
     public String getTrace(Model model, HttpServletRequest request) {
-//        String token = null;
-//        var cookies = request.getCookies();
-//        if (cookies != null) {
-//            for (var cookie : cookies) {
-//                if (Objects.equals(cookie.getName(), "token")) {
-//                    token = cookie.getValue();
-//                    Optional<User> optionalUser = mySecurity.decToken(token);
-//                    if (optionalUser.isPresent()){
-//                        Optional<User> temp = userRepository.findById(optionalUser.get().getId());
-//                        List<Shipment> shipList = shipmentRepository.findByFromUser(temp.get());
-//                        if (!shipList.isEmpty()){
-//                            model.addAttribute("shipList", shipList);
-//                        }
-//                    }
-//
-//                    break;
-//                }
-//            }
-//        }
-        Optional<User> temp = userRepository.findByNameAndPassword("hyt", "123");
-//        List<Shipment> shipList = shipmentRepository.findAllUsersSendPackage(temp.get().getId());
-        var shipList = shipmentRepository.findAll();
-        if (!shipList.isEmpty()) {
-            model.addAttribute("shipList", shipList);
+        String token = null;
+        var cookies = request.getCookies();
+        if (cookies != null) {
+            for (var cookie : cookies) {
+                if (Objects.equals(cookie.getName(), "token")) {
+                    token = cookie.getValue();
+                    Optional<User> optionalUser = mySecurity.decToken(token);
+                    if (optionalUser.isPresent()){
+                        System.err.println("id==="+optionalUser.get().getId());
+                        Optional<User> temp = userRepository.findById(optionalUser.get().getId());
+                        List<Shipment> shipList = shipmentRepository.findByFromUser(temp.get());
+                        if (!shipList.isEmpty()){
+                            model.addAttribute("shipList", shipList);
+                        }
+                    }
+
+                    break;
+                }
+            }
         }
+//        Optional<User> temp = userRepository.findByNameAndPassword("hyt", "123");
+////        List<Shipment> shipList = shipmentRepository.findAllUsersSendPackage(temp.get().getId());
+//        var shipList = shipmentRepository.findAll();
+//        if (!shipList.isEmpty()) {
+//            model.addAttribute("shipList", shipList);
+//        }
 
         return "trace";
     }
@@ -137,15 +138,20 @@ public class MvcController {
     public String login(Model model, @RequestParam String username, @RequestParam String password, HttpServletResponse response) {
 
         if (userRepository.existsByNameAndPassword(username, password)) {
-            String newToken = mySecurity.genToken(new User());
-            var tokenCookie = new Cookie("token", newToken);
-            tokenCookie.setMaxAge(36000);//过期时间
-            response.addCookie(tokenCookie);//保存cookie到客户端（会自动保存以及自动携带？）
-            response.addHeader("Access-Control-Allow-Credentials", String.valueOf(true));
+            Optional<User> user = userRepository.findByNameAndPassword(username, password);
+            if(user.isPresent()){
+                String newToken = mySecurity.genToken(user.get());
+                var tokenCookie = new Cookie("token", newToken);
+                tokenCookie.setMaxAge(36000);//过期时间
+                response.addCookie(tokenCookie);//保存cookie到客户端（会自动保存以及自动携带？）
+                response.addHeader("Access-Control-Allow-Credentials", String.valueOf(true));
 
-            model.addAttribute("loginMessage", "登录成功");
+                model.addAttribute("loginMessage", "登录成功");
 
-            return "redirect:/test/home";
+                return "redirect:/test/home";
+            }
+            model.addAttribute("loginMessage", "登录失败");
+            return "login";
         } else {
             model.addAttribute("loginMessage", "登录失败");
             return "login";
@@ -156,8 +162,6 @@ public class MvcController {
     public String register(Model model, @RequestParam String username, @RequestParam String password, HttpServletResponse response) {
 
         System.err.println(username + " " + password);
-
-
         if (userRepository.existsByNameAndPassword(username, password)) {
             model.addAttribute("registerMessage", "该账户已注册");
             return "register";
