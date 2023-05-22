@@ -95,7 +95,17 @@
                     <div class="search">
                         <span style="margin-right: 10px;font-weight: 550;">快递单号</span>
                         <el-input style="width: 300px;margin-right: 10px;"></el-input>
-                        <el-button icon="el-icon-search" circle></el-button>
+                        <!-- <el-button icon="el-icon-search" circle></el-button> -->
+                        <span style="margin-right: 10px;font-weight: 550;">承运商</span>
+                        <el-select v-model="carrier" placeholder="请选择">
+                            <el-option
+                            v-for="item in options"
+                            :key="item.value"
+                            :label="item.label"
+                            :value="item.value">
+                            </el-option>
+                        </el-select>
+                        <el-button icon="el-icon-search" circle style="margin-left:10px"></el-button>
                     </div>
                     </div>
                     <div>
@@ -160,7 +170,7 @@
 
                 <el-form-item label-width="70px" prop="parcelID" style="margin-top: 0%; display: inline-block;">
                 <span slot="label"  style="color: #403b3b;font-size: 16px;">承运商</span>
-                <el-select v-model="value" placeholder="请选择">
+                <el-select v-model="parcel.carrier" placeholder="请选择">
                     <el-option
                     v-for="item in options"
                     :key="item.value"
@@ -186,10 +196,10 @@
                 <el-form-item label="发货人电话"  style="margin: 13px;">
                 <el-input v-model="parcel.fromPhone"  autocomplete="off"></el-input>
                 </el-form-item>
-                <el-form-item label="省区"  style="margin: 13px;"><!-- :options="options"-->
+                <el-form-item label="省/s市/区"  style="margin: 13px;"><!-- :options="options"-->
                     <el-cascader
                    
-                    :options="options"
+                    :options="optionsCity"
                     v-model="parcel.fromAddrSelect"
                     @change="handleChange">
                 </el-cascader>
@@ -212,7 +222,7 @@
             <el-form-item label="省/市/区"  style="margin: 13px;">
                 <el-cascader
                 size="small"
-                :options="options"
+                :options="optionsCity"
                 v-model="parcel.toAddrSelect"
                 @change="handleChange">
                 </el-cascader>
@@ -253,6 +263,8 @@
 </template>
 
 <script>
+import { regionData, CodeToText, TextToCode } from 'element-china-area-data'
+
 export default{
     provide() {
     return {
@@ -266,6 +278,7 @@ export default{
         isLogin:true,
         activeName: 'first',
         dialogVisible: false,
+        carrier:'',
         tableData:[
             {   from_user: "string",
                 from_phone: "string",
@@ -302,21 +315,22 @@ export default{
             cost: "string",
             weight: "string"
         },
+        optionsCity: regionData,
         options: [{
-          value: '选项1',
-          label: '黄金糕'
+          value: '中通快递',
+          label: '中通快递'
         }, {
-          value: '选项2',
-          label: '双皮奶'
+          value: '韵达快递',
+          label: '韵达快递'
         }, {
-          value: '选项3',
-          label: '蚵仔煎'
+          value: '顺丰速运',
+          label: '顺丰速运'
         }, {
-          value: '选项4',
-          label: '龙须面'
+          value: '圆通快递',
+          label: '圆通快递'
         }, {
-          value: '选项5',
-          label: '北京烤鸭'
+          value: '申通快递',
+          label: '申通快递'
         }],
         value: '',
         currentPage: 1, // 当前页码
@@ -414,7 +428,7 @@ export default{
 }
 .search {
     height: 100px;
-    width: 600px;
+    width: 750px;
     background-color: rgba(206, 223, 247, 0.742);
     border-radius: 20px;
     display: flex;
