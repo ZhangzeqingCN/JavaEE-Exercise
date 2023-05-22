@@ -1,28 +1,70 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <router-view/>
+    <!-- <transition name="slide-fade">
+	<router-view v-if="isRouterAlive"></router-view>
+ </transition> -->
+  
   </div>
 </template>
-
 <script>
-import HelloWorld from './components/HelloWorld.vue'
 
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+  name: "App",
+  provide() {
+    return {
+      reload: this.reload
+    };
+  },
+  data() {
+    return {
+      isRouterAlive: true
+    };
+  },
+  methods: {
+    reload() {
+      this.isRouterAlive = false;
+      this.$nextTick(function () {
+        this.isRouterAlive = true;
+      });
+    }
+  },
+  components: {}
+};
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+<style >
+/**删除浏览器滚动条 */
+::-webkit-scrollbar {
+  width: 0 !important;
 }
+::-webkit-scrollbar {
+  width: 0 !important;
+  /* height: 0; */
+}
+/**动画 */
+/* .slide-fade {
+  position: fixed;
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+.slide-fade-enter,
+.slide-fade-leave-to {
+  left: 0;
+  top: 0;
+  right: 0;
+  position: absolute;
+  transform: translateX(100%);
+}
+.slide-fade-enter-active {
+  transition: all 0.5s ease;
+}
+.slide-fade-leave-active {
+  transition: all 0.5s ease;
+  transform: translateX(-100%);
+  z-index: 100;
+} */
+
+
 </style>
