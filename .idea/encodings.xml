@@ -2,13 +2,8 @@
 <project version="4">
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/A1/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/A1/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/A2/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/A2/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/A3/common/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/A3/database/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/A3/eureka-server/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/A3/feign-client/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/A3/gateway/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/A3/order-service/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/A3/src/main/java" charset="UTF-8" />

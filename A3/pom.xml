@@ -12,8 +12,6 @@
   <artifactId>A3</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>pom</packaging>
-  <name>cloud_demo5</name>
-  <description>cloud_demo5</description>
 
   <modules>
     <module>order-service</module>

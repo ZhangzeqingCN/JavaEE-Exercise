@@ -2,7 +2,6 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
-      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
@@ -15,28 +14,12 @@
         <module name="gateway" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="a3" target="17" />
-      <module name="common" target="17" />
-      <module name="config-service" target="1.5" />
-      <module name="database" target="17" />
-      <module name="department-service" target="1.5" />
-      <module name="discovery-service" target="1.5" />
-      <module name="employee-service" target="1.5" />
-      <module name="feign-client" target="17" />
-      <module name="gateway-service" target="1.5" />
-      <module name="organization-service" target="1.5" />
-    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="A1" options="-parameters" />
       <module name="A2" options="-parameters" />
-      <module name="common" options="-parameters" />
-      <module name="database" options="-parameters" />
-      <module name="demo" options="-parameters" />
       <module name="eureka-server" options="-parameters" />
-      <module name="feign-client" options="-parameters" />
       <module name="gateway" options="-parameters" />
       <module name="order-service" options="-parameters" />
       <module name="user-service" options="-parameters" />
