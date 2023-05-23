@@ -4,47 +4,104 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1b9ba0e7-95fe-4fb6-8a31-6e13de2ee518" name="Changes" comment="Test">
-      <change afterPath="$PROJECT_DIR$/A3/order-service/src/main/java/com/example/order_service/dao/OrderRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A3/order-service/src/main/java/com/example/order_service/dto/Result.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A3/order-service/src/main/java/com/example/order_service/entity/Order.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A3/order-service/src/main/java/com/example/order_service/entity/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A3/user-service/src/main/java/com/example/user_service/dao/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A3/user-service/src/main/java/com/example/user_service/dto/GetOrderByNameDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A3/user-service/src/main/java/com/example/user_service/dto/Result.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A3/user-service/src/main/java/com/example/user_service/entity/Order.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A3/user-service/src/main/java/com/example/user_service/entity/User.java" afterDir="false" />
+    <list default="true" id="96528817-b786-4ce5-8761-2fc899131a1b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/A2/src/main/vite-project/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A2/src/main/vite-project/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A2/src/main/vite-project/env.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A2/src/main/vite-project/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A2/src/main/vite-project/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A2/src/main/vite-project/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A2/src/main/vite-project/public/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A2/src/main/vite-project/src/App.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A2/src/main/vite-project/src/assets/base.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A2/src/main/vite-project/src/assets/logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A2/src/main/vite-project/src/assets/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A2/src/main/vite-project/src/components/HelloWorld.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A2/src/main/vite-project/src/components/TheWelcome.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A2/src/main/vite-project/src/components/WelcomeItem.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A2/src/main/vite-project/src/components/__tests__/HelloWorld.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A2/src/main/vite-project/src/components/icons/IconCommunity.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A2/src/main/vite-project/src/components/icons/IconDocumentation.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A2/src/main/vite-project/src/components/icons/IconEcosystem.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A2/src/main/vite-project/src/components/icons/IconSupport.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A2/src/main/vite-project/src/components/icons/IconTooling.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A2/src/main/vite-project/src/main.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A2/src/main/vite-project/src/router/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A2/src/main/vite-project/src/stores/counter.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A2/src/main/vite-project/src/views/AboutView.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A2/src/main/vite-project/src/views/HomeView.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A2/src/main/vite-project/tsconfig.app.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A2/src/main/vite-project/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A2/src/main/vite-project/tsconfig.node.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A2/src/main/vite-project/tsconfig.vitest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A2/src/main/vite-project/vite.config.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A2/src/main/vite-project/vitest.config.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-security/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-security/src/main/java/com/example/testsecurity/controller/HelloController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-security/src/main/java/com/example/testsecurity/domain/MyResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-security/src/main/java/com/example/testsecurity/domain/MyUserDetails.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-security/src/main/java/com/example/testsecurity/entity/MyOrder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-security/src/main/java/com/example/testsecurity/entity/MyUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-security/src/main/java/com/example/testsecurity/repository/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-security/src/main/java/com/example/testsecurity/service/MyUserDetailsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-security/src/main/resources/application.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-security/src/main/vite-project/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-security/src/main/vite-project/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-security/src/main/vite-project/env.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-security/src/main/vite-project/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-security/src/main/vite-project/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-security/src/main/vite-project/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-security/src/main/vite-project/public/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-security/src/main/vite-project/src/App.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-security/src/main/vite-project/src/assets/base.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-security/src/main/vite-project/src/assets/logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-security/src/main/vite-project/src/assets/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-security/src/main/vite-project/src/components/HelloWorld.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-security/src/main/vite-project/src/components/TheWelcome.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-security/src/main/vite-project/src/components/WelcomeItem.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-security/src/main/vite-project/src/components/__tests__/HelloWorld.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-security/src/main/vite-project/src/components/icons/IconCommunity.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-security/src/main/vite-project/src/components/icons/IconDocumentation.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-security/src/main/vite-project/src/components/icons/IconEcosystem.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-security/src/main/vite-project/src/components/icons/IconSupport.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-security/src/main/vite-project/src/components/icons/IconTooling.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-security/src/main/vite-project/src/main.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-security/src/main/vite-project/src/router/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-security/src/main/vite-project/src/stores/counter.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-security/src/main/vite-project/src/views/AboutView.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-security/src/main/vite-project/src/views/HomeView.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-security/src/main/vite-project/tsconfig.app.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-security/src/main/vite-project/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-security/src/main/vite-project/tsconfig.node.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-security/src/main/vite-project/tsconfig.vitest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-security/src/main/vite-project/vite.config.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-security/src/main/vite-project/vitest.config.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-security/src/test/java/com/example/testsecurity/LombokTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/A3/common/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A3/common/src/main/java/com/example/common/dto/Result.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A3/common/src/main/java/com/example/common/entity/Order.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A3/common/src/main/java/com/example/common/entity/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A3/common/src/main/resources/application.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A3/common/src/test/java/com/example/common/OrderServiceApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A3/database/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A3/database/src/main/java/com/example/gateway/EurekaGatewayApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A3/database/src/main/resources/application.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A3/database/src/test/java/com/example/gateway/EurekaGatewayApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A3/gateway/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/A3/gateway/src/main/resources/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/A3/order-service/src/main/java/com/example/order_service/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/A3/order-service/src/main/java/com/example/order_service/OrderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/A3/order-service/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/A3/order-service/src/main/resources/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/A3/order-service/src/test/java/com/example/order_service/OrderServiceApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/A3/order-service/src/test/java/com/example/order_service/OrderServiceApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/A2/src/main/vue-front" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/A3/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/A3/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/A3/user-service/src/main/java/com/example/user_service/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/A3/user-service/src/main/java/com/example/user_service/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/A3/user-service/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/A3/user-service/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UdpTest/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/UdpTest/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/UdpTest/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/UdpTest/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/UdpTest/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/UdpTest/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/UdpTest/src/main/java/com/example/udptest/UdpTestApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/test-security/src/main/java/com/example/testsecurity/TestSecurityApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UdpTest/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/UdpTest/src/test/java/com/example/udptest/UdpTestApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/test-security/src/test/java/com/example/testsecurity/TestSecurityApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-      </list>
-    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -55,13 +112,11 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="localRepository" value="D:\Maven\.m2\repository" />
-        <option name="mavenHome" value="Use Maven wrapper" />
         <option name="useMavenConfig" value="true" />
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="ProjectId" id="2PoT2lAbsLn4ktQYPC4iEkMEDYG" />
+  <component name="ProjectId" id="2QCaDV0QrThpIMOrRJ1DfWkiiug" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
@@ -71,41 +126,18 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
-    "jdk.selected.JAVA_MODULE": "openjdk-20",
-    "last_opened_file_path": "D:/IdeaProjects/JavaEE-Exercise/A3/user-service/src/main/java/com/example/user_service/entity",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "reactor",
-    "spring.configuration.checksum": "5639ad194ce5679fa25f4bdfb2b22b26",
-    "two.files.diff.last.used.folder": "D:/IdeaProjects/JavaEE-Exercise/A3/.idea",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="ReactorSettings">
-    <option name="notificationShown" value="true" />
-  </component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\IdeaProjects\JavaEE-Exercise\A3\user-service\src\main\java\com\example\user_service\entity" />
-      <recent name="D:\IdeaProjects\JavaEE-Exercise\A3\user-service\src\main\java\com\example\user_service" />
-      <recent name="D:\IdeaProjects\JavaEE-Exercise\A3\order-service\src\main\java\com\example\order_service" />
-      <recent name="D:\IdeaProjects\JavaEE-Exercise\A3" />
-    </key>
-  </component>
   <component name="RunDashboard">
     <option name="configurationTypes">
       <set>
@@ -113,7 +145,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.GatewayApplication">
+  <component name="RunManager" selected="Spring Boot.A1Application">
     <configuration name="A1Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="A1" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.a2.A1Application" />
@@ -121,158 +153,58 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EurekaGatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="database" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.gateway.EurekaGatewayApplication" />
+    <configuration name="A2Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="A2" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.a2.A2Application" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EurekaServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+    <configuration name="EurekaServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="eureka-server" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.eureka_server.EurekaServerApplication" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.eureka_server.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+    <configuration name="GatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="gateway" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.gateway.GatewayApplication" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.gateway.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OrderServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+    <configuration name="OrderServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="order-service" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.order_service.OrderServiceApplication" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.order_service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserServiceApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true">
+    <configuration name="UserServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="user-service" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.user_service.UserServiceApplication" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.user_service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserServiceApplication (2)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true">
-      <module name="user-service" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.user_service.UserServiceApplication" />
-      <option name="VM_PARAMETERS" value="-Dserver.port=8083" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.user_service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <list>
-      <item itemvalue="Spring Boot.A1Application" />
-      <item itemvalue="Spring Boot.EurekaGatewayApplication" />
-      <item itemvalue="Spring Boot.OrderServiceApplication" />
-      <item itemvalue="Spring Boot.EurekaServerApplication" />
-      <item itemvalue="Spring Boot.GatewayApplication" />
-      <item itemvalue="Spring Boot.UserServiceApplication (1)" />
-      <item itemvalue="Spring Boot.UserServiceApplication (2)" />
-    </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Spring Boot.GatewayApplication" />
-        <item itemvalue="Spring Boot.UserServiceApplication (2)" />
-        <item itemvalue="Spring Boot.UserServiceApplication (1)" />
-        <item itemvalue="Spring Boot.OrderServiceApplication" />
-        <item itemvalue="Spring Boot.EurekaServerApplication" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="1b9ba0e7-95fe-4fb6-8a31-6e13de2ee518" name="Changes" comment="" />
-      <created>1684122231793</created>
+      <changelist id="96528817-b786-4ce5-8761-2fc899131a1b" name="Changes" comment="" />
+      <created>1684859900233</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1684122231793</updated>
-      <workItem from="1684122233083" duration="97000" />
-      <workItem from="1684122335847" duration="1160000" />
-      <workItem from="1684124483072" duration="391000" />
-      <workItem from="1684124882211" duration="267000" />
-      <workItem from="1684166263285" duration="186000" />
-      <workItem from="1684412159785" duration="172000" />
-      <workItem from="1684412355337" duration="1451000" />
-      <workItem from="1684508447283" duration="1144000" />
-      <workItem from="1684544161896" duration="2991000" />
+      <updated>1684859900233</updated>
+      <workItem from="1684859901472" duration="413000" />
     </task>
-    <task id="LOCAL-00001" summary="Test">
-      <created>1684413672967</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1684413672967</updated>
-    </task>
-    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State>
-              <option name="FILTERS">
-                <map>
-                  <entry key="branch">
-                    <value>
-                      <list>
-                        <option value="origin/master" />
-                      </list>
-                    </value>
-                  </entry>
-                </map>
-              </option>
-            </State>
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Test" />
-    <option name="LAST_COMMIT_MESSAGE" value="Test" />
-  </component>
-  <component name="XSLT-Support.FileAssociations.UIState">
-    <expand />
-    <select />
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>
