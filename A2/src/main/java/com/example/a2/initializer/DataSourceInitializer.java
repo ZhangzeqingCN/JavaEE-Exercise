@@ -4,6 +4,7 @@ import com.example.a2.entity.User;
 import com.example.a2.entity.Shipment;
 import com.example.a2.repository.UserRepository;
 import com.example.a2.repository.ShipmentRepository;
+import jakarta.annotation.Resource;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
@@ -16,9 +17,7 @@ public class DataSourceInitializer implements CommandLineRunner {
 
     UserRepository userRepository;
 
-
     ShipmentRepository shipmentRepository;
-
 
     @Autowired
     public void setUserRepository(UserRepository userRepository) {

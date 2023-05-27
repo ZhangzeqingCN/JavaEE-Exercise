@@ -4,99 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="96528817-b786-4ce5-8761-2fc899131a1b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/A2/src/main/vite-project/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/src/main/vite-project/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/src/main/vite-project/env.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/src/main/vite-project/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/src/main/vite-project/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/src/main/vite-project/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/src/main/vite-project/public/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/src/main/vite-project/src/App.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/src/main/vite-project/src/assets/base.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/src/main/vite-project/src/assets/logo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/src/main/vite-project/src/assets/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/src/main/vite-project/src/components/HelloWorld.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/src/main/vite-project/src/components/TheWelcome.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/src/main/vite-project/src/components/WelcomeItem.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/src/main/vite-project/src/components/__tests__/HelloWorld.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/src/main/vite-project/src/components/icons/IconCommunity.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/src/main/vite-project/src/components/icons/IconDocumentation.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/src/main/vite-project/src/components/icons/IconEcosystem.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/src/main/vite-project/src/components/icons/IconSupport.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/src/main/vite-project/src/components/icons/IconTooling.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/src/main/vite-project/src/main.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/src/main/vite-project/src/router/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/src/main/vite-project/src/stores/counter.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/src/main/vite-project/src/views/AboutView.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/src/main/vite-project/src/views/HomeView.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/src/main/vite-project/tsconfig.app.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/src/main/vite-project/tsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/src/main/vite-project/tsconfig.node.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/src/main/vite-project/tsconfig.vitest.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/src/main/vite-project/vite.config.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/src/main/vite-project/vitest.config.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-security/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-security/src/main/java/com/example/testsecurity/controller/HelloController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-security/src/main/java/com/example/testsecurity/domain/MyResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-security/src/main/java/com/example/testsecurity/domain/MyUserDetails.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-security/src/main/java/com/example/testsecurity/entity/MyOrder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-security/src/main/java/com/example/testsecurity/entity/MyUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-security/src/main/java/com/example/testsecurity/repository/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-security/src/main/java/com/example/testsecurity/service/MyUserDetailsService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-security/src/main/resources/application.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-security/src/main/vite-project/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-security/src/main/vite-project/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-security/src/main/vite-project/env.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-security/src/main/vite-project/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-security/src/main/vite-project/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-security/src/main/vite-project/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-security/src/main/vite-project/public/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-security/src/main/vite-project/src/App.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-security/src/main/vite-project/src/assets/base.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-security/src/main/vite-project/src/assets/logo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-security/src/main/vite-project/src/assets/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-security/src/main/vite-project/src/components/HelloWorld.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-security/src/main/vite-project/src/components/TheWelcome.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-security/src/main/vite-project/src/components/WelcomeItem.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-security/src/main/vite-project/src/components/__tests__/HelloWorld.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-security/src/main/vite-project/src/components/icons/IconCommunity.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-security/src/main/vite-project/src/components/icons/IconDocumentation.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-security/src/main/vite-project/src/components/icons/IconEcosystem.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-security/src/main/vite-project/src/components/icons/IconSupport.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-security/src/main/vite-project/src/components/icons/IconTooling.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-security/src/main/vite-project/src/main.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-security/src/main/vite-project/src/router/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-security/src/main/vite-project/src/stores/counter.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-security/src/main/vite-project/src/views/AboutView.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-security/src/main/vite-project/src/views/HomeView.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-security/src/main/vite-project/tsconfig.app.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-security/src/main/vite-project/tsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-security/src/main/vite-project/tsconfig.node.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-security/src/main/vite-project/tsconfig.vitest.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-security/src/main/vite-project/vite.config.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-security/src/main/vite-project/vitest.config.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-security/src/test/java/com/example/testsecurity/LombokTests.java" afterDir="false" />
+    <list default="true" id="96528817-b786-4ce5-8761-2fc899131a1b" name="Changes" comment="Changes">
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/src/main/vue-front" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A3/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/A3/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UdpTest/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UdpTest/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UdpTest/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UdpTest/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UdpTest/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UdpTest/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UdpTest/src/main/java/com/example/udptest/UdpTestApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/test-security/src/main/java/com/example/testsecurity/TestSecurityApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UdpTest/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UdpTest/src/test/java/com/example/udptest/UdpTestApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/test-security/src/test/java/com/example/testsecurity/TestSecurityApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/A2/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/A2/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/A2/src/main/java/com/example/a2/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/A2/src/main/java/com/example/a2/controller/AuthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/A2/src/main/java/com/example/a2/initializer/DataSourceInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/A2/src/main/java/com/example/a2/initializer/DataSourceInitializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/A2/src/main/java/com/example/a2/repository/ImageRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/A2/src/main/java/com/example/a2/repository/ImageRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/A2/src/main/java/com/example/a2/repository/ShipmentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/A2/src/main/java/com/example/a2/repository/ShipmentRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/A2/src/main/java/com/example/a2/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/A2/src/main/java/com/example/a2/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/vue-front/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/vue-front/src/main.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,6 +23,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="5" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -117,7 +38,7 @@
     </option>
   </component>
   <component name="ProjectId" id="2QCaDV0QrThpIMOrRJ1DfWkiiug" />
-  <component name="ProjectLevelVcsManager">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
@@ -127,6 +48,10 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
@@ -135,6 +60,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "spring.configuration.checksum": "a76aaccc4e0d4dba9becdaa627d1525a",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -145,7 +71,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.A1Application">
+  <component name="RunManager" selected="Spring Boot.A2Application">
     <configuration name="A1Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="A1" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.a2.A1Application" />
@@ -188,6 +114,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Spring Boot.A2Application" />
+      <item itemvalue="Spring Boot.UserServiceApplication" />
+      <item itemvalue="Spring Boot.A1Application" />
+      <item itemvalue="Spring Boot.OrderServiceApplication" />
+      <item itemvalue="Spring Boot.EurekaServerApplication" />
+      <item itemvalue="Spring Boot.GatewayApplication" />
+    </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -198,6 +132,8 @@
       <option name="presentableId" value="Default" />
       <updated>1684859900233</updated>
       <workItem from="1684859901472" duration="413000" />
+      <workItem from="1685178785017" duration="185000" />
+      <workItem from="1685178991246" duration="1648000" />
     </task>
     <servers />
   </component>
