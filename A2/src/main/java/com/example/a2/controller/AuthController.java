@@ -5,6 +5,7 @@ import com.example.a2.data.Result;
 import com.example.a2.entity.User;
 import com.example.a2.repository.UserRepository;
 import com.example.a2.security.MySecurity;
+import jakarta.annotation.Resource;
 import jakarta.servlet.http.Cookie;
 import jakarta.servlet.http.HttpServletResponse;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,7 +22,6 @@ public class AuthController {
     public void setUserRepository(UserRepository userRepository) {
         this.userRepository = userRepository;
     }
-
     UserRepository userRepository;
 
     @Autowired
