@@ -5,21 +5,38 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="96528817-b786-4ce5-8761-2fc899131a1b" name="Changes" comment="Changes">
+      <change afterPath="$PROJECT_DIR$/A2/src/main/java/com/example/a2/condition/DevelopmentCondition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A2/src/main/java/com/example/a2/condition/FalseCondition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A2/src/main/java/com/example/a2/condition/TrueCondition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A2/src/main/java/com/example/a2/filter/AllPermitJwtFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A2/src/main/java/com/example/a2/filter/JwtFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A2/src/main/java/com/example/a2/service/AuthService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A2/src/main/java/com/example/a2/service/impl/AuthServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A2/src/main/java/com/example/a2/utils/JwtUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A2/src/main/java/com/example/a2/utils/MyAuthenticationManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A2/src/main/java/com/example/a2/utils/MyAuthenticationProvider.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/A2/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/A2/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/A2/src/main/java/com/example/a2/config/MyInterceptorConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/A2/src/main/java/com/example/a2/config/MyInterceptorConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/A2/src/main/java/com/example/a2/config/MySecurityConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/A2/src/main/java/com/example/a2/config/MySecurityConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/A2/src/main/java/com/example/a2/config/MyUtilConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/A2/src/main/java/com/example/a2/config/MyUtilConfiguration.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/A2/src/main/java/com/example/a2/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/A2/src/main/java/com/example/a2/controller/AuthController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/src/main/java/com/example/a2/initializer/DataSourceInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/A2/src/main/java/com/example/a2/initializer/DataSourceInitializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/src/main/java/com/example/a2/repository/ImageRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/A2/src/main/java/com/example/a2/repository/ImageRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/src/main/java/com/example/a2/repository/ShipmentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/A2/src/main/java/com/example/a2/repository/ShipmentRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/src/main/java/com/example/a2/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/A2/src/main/java/com/example/a2/repository/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/vue-front/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/vue-front/src/main.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -33,9 +50,14 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
+        <option name="localRepository" value="F:\maven\apache-maven-3.8.1\maven_repository" />
         <option name="useMavenConfig" value="true" />
+        <option name="userSettingsFile" value="F:\maven\apache-maven-3.8.1\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="2QCaDV0QrThpIMOrRJ1DfWkiiug" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -45,25 +67,35 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "spring.configuration.checksum": "a76aaccc4e0d4dba9becdaa627d1525a",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;F:/test-security/test-security&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;36092030e8fa120cd30e02d72724bdf1&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.example.a2.repository" />
+      <recent name="com.example.a2.domain" />
+      <recent name="com.example.a2.utils" />
+      <recent name="com.example.a2.condition" />
+    </key>
+  </component>
   <component name="RunDashboard">
     <option name="configurationTypes">
       <set>
@@ -82,6 +114,13 @@
     <configuration name="A2Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="A2" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.a2.A2Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DemoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="JavaEE-Exercise" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.ex3_2_back.DemoApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -115,6 +154,7 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Spring Boot.DemoApplication" />
       <item itemvalue="Spring Boot.A2Application" />
       <item itemvalue="Spring Boot.UserServiceApplication" />
       <item itemvalue="Spring Boot.A1Application" />
@@ -134,11 +174,26 @@
       <workItem from="1684859901472" duration="413000" />
       <workItem from="1685178785017" duration="185000" />
       <workItem from="1685178991246" duration="1648000" />
+      <workItem from="1685195744670" duration="3648000" />
+      <workItem from="1685201814785" duration="3040000" />
+      <workItem from="1685263855869" duration="2904000" />
+      <workItem from="1685341566764" duration="2929000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
