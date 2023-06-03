@@ -3,7 +3,7 @@ import { Message } from 'element-ui'
 
 // import store from '@/router'
 
-const BASE_API = 'http://localhost:7070'
+const BASE_API = 'http://localhost:8080/auth'
 // create an axios instance
 const service = axios.create({
   baseURL: BASE_API, // api 的 base_url
@@ -14,10 +14,10 @@ const service = axios.create({
 //添加请求拦截器
 service.interceptors.request.use(
   config => {
-    console.log(localStorage.getItem("token"))
-    if(localStorage.getItem("token")){
-      config.headers['token'] = localStorage.getItem("token")
-    }
+    // console.log(localStorage.getItem("token"))
+    // if(localStorage.getItem("token")){
+    //   config.headers['token'] = localStorage.getItem("token")
+    // }
     return config;
   },
   error => {
@@ -33,26 +33,6 @@ service.interceptors.response.use(
    * 当code返回如下情况则说明权限有问题，登出并返回到登录页
    */
   response => {
-    // const res = response
-    // if (res.code !== 200) {
-    //   if (res.code > 4000) {
-    //     Message({
-    //       message: res.message,
-    //       type: 'error',
-    //       duration: 5 * 1000
-    //     })
-    //     return response.success
-    //   }
-
-    //   Message({
-    //     message: res.message,
-    //     type: 'error',
-    //     duration: 5 * 1000
-    //   })
-    //   return Promise.reject(new Error('error'))
-    // } else {
-    //   return response.data
-    // }
     return response.data
   },
   error => {

@@ -1,16 +1,18 @@
 import request from '@/requestAndSecurity/request'
 
 export default {
+
     register(param){
         return request({
-            url: '/user/register',
+            url: '/register',
             method: 'post',
             data: param
           })
     },
+
     login(param){
         return request({
-            url: '/user/login',
+            url: '/login',
             method: 'post',
             data: param
         })

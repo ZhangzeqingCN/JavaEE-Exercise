@@ -6,10 +6,10 @@
                     <h2 class="title">登录</h2>
                     <el-form :model="loginForm" :rules="rules" ref="loginForm"  >
                         <div style="margin-right: 30px;" >
-                            <el-form-item  prop="phone" class="hover" >
+                            <el-form-item  prop="username" class="hover" >
                             <div style="display: flex;justify-content: center; align-items: center;">
                                 <el-button icon="el-icon-user" circle style="font-size: 20px;margin-right: 10px;"></el-button>
-                         <el-input class=" login-input"  placeholder="请填写电话号码"  v-model="loginForm.phone" style="width: 300px;"></el-input>
+                         <el-input class=" login-input"  placeholder="请填写用户名"  v-model="loginForm.username" style="width: 300px;"></el-input>
                             </div>
                         </el-form-item>
             
@@ -32,12 +32,7 @@
                     <h2 class="title">注册</h2>
                     <el-form :model="registerForm" :rules="rules" ref="registerForm"   >
                         <div style="margin-right: 56px;">
-                            <el-form-item  prop="phone" class="hover" style="margin-top: 0px;margin-bottom: 13px;" >
-                            <div style="display: flex;justify-content: center; align-items: center;">
-                                <span slot="label" class="register-span">电话号码</span>
-                             <el-input class=" register-input"  placeholder="请填写电话号码"  v-model="registerForm.phone" style="width: 300px;"></el-input>
-                            </div>
-                        </el-form-item>
+                            
                         <el-form-item  prop="user_name" class="hover" v-show="!isCode" style="margin-top: 0px;margin-bottom: 13px;">
                             <div style="display: flex;justify-content: center; align-items: center;">
                                 <span slot="label" class="register-span" >用户名</span>
@@ -55,6 +50,18 @@
                                 <span slot="label" class="register-span" >确认密码</span>
                         <el-input class=" register-input"  placeholder="必须与上面输入的密码一致" type="password" v-model="registerForm.passwordConfirm" show-password style="width: 300px;"></el-input>
                             </div>   
+                        </el-form-item>
+                        <el-form-item  prop="email" class="hover" style="margin-top: 0px;margin-bottom: 13px;" >
+                            <div style="display: flex;justify-content: center; align-items: center;">
+                                <span slot="label" class="register-span">电子邮件</span>
+                             <el-input class=" register-input"  placeholder="请填写电子邮件"  v-model="registerForm.email" style="width: 300px;"></el-input>
+                            </div>
+                        </el-form-item>
+                        <el-form-item  prop="phone" class="hover" style="margin-top: 0px;margin-bottom: 13px;" >
+                            <div style="display: flex;justify-content: center; align-items: center;">
+                                <span slot="label" class="register-span">电话</span>
+                             <el-input class=" register-input"  placeholder="请填写电话号码"  v-model="registerForm.phone" style="width: 300px;"></el-input>
+                            </div>
                         </el-form-item>
                         
                         </div>
@@ -92,7 +99,7 @@
     </div>
 </template>
 
-<script lang="ts">
+<script >
 import user from '@/api/user.js'
 export default {
     data() {
@@ -103,13 +110,12 @@ export default {
           callback()
         }
       }
-
+//else if (!/^(?![0-9]+$)(?![a-zA-Z]+$)[0-9A-Za-z]{3,16}$/.test(value)) {
       var password = (rule, value, callback) => {
+        console.log(value)
         if (!value) {
           return callback(new Error('请输入密码'))
-        } else if (!/^(?![0-9]+$)(?![a-zA-Z]+$)[0-9A-Za-z]{3,16}$/.test(value)) {
-          return callback(new Error('密码长度在3-16个字符,只能包含数字、大小写字母'))
-        } else {
+        }  else {
           callback()
         }
       }
@@ -117,21 +123,28 @@ export default {
       var passwordConfirm = (rule, value, callback) => {
         if (!value) {
           return callback(new Error('请输入确认密码！'))
-        } else if (!/^(?![0-9]+$)(?![a-zA-Z]+$)[0-9A-Za-z]{3,16}$/.test(value)) {
-          return callback(new Error('密码长度在3-16个字符,只能包含数字、大小写字母'))
-        } else if (value !== this.registerForm.password) {
+        }else if (value !== this.registerForm.password1) {
           return callback(new Error('两次输入的密码不一致！'))
         } else {
           return callback()
         }
       }
 
-      var phone = (rule, value, callback) => {
+      var phone  = (rule, value, callback) => {
         if (!value) {
           return callback(new Error('请输入手机号'))
-          //!(/^1(3|4|5|6|7|8|9)\d{9}$/.test(phone))
-        } else if (!/^[1][3,4,5,6,7,8,9][0-9]{9}$/.test(value)) {
-          return callback(new Error('手机号不合法，请重新输入'))
+        } else if (!/^(13[0-9]|14[01456879]|15[0-35-9]|16[2567]|17[0-8]|18[0-9]|19[0-35-9])\d{8}$/.test(value)) {
+          return callback(new Error('邮箱不合法，请重新输入'))
+        } else {
+          callback()
+        }
+      }
+
+      var email = (rule, value, callback) => {
+        if (!value) {
+          return callback(new Error('请输入邮箱'))
+        } else if (!/^[a-zA-Z0-9_-]+@[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+)+$/.test(value)) {
+          return callback(new Error('邮箱不合法，请重新输入'))
         } else {
           callback()
         }
@@ -142,37 +155,39 @@ export default {
         isLogin: false,
         loading: false,//加载效果
         loginForm: {
-            phone: "string",
-            password: "string"
+            username: "",
+            password: ""
         },
         registerForm: {
-            user_name: '',
-            password: '',
-            passwordConfirm:'',
-            phone: ''
+            username: '',
+            password1: '',
+            password2:'',
+            email: '',
+            phone:''
         },
         rules: {
-          user_name: [
+            username: [
             { validator: username, trigger: 'blur' }
+          ],
+          password1: [
+            { validator: password, trigger: 'blur' }
           ],
           password: [
             { validator: password, trigger: 'blur' }
           ],
-          phone: [
-            { validator: phone, trigger: 'blur'}
+          email: [
+            { validator: email, trigger: 'blur'}
           ],
-          passwordConfirm: [
+          password2: [
             { validator: passwordConfirm, trigger: 'blur'}
+          ],
+          phone: [
+            { validator: phone, trigger: 'blur' }
           ]
-
         }
         }
     },
     created(){
-        if(window.sessionStorage.getItem('isLogin') === "false"){
-        }else {
-            this.isLogin = !this.isLogin
-        }
         
     },
     methods:{
@@ -189,7 +204,8 @@ export default {
                     message: '登录成功',
                     type: 'success'
                     })
-                    window.localStorage.setItem('token',res.data.token)
+                    window.sessionStorage.setItem('username',this.loginForm.username)
+                    // window.localStorage.setItem('token',res.data.token)
                     this.$router.push('/Home')
                 } else {
                     this.$message({

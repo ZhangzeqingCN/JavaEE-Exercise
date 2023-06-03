@@ -6,31 +6,9 @@ import Home from '@/components/order/Home.vue'
 Vue.use(VueRouter)
 
 const routes = [
-  { path: '/welcome', component: Home},
-//   { path: '/login', component: Login ,},
-//   { path: '/register', component: Register },
-  { path: '/', redirect: '/welcome' },
+  { path: '/Home', component: Home},
+  { path: '/', redirect: '/loginAndRegister' },
   { path: '/loginAndRegister', component: loginAndRegister}
-//   {
-//     path: '/home',
-//     component: Home,
-//     redirect: '/HomePage',
-//     children: [
-//       // 写子路由  显示在主区域
-//       { path: '/enter', component: Enter },
-//       { path: '/outer', component: Outer },
-//       { path: '/personalPage', component: User},
-//       { path: '/company', component: Company},
-//       { path: '/addNewIn', component: addIn},
-//       { path: '/outStock', component: outStock},
-//       { path: '/area', component: Area},
-//       { path: '/shelf', component: Shelf},
-//       { path: '/parcel', component: Parcel},
-//       { path: '/data', component: data},
-//       { path: '/inStock', component: inStock },
-//       { path: '/HomePage', component: HomePage}
-//     ]
-//   }
 ]
 
 const router = new VueRouter({

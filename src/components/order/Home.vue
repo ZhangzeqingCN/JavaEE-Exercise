@@ -10,7 +10,7 @@
                
             </div>
             <div class="header-right">
-                <div class="header-user-con" v-if="isLogin===false">
+                <div class="header-user-con" >
                     <!-- 客服聊天 -->
                     <div style="cursor: pointer; font-size: 16px" @click="contact" class="text text-shadow">联系客服</div>
                     <!-- 用户头像 -->
@@ -29,12 +29,12 @@
                         </el-dropdown-menu>
                     </el-dropdown>
                 </div>
-                <div class="header-user-con" v-else>
+                <!-- <div class="header-user-con" v-else>
                     <el-button type="text" class="login-brt" style="margin-right: 10px;color: aliceblue;">关于我们</el-button>
                     <i class="el-icon-question login-brt" style="margin-right: 10px;"></i>
                     <el-button type="text"  class="login-brt" @click="login">登录</el-button>
                     <el-button type="text" class="login-brt" @click="register">注册</el-button>
-                </div>
+                </div> -->
             </div>
         </el-header>
         <el-container class="aside"  >
@@ -48,7 +48,7 @@
                         <span style="margin-right: 10px;font-weight: 550;">快递单号</span>
                         <el-input style="width: 300px;margin-right: 10px;" v-model="parcelID"></el-input>
                         <!-- <el-button icon="el-icon-search" circle></el-button> -->
-                        <span style="margin-right: 10px;font-weight: 550;">承运商</span>
+                        <!-- <span style="margin-right: 10px;font-weight: 550;">承运商</span>
                         <el-select v-model="carrier" placeholder="请选择">
                             <el-option
                             v-for="item in options"
@@ -56,12 +56,12 @@
                             :label="item.label"
                             :value="item.value">
                             </el-option>
-                        </el-select>
+                        </el-select> -->
                         <el-button icon="el-icon-search" circle style="margin-left:10px"></el-button>
                     </div>
                     </div>
                     <div>
-                        <div v-if="isLogin===false">
+                        <div >
                             <el-table :data="tableData.slice((currentPage-1)*pageSize,currentPage*pageSize)" style="width: 100%" @selection-change="handleSelectionChange" 
                                 :header-row-style="{height:'30px'}" 
                                 :header-cell-style="{background:'#f5f7fa',padding:'0px',textAlign: 'center'}"
@@ -73,31 +73,31 @@
                                 <template slot-scope="props">
                                     <el-form label-position="left" inline class="demo-table-expand">
                                     <el-form-item label="物流信息">
-                                        <span>{{ props.row.transportation }}</span>
+                                        <span>{{ props.row.parcelTrace }}</span>
                                     </el-form-item>
                                     </el-form>
                                 </template>
                                 </el-table-column>
                                 <el-table-column prop="id" label="运输单号" >
                                 </el-table-column>
-                                <el-table-column  prop="from_user"  label="发件人"  >
+                                <el-table-column  prop="fromUser"  label="发件人"  >
                                 </el-table-column>
-                                <el-table-column  prop="from_phone"  label="发件人电话">
+                                <el-table-column  prop="fromPhone"  label="发件人电话">
                                 </el-table-column>
-                                <el-table-column prop="from_addr" label="发货地址" ></el-table-column>
-                                <el-table-column prop="to_user" label="收件人" >
+                                <el-table-column prop="fromAddress" label="发货地址" ></el-table-column>
+                                <el-table-column prop="toUser" label="收件人" >
                                 </el-table-column>
-                                <el-table-column prop="to_phone"  label="收件人电话" >
+                                <el-table-column prop="toPhone"  label="收件人电话" >
                                 </el-table-column>
-                                <el-table-column prop="to_addr" label="收货地址" >
+                                <el-table-column prop="toAddress" label="收货地址" >
                                 </el-table-column>
-                                <el-table-column prop="carrier"  label="承运商" >
+                                <!-- <el-table-column prop="carrier"  label="承运商" >
                                 </el-table-column>
                                 <el-table-column prop="cost" label="运费" >
-                                </el-table-column>
+                                </el-table-column> -->
                                 <el-table-column prop="weight" label="重量(kg)" >
                                 </el-table-column>
-                                <el-table-column prop="createtime" label="创建时间" >
+                                <el-table-column prop="volume" label="体积(平方米)" >
                                 </el-table-column>
                             </el-table>
                             <el-pagination align='center' 
@@ -111,20 +111,17 @@
                             style="margin-top: 7px;">
                             </el-pagination>
                         </div>
-                        <div v-else>
-                            <el-empty description="包裹详情（请先进行登录）"></el-empty>
-                        </div>
                     </div>
                 </el-tab-pane>
                 <el-tab-pane label="我要寄件" name="second">
-                    <div v-if="isLogin==false">
+                    <div >
                     <el-form :model="parcel" ref="parcel" :rules="rules" style="padding: 0px; height: 300px; " label-width="90px">
                  <div >
                 <div style="  display: flex;
                     justify-content: center;
                     align-items: center;">
 
-                <el-form-item label-width="70px" prop="parcelID" style="margin-top: 0%; display: inline-block;">
+                <!-- <el-form-item label-width="70px" prop="parcelID" style="margin-top: 0%; display: inline-block;">
                 <span slot="label"  style="color: #403b3b;font-size: 16px;">承运商</span>
                 <el-select v-model="parcel.carrier" placeholder="请选择">
                     <el-option
@@ -134,10 +131,15 @@
                     :value="item.value">
                     </el-option>
                 </el-select>
-                </el-form-item>
-                <el-form-item  label-width="200px"  style="width: 400px;margin-top: 0%; display: inline-block;">
+                </el-form-item> -->
+                <el-form-item  label-width="200px"  style="width: 300px;margin-top: 0%; display: inline-block;">
                     <span slot="label"  style="color: #403b3b;font-size: 16px;">包裹重量(kg单位)</span>
                 <el-input v-model="parcel.weight"  autocomplete="off" ></el-input>
+               
+                </el-form-item>
+                <el-form-item  label-width="200px"  style="width: 300px;margin-top: 0%; display: inline-block;">
+                    <span slot="label"  style="color: #403b3b;font-size: 16px;">包裹体积(平方米单位)</span>
+                <el-input v-model="parcel.volume"  autocomplete="off" ></el-input>
                
                 </el-form-item>
             </div>
@@ -196,19 +198,19 @@
                 <el-button  type="primary" @click="sureAdd('parcel')">确 定</el-button>
             </div>
             </div>
-                <div v-else>
+                <!-- <div v-else>
                    <el-empty description="请先进行登录"></el-empty>
-                </div>
+                </div> -->
                 </el-tab-pane>
                 </el-tabs>
             </div>
             </div>
             <el-dialog
-            title="支付"
+            title="确认订单"
             :visible.sync="dialogVisible"
             width="30%"
             :before-close="handleClose">
-            <span>{{ parcel.cost }}</span>
+            <span>是否确认订单</span>
             <span slot="footer" class="dialog-footer">
                 <el-button @click="dialogVisible = false">取 消</el-button>
                 <el-button type="primary" @click="addOrder">确 定</el-button>
@@ -240,73 +242,8 @@ export default{
         activeName: 'first',
         dialogVisible: false,
         parcelID:'',//查询Param
-        carrier:'',//查询Param
-        tableData:[
-            {   
-                id:"3348204254",
-                from_user: "小王",
-                from_phone: "14793898634",
-                from_addr: "北京市海淀区北下关街道北京交通大学",
-                to_user: "何与与",
-                to_phone: "1479389897",
-                to_addr: "广西柳州市鱼峰区第一中学",
-                transportation_state: "待发货",// 2023-5-21-20:12:33
-                carrier: "中通快递",
-                cost: "10",
-                weight: "1",
-                createtime:"2023-5-21-20:12:33",
-                transportation: [
-                    "待发货"
-                ]},
-                {   
-                id:"629472942131",
-                from_user: "小王",
-                from_phone: "14793898634",
-                from_addr: "北京市海淀区北下关街道北京交通大学",
-                to_user: "何与与",
-                to_phone: "1479389897",
-                to_addr: "广西柳州市鱼峰区第一中学",
-                transportation_state: "待发货",// 2023-5-21-20:12:33
-                carrier: "中通快递",
-                cost: "15",
-                weight: "2",
-                createtime:"2023-5-21-20:23:56",
-                transportation: [
-                    "包裹已揽收 2023-5-21-22:12:47——————到达在北京中关村二部 2023-5-22-1:33:43"
-                ]},
-                {   
-                id:"32095273246",
-                from_user: "小王",
-                from_phone: "14793898634",
-                from_addr: "北京市海淀区北下关街道北京交通大学",
-                to_user: "何与与",
-                to_phone: "1479389897",
-                to_addr: "广西柳州市鱼峰区第一中学",
-                transportation_state: "待发货",// 2023-5-21-20:12:33
-                carrier: "韵达快递",
-                cost: "10",
-                weight: "1",
-                createtime:"2023-5-20-20:10:33",
-                transportation: [
-                    ""
-                ]},
-                {   
-                id:"3756204824",
-                from_user: "晓晓",
-                from_phone: "14793898432",
-                from_addr: "北京市市辖区海淀区北京交通大学主校区",
-                to_user: "何与",
-                to_phone: "13784960365",
-                to_addr: "河北省唐山市路北区解放西路秀山小区6单元601",
-                transportation_state: "待发货",// 2023-5-21-20:12:33
-                carrier: "韵达快递",
-                cost: "10",
-                weight: "1",
-                createtime:"2023-5-22-21:12:58",
-                transportation: [
-                    "待发货"
-                ]},
-                ],
+        // carrier:'',//查询Param
+        tableData:[{}     ],
         parcel:{
         fromPeople: "",
         fromPhone: "",
@@ -316,9 +253,10 @@ export default{
         toPhone: "",
         toAddrSelect:[],
         toAddrDetail: "",
-        carrier: "",
-        cost: "10元",
-        weight: ""
+        // carrier: "",
+        // cost: "10元",
+        weight: "",
+        volume:''
         },
         parcelSend:{
             from_user: "",
@@ -327,27 +265,28 @@ export default{
             to_user: "",
             to_phone: "",
             to_addr: "",
-            carrier: "",
-            cost: "",
-            weight: ""
+            // carrier: "",
+            // cost: "",
+            weight: "",
+            volume:''
         },
         optionsCity: regionData,
-        options: [{
-          value: '中通快递',
-          label: '中通快递'
-        }, {
-          value: '韵达快递',
-          label: '韵达快递'
-        }, {
-          value: '顺丰速运',
-          label: '顺丰速运'
-        }, {
-          value: '圆通快递',
-          label: '圆通快递'
-        }, {
-          value: '申通快递',
-          label: '申通快递'
-        }],
+        // options: [{
+        //   value: '中通快递',
+        //   label: '中通快递'
+        // }, {
+        //   value: '韵达快递',
+        //   label: '韵达快递'
+        // }, {
+        //   value: '顺丰速运',
+        //   label: '顺丰速运'
+        // }, {
+        //   value: '圆通快递',
+        //   label: '圆通快递'
+        // }, {
+        //   value: '申通快递',
+        //   label: '申通快递'
+        // }],
         value: '',
         currentPage: 1, // 当前页码
         total: 20, // 总条数
@@ -392,16 +331,6 @@ export default{
         personal(){
             this.$router.push('/personalPage')
         },
-        //登录
-        login(){
-            window.sessionStorage.setItem('isLogin',"false")
-            this.$router.push('/loginAndRegister')
-        },
-        //注册
-        register(){
-            window.sessionStorage.setItem('isLogin',"true")
-            this.$router.push('/loginAndRegister')
-        },
         //添加订单
         sureAdd(formName){
             //表单验证
@@ -419,13 +348,8 @@ export default{
 
     },
     created(){
-      if(window.localStorage.getItem('token')){
-        this.isLogin = false
-      }
-      this.isLogin = false
-     
+        this.username = window.sessionStorage.getItem('username')
     }
-
 }
 </script>
 
