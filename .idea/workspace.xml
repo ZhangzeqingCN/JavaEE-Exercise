@@ -4,162 +4,46 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="96528817-b786-4ce5-8761-2fc899131a1b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/A2/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/src/main/java/com/example/apiproject/ApiProjectApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/src/main/java/com/example/apiproject/access/Commodity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/src/main/java/com/example/apiproject/access/Gender.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/src/main/java/com/example/apiproject/access/GenderConverter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/src/main/java/com/example/apiproject/access/Purchasing.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/src/main/java/com/example/apiproject/access/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/src/main/java/com/example/apiproject/configuration/MyCorsConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/src/main/java/com/example/apiproject/configuration/MyInterceptorConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/src/main/java/com/example/apiproject/configuration/MyUtilsConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/src/main/java/com/example/apiproject/controller/AuthController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/src/main/java/com/example/apiproject/controller/CommodityController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/src/main/java/com/example/apiproject/controller/MyTestController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/src/main/java/com/example/apiproject/controller/dev/DevCommodityController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/src/main/java/com/example/apiproject/controller/dev/DevUserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/src/main/java/com/example/apiproject/controller/dev/DevelopmentController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/src/main/java/com/example/apiproject/domain/DevMessage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/src/main/java/com/example/apiproject/domain/Result.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/src/main/java/com/example/apiproject/domain/auth/LoginDomain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/src/main/java/com/example/apiproject/domain/auth/RegisterDomain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/src/main/java/com/example/apiproject/exception/MyUnauthorizedException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/src/main/java/com/example/apiproject/exceptionhandler/MyExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/src/main/java/com/example/apiproject/initializer/DataSourceInitializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/src/main/java/com/example/apiproject/interceptor/AuthInterceptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/src/main/java/com/example/apiproject/repository/CommodityRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/src/main/java/com/example/apiproject/repository/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/src/main/java/com/example/apiproject/service/AuthService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/src/main/java/com/example/apiproject/utils/MyJwtUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/src/test/java/com/example/apiproject/ApiProjectApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/src/test/java/com/example/apiproject/repository/CommodityRepositoryTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/src/test/java/com/example/apiproject/repository/UserRepositoryTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/src/test/java/com/example/apiproject/utils/JwtUtilTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/src/vite-project/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/src/vite-project/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/src/vite-project/env.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/src/vite-project/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/src/vite-project/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/src/vite-project/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/src/vite-project/public/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/src/vite-project/src/App.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/src/vite-project/src/assets/base.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/src/vite-project/src/assets/logo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/src/vite-project/src/assets/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/src/vite-project/src/components/HelloWorld.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/src/vite-project/src/components/TheWelcome.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/src/vite-project/src/components/WelcomeItem.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/src/vite-project/src/components/__tests__/HelloWorld.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/src/vite-project/src/components/icons/IconCommunity.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/src/vite-project/src/components/icons/IconDocumentation.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/src/vite-project/src/components/icons/IconEcosystem.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/src/vite-project/src/components/icons/IconSupport.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/src/vite-project/src/components/icons/IconTooling.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/src/vite-project/src/main.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/src/vite-project/src/router/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/src/vite-project/src/stores/counter.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/src/vite-project/src/views/AboutView.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/src/vite-project/src/views/HomeView.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/src/vite-project/src/views/LoginView.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/src/vite-project/tsconfig.app.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/src/vite-project/tsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/src/vite-project/tsconfig.node.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/src/vite-project/tsconfig.vitest.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/src/vite-project/vite.config.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/src/vite-project/vitest.config.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/A2/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/A2/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/A2/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/mvnw" beforeDir="false" afterPath="$PROJECT_DIR$/A2/mvnw" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/A2/mvnw.cmd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/A2/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/src/main/java/com/example/a2/A2Application.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/src/main/java/com/example/a2/config/MyCorsConfiguration.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/src/main/java/com/example/a2/config/MyInterceptorConfiguration.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/src/main/java/com/example/a2/config/MySecurityConfiguration.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/src/main/java/com/example/a2/config/MyUtilConfiguration.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/src/main/java/com/example/a2/controller/AuthController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/src/main/java/com/example/a2/controller/TestsController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/src/main/java/com/example/a2/data/Result.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/src/main/java/com/example/a2/entity/Gender.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/src/main/java/com/example/a2/entity/GenderConverter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/src/main/java/com/example/a2/entity/Image.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/src/main/java/com/example/a2/entity/Shipment.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/src/main/java/com/example/a2/entity/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/src/main/java/com/example/a2/initializer/DataSourceInitializer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/src/main/java/com/example/a2/interceptor/AuthInterceptor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/src/main/java/com/example/a2/repository/ImageRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/src/main/java/com/example/a2/repository/ShipmentRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/src/main/java/com/example/a2/repository/UserRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/src/main/java/com/example/a2/security/MySecurity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/src/main/resources/application-h2dev.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/src/main/resources/application-h2mendev.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/src/main/resources/application-mysqldev.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/src/main/resources/application-release.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/A2/src/main/resources/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/src/main/resources/static/css/common.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/src/main/resources/static/css/home.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/src/main/resources/static/css/login.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/src/main/resources/static/css/register.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/src/main/resources/static/css/trace.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/src/main/resources/templates/common.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/src/main/resources/templates/home.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/src/main/resources/templates/image.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/src/main/resources/templates/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/src/main/resources/templates/login.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/src/main/resources/templates/nothing.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/src/main/resources/templates/register.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/src/main/resources/templates/shipment.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/src/main/resources/templates/test.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/src/main/resources/templates/trace.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/src/main/vite-project/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/src/main/vite-project/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/src/main/vite-project/env.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/src/main/vite-project/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/src/main/vite-project/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/src/main/vite-project/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/src/main/vite-project/public/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/src/main/vite-project/src/App.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/src/main/vite-project/src/assets/base.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/src/main/vite-project/src/assets/logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/src/main/vite-project/src/assets/main.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/src/main/vite-project/src/components/HelloWorld.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/src/main/vite-project/src/components/TheWelcome.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/src/main/vite-project/src/components/WelcomeItem.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/src/main/vite-project/src/components/__tests__/HelloWorld.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/src/main/vite-project/src/components/icons/IconCommunity.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/src/main/vite-project/src/components/icons/IconDocumentation.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/src/main/vite-project/src/components/icons/IconEcosystem.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/src/main/vite-project/src/components/icons/IconSupport.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/src/main/vite-project/src/components/icons/IconTooling.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/src/main/vite-project/src/main.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/src/main/vite-project/src/router/index.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/src/main/vite-project/src/stores/counter.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/src/main/vite-project/src/views/AboutView.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/src/main/vite-project/src/views/HomeView.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/src/main/vite-project/tsconfig.app.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/src/main/vite-project/tsconfig.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/src/main/vite-project/tsconfig.node.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/src/main/vite-project/tsconfig.vitest.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/src/main/vite-project/vite.config.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/src/main/vite-project/vitest.config.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/src/test/java/com/example/a2/A2ApplicationTests.java" beforeDir="false" />
+    <list default="true" id="96528817-b786-4ce5-8761-2fc899131a1b" name="Changes" comment="修改部分A2">
+      <change afterPath="$PROJECT_DIR$/A2/src/main/java/com/example/a2/entity/test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A2/src/main/java/com/example/apiproject/access/FromPeople.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A2/src/main/java/com/example/apiproject/access/ParcelTrace.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A2/src/main/java/com/example/apiproject/access/ToPeople.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A2/src/main/java/com/example/apiproject/access/shipment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A2/src/main/java/com/example/apiproject/repository/FromPeopleRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A2/src/main/java/com/example/apiproject/repository/ParcelTraceRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A2/src/main/java/com/example/apiproject/repository/ShipRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A2/src/main/java/com/example/apiproject/repository/ToPeopleRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/A2/src/main/java/com/example/apiproject/access/Commodity.java" beforeDir="false" afterPath="$PROJECT_DIR$/A2/src/main/java/com/example/apiproject/access/Commodity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/A2/src/main/java/com/example/apiproject/access/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/A2/src/main/java/com/example/apiproject/access/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/A2/src/vite-project/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/A2/src/vite-project/src/api/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/A2/src/vite-project/src/api/user.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/A2/src/vite-project/src/components/order/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/A2/src/vite-project/src/components/order/Home.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/A2/src/vite-project/src/components/user/loginAndRegister.vue" beforeDir="false" afterPath="$PROJECT_DIR$/A2/src/vite-project/src/components/user/loginAndRegister.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/A2/src/vite-project/src/requestAndSecurity/request.js" beforeDir="false" afterPath="$PROJECT_DIR$/A2/src/vite-project/src/requestAndSecurity/request.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/A2/src/vite-project/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/A2/src/vite-project/src/router/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="Git.Settings">
-    <option name="RECENT_BRANCH_BY_REPOSITORY">
-      <map>
-        <entry key="$PROJECT_DIR$" value="hyt" />
-      </map>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Interface" />
+      </list>
     </option>
+  </component>
+  <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="5" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -182,6 +66,10 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
@@ -190,14 +78,11 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;c49906a0ab4827a1e5a229e9a422506e&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;E:\\大三下\\JAVA-EE\\code\\JavaEE-Exercise\\A2\\src\\main\\vite-project\\node_modules\\typescript\\lib&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RecentsManager">
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.example.a2.controller" />
-    </key>
-  </component>
   <component name="RunDashboard">
     <option name="configurationTypes">
       <set>
@@ -205,20 +90,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.A1Application">
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="user-service" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="user-service" />
-      <option name="filePath" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Spring Boot.ApiProjectApplication">
     <configuration name="A1Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="A1" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.a2.A1Application" />
@@ -229,6 +101,13 @@
     <configuration name="A2Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="A2" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.a2.A2Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ApiProjectApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="api-project" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.apiproject.ApiProjectApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -262,6 +141,7 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Spring Boot.ApiProjectApplication" />
       <item itemvalue="Spring Boot.A2Application" />
       <item itemvalue="Spring Boot.UserServiceApplication" />
       <item itemvalue="Spring Boot.A1Application" />
@@ -279,13 +159,39 @@
       <option name="presentableId" value="Default" />
       <updated>1684859900233</updated>
       <workItem from="1684859901472" duration="413000" />
+      <workItem from="1685178785017" duration="185000" />
+      <workItem from="1685178991246" duration="1965000" />
+      <workItem from="1685197191646" duration="1317000" />
+      <workItem from="1685344683714" duration="227000" />
+      <workItem from="1685430063135" duration="15000" />
+      <workItem from="1685781256410" duration="5334000" />
+      <workItem from="1685796118250" duration="2084000" />
+      <workItem from="1685799556182" duration="598000" />
+      <workItem from="1685875629890" duration="1685000" />
+      <workItem from="1685945650849" duration="4516000" />
     </task>
+    <task id="LOCAL-00001" summary="修改部分A2">
+      <created>1685180911110</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1685180911110</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+    <option name="exactExcludedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/A2/src/vite-project/src/main.js" />
+        <option value="$PROJECT_DIR$/A2/src/vite-project/src/router/index.js" />
+      </list>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="修改部分A2" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改部分A2" />
   </component>
 </project>
