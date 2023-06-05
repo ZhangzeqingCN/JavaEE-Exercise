@@ -1,9 +1,6 @@
 package com.example.apiproject.access;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.ManyToOne;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.*;
 
 /**
@@ -23,15 +20,14 @@ import lombok.*;
 @Table(name = "t_ToPeople")
 public class ToPeople {
     @Id
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
     Integer id;//记录id
 
     @ManyToOne//多个寄件人对应一个用户
     User user;
 
-    String fromUser;
-    String fromPhone;
-    String fromAddress;
     String toUser;
     String toPhone;
-    String toAddress;
+    String toAddressSelect;
+    String toAddressDetail;
 }

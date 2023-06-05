@@ -1,10 +1,14 @@
 package com.example.apiproject.service;
 
+import com.example.apiproject.access.FromPeople;
+import com.example.apiproject.access.ToPeople;
 import com.example.apiproject.domain.DevMessage;
 import com.example.apiproject.domain.Result;
 import com.example.apiproject.domain.auth.*;
 import com.example.apiproject.domain.auth.RegisterDomain;
 import com.example.apiproject.access.User;
+import com.example.apiproject.repository.FromPeopleRepository;
+import com.example.apiproject.repository.ToPeopleRepository;
 import com.example.apiproject.repository.UserRepository;
 import com.example.apiproject.utils.MyJwtUtil;
 import jakarta.servlet.http.Cookie;
@@ -16,6 +20,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.Arrays;
+import java.util.List;
 import java.util.Objects;
 import java.util.Optional;
 
@@ -27,7 +32,14 @@ import java.util.Optional;
 public class AuthService {
     private UserRepository userRepository;
 
+    private FromPeopleRepository fromPeopleRepository;
+
+    private ToPeopleRepository toPeopleRepository;
+
     private MyJwtUtil jwtUtil;
+
+    @Autowired
+    public void setToPeopleRepository(ToPeopleRepository toPeopleRepository) { this.toPeopleRepository = toPeopleRepository;}
 
     @Autowired
     public void setUserRepository(UserRepository userRepository) {
@@ -38,6 +50,9 @@ public class AuthService {
     public void setJwtUtil(MyJwtUtil jwtUtil) {
         this.jwtUtil = jwtUtil;
     }
+
+    @Autowired
+    public void setFromPeopleRepository(FromPeopleRepository fromPeopleRepository) { this.fromPeopleRepository = fromPeopleRepository; }
 
     @NotNull
     public Result login(@NotNull LoginDomain loginDomain, @NotNull HttpServletResponse response) {
@@ -78,13 +93,70 @@ public class AuthService {
         return Result.success();
     }
 
-    public Result saveFrom(@NotNull saveFromPeople saveFromPeople){
-
-        return Result.success();
+    public Result saveFrom(@NotNull saveFromPeople saveFromPeople,HttpServletRequest request){
+        String token = null;
+        var cookies = request.getCookies();
+        if (cookies != null) {
+            for (var cookie : cookies) {
+                if (Objects.equals(cookie.getName(), "token")) {
+                  token = cookie.getValue();
+                    Optional<String> name=jwtUtil.decodeToken(token);
+                    log.info(String.format("用户名 %s", name.get()));
+                    if(name.isPresent()){
+                        Optional<User> userOptional=userRepository.findByName(name.get());
+                        if(userOptional.isPresent()){
+                            //保存
+                            fromPeopleRepository.save(FromPeople.builder()
+                                    .user(userOptional.get())
+                                    .fromUser(saveFromPeople.getFromPeople())
+                                    .fromPhone(saveFromPeople.getFromPhone())
+                                    .fromAddressSelect(saveFromPeople.getFromAddrSelect())
+                                    .fromAddressDetail(saveFromPeople.getFromAddrDetail())
+                                    .build());
+                        } else {
+                            Result.error("本用户不存在");
+                        }
+                    }else{
+                        Result.error("用户鉴权失败");
+                    }
+                    break;
+                }
+            }
+        }
+        return Result.error("用户鉴权失败");
     }
 
-    public Result saveTo(@NotNull saveToPeople saveToPeople){
-        return Result.success();
+    public Result saveTo(@NotNull saveToPeople saveToPeople, HttpServletRequest request){
+        String token = null;
+        var cookies = request.getCookies();
+        if (cookies != null) {
+            for (var cookie : cookies) {
+                if (Objects.equals(cookie.getName(), "token")) {
+                    token = cookie.getValue();
+                    Optional<String> name=jwtUtil.decodeToken(token);
+                    log.info(String.format("用户名 %s", name.get()));
+                    if(name.isPresent()){
+                        Optional<User> userOptional=userRepository.findByName(name.get());
+                        if(userOptional.isPresent()){
+                            //保存
+                            toPeopleRepository.save(ToPeople.builder()
+                                    .user(userOptional.get())
+                                    .toUser(saveToPeople.getToPeople())
+                                    .toPhone(saveToPeople.getToPhone())
+                                    .toAddressSelect(saveToPeople.getToAddrSelect())
+                                    .toAddressDetail(saveToPeople.getToAddrDetail())
+                                    .build());
+                        } else {
+                            Result.error("用户不存在");
+                        }
+                    }else{
+                        Result.error("用户鉴权失败");
+                    }
+                    break;
+                }
+            }
+        }
+        return Result.error("用户鉴权失败");
     }
 
     public Result deleteFrom(@NotNull String id){
@@ -95,11 +167,11 @@ public class AuthService {
         return Result.success();
     }
 
-    public Result showFromPeople(){
+    public Result showFromPeople(HttpServletRequest request){
         return Result.success();
     }
 
-    public Result showToPeople(){
+    public Result showToPeople(HttpServletRequest request){
         return Result.success();
     }
     /**

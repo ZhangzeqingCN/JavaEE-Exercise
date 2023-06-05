@@ -6,6 +6,7 @@ import com.example.apiproject.domain.auth.*;
 import com.example.apiproject.domain.auth.LoginDomain;
 import com.example.apiproject.domain.auth.RegisterDomain;
 import com.example.apiproject.service.AuthService;
+import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import lombok.extern.slf4j.Slf4j;
 import org.jetbrains.annotations.NotNull;
@@ -43,13 +44,13 @@ public class AuthController {
     }
 
     @PostMapping("/saveFrom")
-    public Result saveFrom(@RequestBody @NotNull saveFromPeople saveFromPeople) {
-        return authService.saveFrom(saveFromPeople);
+    public Result saveFrom(@RequestBody @NotNull saveFromPeople saveFromPeople, HttpServletRequest request) {
+        return authService.saveFrom(saveFromPeople,request);
     }
 
     @PostMapping("/saveTo")
-    public Result saveTo(@RequestBody @NotNull saveToPeople saveToPeople) {
-        return authService.saveTo(saveToPeople);
+    public Result saveTo(@RequestBody @NotNull saveToPeople saveToPeople, HttpServletRequest request) {
+        return authService.saveTo(saveToPeople,request);
     }
 
     @DeleteMapping("/deleteFrom")
@@ -63,13 +64,14 @@ public class AuthController {
     }
 
     @GetMapping("/showFromPeople")
-    public Result showFromPeople(){
-        return authService.showFromPeople();
+    public Result showFromPeople(HttpServletRequest request){
+        return authService.showFromPeople(request);
     }
 
     @GetMapping("/showFromPeople")
-    public Result showToPeople(){
-        return authService.showToPeople();
+    public Result showToPeople(HttpServletRequest request){
+        return authService.showToPeople(request);
     }
+
 
 }
