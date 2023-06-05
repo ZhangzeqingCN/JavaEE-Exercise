@@ -44,7 +44,7 @@ public class AuthService {
         if (!userRepository.existsByNameAndPassword(loginDomain.getUsername(), loginDomain.getPassword())) {
             String message = String.format("wrong username %s or password %s", loginDomain.getUsername(), loginDomain.getPassword());
             log.info(message);
-            return Result.error(message).addErrors(message).addDevMessages(new DevMessage(loginDomain));
+            return Result.error(message).addDevMessages(new DevMessage(loginDomain)).addDevMessages(message);
         }
 
         log.info(String.format("login username %s with password %s", loginDomain.getUsername(), loginDomain.getPassword()));
@@ -60,7 +60,7 @@ public class AuthService {
         if (userRepository.existsByName(registerDomain.getUsername())) {
             String message = String.format("username %s already exists", registerDomain.getUsername());
             log.info(message);
-            return Result.error(message).addErrors(registerDomain.getUsername());
+            return Result.error(message).addDevMessages(registerDomain.getUsername());
         }
 
         if (!Objects.equals(registerDomain.getPassword1(), registerDomain.getPassword2())) {

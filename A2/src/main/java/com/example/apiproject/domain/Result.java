@@ -18,7 +18,7 @@ public class Result {
     private int code;
     private String message;
     private Object data;
-    public final List<Object> errors = new ArrayList<>();
+    public final List<Exception> errors = new ArrayList<>();
     public final List<Object> devMessages = new ArrayList<>();
 
     public static Result success() {
@@ -33,7 +33,7 @@ public class Result {
         return Result.builder().success(false).message(message).build();
     }
 
-    public Result addErrors(Object error) {
+    public Result addErrors(Exception error) {
         errors.add(error);
         return this;
     }
