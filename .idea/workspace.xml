@@ -5,9 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="96528817-b786-4ce5-8761-2fc899131a1b" name="Changes" comment="添加部分实体等">
-      <change afterPath="$PROJECT_DIR$/A2/src/main/java/com/example/apiproject/controller/OrderController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/src/main/java/com/example/apiproject/service/OrderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A2/src/main/java/com/example/apiproject/domain/auth/saveFromPeople.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A2/src/main/java/com/example/apiproject/domain/auth/saveToPeople.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A2/src/main/java/com/example/apiproject/domain/order/addNewOrderDomain.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/A2/src/main/java/com/example/apiproject/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/A2/src/main/java/com/example/apiproject/controller/AuthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/A2/src/main/java/com/example/apiproject/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/A2/src/main/java/com/example/apiproject/controller/OrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/A2/src/main/java/com/example/apiproject/service/AuthService.java" beforeDir="false" afterPath="$PROJECT_DIR$/A2/src/main/java/com/example/apiproject/service/AuthService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/A2/src/main/java/com/example/apiproject/service/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/A2/src/main/java/com/example/apiproject/service/OrderService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -154,6 +159,7 @@
       <workItem from="1685875629890" duration="1685000" />
       <workItem from="1685945650849" duration="5091000" />
       <workItem from="1685950846957" duration="294000" />
+      <workItem from="1685970001130" duration="2678000" />
     </task>
     <task id="LOCAL-00001" summary="修改部分A2">
       <created>1685180911110</created>
@@ -169,7 +175,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685950467721</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="添加部分实体等">
+      <created>1685970074201</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1685970074201</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

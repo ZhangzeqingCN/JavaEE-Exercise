@@ -2,7 +2,7 @@ package com.example.apiproject.service;
 
 import com.example.apiproject.domain.DevMessage;
 import com.example.apiproject.domain.Result;
-import com.example.apiproject.domain.auth.LoginDomain;
+import com.example.apiproject.domain.auth.*;
 import com.example.apiproject.domain.auth.RegisterDomain;
 import com.example.apiproject.access.User;
 import com.example.apiproject.repository.UserRepository;
@@ -78,6 +78,30 @@ public class AuthService {
         return Result.success();
     }
 
+    public Result saveFrom(@NotNull saveFromPeople saveFromPeople){
+
+        return Result.success();
+    }
+
+    public Result saveTo(@NotNull saveToPeople saveToPeople){
+        return Result.success();
+    }
+
+    public Result deleteFrom(@NotNull String id){
+        return Result.success();
+    }
+
+    public Result deleteTo(@NotNull String id){
+        return Result.success();
+    }
+
+    public Result showFromPeople(){
+        return Result.success();
+    }
+
+    public Result showToPeople(){
+        return Result.success();
+    }
     /**
      * 设置token
      *
