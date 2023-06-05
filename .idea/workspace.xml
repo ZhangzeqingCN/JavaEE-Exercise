@@ -4,27 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="96528817-b786-4ce5-8761-2fc899131a1b" name="Changes" comment="修改部分A2">
-      <change afterPath="$PROJECT_DIR$/A2/src/main/java/com/example/a2/entity/test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/src/main/java/com/example/apiproject/access/FromPeople.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/src/main/java/com/example/apiproject/access/ParcelTrace.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/src/main/java/com/example/apiproject/access/ToPeople.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/src/main/java/com/example/apiproject/access/shipment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/src/main/java/com/example/apiproject/repository/FromPeopleRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/src/main/java/com/example/apiproject/repository/ParcelTraceRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/src/main/java/com/example/apiproject/repository/ShipRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/src/main/java/com/example/apiproject/repository/ToPeopleRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="96528817-b786-4ce5-8761-2fc899131a1b" name="Changes" comment="添加部分实体等">
+      <change afterPath="$PROJECT_DIR$/A2/src/main/java/com/example/apiproject/controller/OrderController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A2/src/main/java/com/example/apiproject/service/OrderService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/src/main/java/com/example/apiproject/access/Commodity.java" beforeDir="false" afterPath="$PROJECT_DIR$/A2/src/main/java/com/example/apiproject/access/Commodity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/src/main/java/com/example/apiproject/access/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/A2/src/main/java/com/example/apiproject/access/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/src/vite-project/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/src/vite-project/src/api/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/A2/src/vite-project/src/api/user.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/src/vite-project/src/components/order/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/A2/src/vite-project/src/components/order/Home.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/src/vite-project/src/components/user/loginAndRegister.vue" beforeDir="false" afterPath="$PROJECT_DIR$/A2/src/vite-project/src/components/user/loginAndRegister.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/src/vite-project/src/requestAndSecurity/request.js" beforeDir="false" afterPath="$PROJECT_DIR$/A2/src/vite-project/src/requestAndSecurity/request.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/src/vite-project/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/A2/src/vite-project/src/router/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,13 +17,14 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="GitToolBoxStore">
     <option name="projectConfigVersion" value="5" />
@@ -168,7 +152,8 @@
       <workItem from="1685796118250" duration="2084000" />
       <workItem from="1685799556182" duration="598000" />
       <workItem from="1685875629890" duration="1685000" />
-      <workItem from="1685945650849" duration="4516000" />
+      <workItem from="1685945650849" duration="5091000" />
+      <workItem from="1685950846957" duration="294000" />
     </task>
     <task id="LOCAL-00001" summary="修改部分A2">
       <created>1685180911110</created>
@@ -177,7 +162,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685180911110</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="添加部分实体等">
+      <created>1685950467721</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1685950467721</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -192,6 +184,7 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="修改部分A2" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改部分A2" />
+    <MESSAGE value="添加部分实体等" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加部分实体等" />
   </component>
 </project>
