@@ -71,7 +71,6 @@ public class AuthService {
 
     @NotNull
     public Result register(@NotNull RegisterDomain registerDomain) {
-
         if (userRepository.existsByName(registerDomain.getUsername())) {
             String message = String.format("username %s already exists", registerDomain.getUsername());
             log.info(message);
@@ -96,12 +95,13 @@ public class AuthService {
     public Result saveFrom(@NotNull saveFromPeople saveFromPeople,HttpServletRequest request){
         String token = null;
         var cookies = request.getCookies();
+        log.info(saveFromPeople.getFromPeople());
         if (cookies != null) {
             for (var cookie : cookies) {
                 if (Objects.equals(cookie.getName(), "token")) {
                   token = cookie.getValue();
                     Optional<String> name=jwtUtil.decodeToken(token);
-                    log.info(String.format("用户名 %s", name.get()));
+                   // log.info(String.format("用户名 %s", name.get()));
                     if(name.isPresent()){
                         Optional<User> userOptional=userRepository.findByName(name.get());
                         if(userOptional.isPresent()){
@@ -113,13 +113,13 @@ public class AuthService {
                                     .fromAddressSelect(saveFromPeople.getFromAddrSelect())
                                     .fromAddressDetail(saveFromPeople.getFromAddrDetail())
                                     .build());
+                            return Result.success();
                         } else {
-                            Result.error("本用户不存在");
+                            return Result.error("本用户不存在");
                         }
                     }else{
-                        Result.error("用户鉴权失败");
+                        return Result.error("用户鉴权失败");
                     }
-                    break;
                 }
             }
         }
@@ -134,7 +134,7 @@ public class AuthService {
                 if (Objects.equals(cookie.getName(), "token")) {
                     token = cookie.getValue();
                     Optional<String> name=jwtUtil.decodeToken(token);
-                    log.info(String.format("用户名 %s", name.get()));
+                   // log.info(String.format("用户名 %s", name.get()));
                     if(name.isPresent()){
                         Optional<User> userOptional=userRepository.findByName(name.get());
                         if(userOptional.isPresent()){
@@ -146,13 +146,13 @@ public class AuthService {
                                     .toAddressSelect(saveToPeople.getToAddrSelect())
                                     .toAddressDetail(saveToPeople.getToAddrDetail())
                                     .build());
+                            return Result.success();
                         } else {
-                            Result.error("用户不存在");
+                            return Result.error("用户不存在");
                         }
                     }else{
-                        Result.error("用户鉴权失败");
+                        return Result.error("用户鉴权失败");
                     }
-                    break;
                 }
             }
         }
@@ -160,19 +160,76 @@ public class AuthService {
     }
 
     public Result deleteFrom(@NotNull String id){
-        return Result.success();
+        if(fromPeopleRepository.existsById(Integer.valueOf(id))){
+            fromPeopleRepository.deleteById(Integer.valueOf(id));
+           return Result.success();
+        }else {
+            return Result.error("该寄件人不存在");
+        }
     }
 
     public Result deleteTo(@NotNull String id){
-        return Result.success();
+        if(toPeopleRepository.existsById(Integer.valueOf(id))){
+            toPeopleRepository.deleteById(Integer.valueOf(id));
+            return Result.success();
+        }else {
+            return Result.error("该寄件人不存在");
+        }
     }
 
     public Result showFromPeople(HttpServletRequest request){
-        return Result.success();
+        String token = null;
+        var cookies = request.getCookies();
+        if (cookies != null) {
+            for (var cookie : cookies) {
+                if (Objects.equals(cookie.getName(), "token")) {
+                    token = cookie.getValue();
+                    Optional<String> name=jwtUtil.decodeToken(token);
+                   // log.info(String.format("用户名 %s", name.get()));
+                    if(name.isPresent()){
+                        Optional<User> userOptional=userRepository.findByName(name.get());
+                       // log.info(String.format("用户 %s",userOptional.get()));
+                        if(userOptional.isPresent()){
+                            List<FromPeople> fromList=fromPeopleRepository.findAll();
+                            return Result.success(fromList);//前端接收形式？
+                        } else {
+                            return  Result.error("用户不存在");
+                        }
+                    }else{
+                        return Result.error("用户鉴权失败");
+                    }
+
+                }
+            }
+        }
+        return Result.error("用户鉴权失败");
     }
 
     public Result showToPeople(HttpServletRequest request){
-        return Result.success();
+        String token = null;
+        var cookies = request.getCookies();
+        if (cookies != null) {
+            for (var cookie : cookies) {
+                if (Objects.equals(cookie.getName(), "token")) {
+                    token = cookie.getValue();
+                    Optional<String> name=jwtUtil.decodeToken(token);
+                   // log.info(String.format("用户名 %s", name.get()));
+                    if(name.isPresent()){
+                        Optional<User> userOptional=userRepository.findByName(name.get());
+                      //  log.info(String.format("用户 %s",userOptional.get()));
+                        if(userOptional.isPresent()){
+                            List<ToPeople> toList=toPeopleRepository.findAll();
+                            return Result.success(toList);//前端接收形式？
+                        } else {
+                            return Result.error("用户不存在");
+                        }
+                    }else{
+                        return Result.error("用户不存在");
+                    }
+                }
+            }
+        }
+        return Result.error("用户鉴权失败");
     }
     /**
      * 设置token

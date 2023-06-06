@@ -40,7 +40,7 @@ public class AuthController {
 
     @PostMapping("/register")
     public Result register(@RequestBody @NotNull RegisterDomain registerDomain) {
-        return Result.success();
+        return authService.register(registerDomain);
     }
 
     @PostMapping("/saveFrom")
@@ -68,7 +68,7 @@ public class AuthController {
         return authService.showFromPeople(request);
     }
 
-    @GetMapping("/showFromPeople")
+    @GetMapping("/showToPeople")
     public Result showToPeople(HttpServletRequest request){
         return authService.showToPeople(request);
     }

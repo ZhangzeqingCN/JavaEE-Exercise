@@ -12,4 +12,6 @@ public interface ToPeopleRepository extends JpaRepository<ToPeople,String> {
     Optional<ToPeople> findByUser(User user);
 
     void deleteById(@NotNull Integer id);
+
+    boolean existsById(Integer id);
 }

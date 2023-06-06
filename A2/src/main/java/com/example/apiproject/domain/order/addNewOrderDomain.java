@@ -15,5 +15,6 @@ import lombok.*;
 @ToString
 @EqualsAndHashCode
 public class addNewOrderDomain {
+    private String fromPeople;
 
 }
