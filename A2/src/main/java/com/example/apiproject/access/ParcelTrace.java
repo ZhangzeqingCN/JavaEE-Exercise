@@ -1,9 +1,6 @@
 package com.example.apiproject.access;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.ManyToOne;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.*;
 
 /**
@@ -23,7 +20,9 @@ import lombok.*;
 @Table(name = "t_ParcelTrace")
 public class ParcelTrace {
     @Id
-    Integer id;
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    Integer id;//物流信息记录
+
     @ManyToOne//多个物流信息对应一个包裹订单
     shipment shipment;
 

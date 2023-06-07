@@ -4,13 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="96528817-b786-4ce5-8761-2fc899131a1b" name="Changes" comment="修改部分实体、完成保存寄/收件人请求">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="96528817-b786-4ce5-8761-2fc899131a1b" name="Changes" comment="完成寄件人管理模块（增删查），已通过测试">
+      <change afterPath="$PROJECT_DIR$/A2/src/main/java/com/example/apiproject/access/Courier.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A2/src/main/java/com/example/apiproject/domain/item.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/src/main/java/com/example/apiproject/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/A2/src/main/java/com/example/apiproject/controller/AuthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/A2/src/main/java/com/example/apiproject/access/Commodity.java" beforeDir="false" afterPath="$PROJECT_DIR$/A2/src/main/java/com/example/apiproject/access/Commodity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/A2/src/main/java/com/example/apiproject/access/ParcelTrace.java" beforeDir="false" afterPath="$PROJECT_DIR$/A2/src/main/java/com/example/apiproject/access/ParcelTrace.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/A2/src/main/java/com/example/apiproject/access/shipment.java" beforeDir="false" afterPath="$PROJECT_DIR$/A2/src/main/java/com/example/apiproject/access/shipment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/A2/src/main/java/com/example/apiproject/domain/auth/RegisterDomain.java" beforeDir="false" afterPath="$PROJECT_DIR$/A2/src/main/java/com/example/apiproject/domain/auth/RegisterDomain.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/A2/src/main/java/com/example/apiproject/domain/order/addNewOrderDomain.java" beforeDir="false" afterPath="$PROJECT_DIR$/A2/src/main/java/com/example/apiproject/domain/order/addNewOrderDomain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/src/main/java/com/example/apiproject/repository/FromPeopleRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/A2/src/main/java/com/example/apiproject/repository/FromPeopleRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/src/main/java/com/example/apiproject/repository/ToPeopleRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/A2/src/main/java/com/example/apiproject/repository/ToPeopleRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/A2/src/main/java/com/example/apiproject/service/AuthService.java" beforeDir="false" afterPath="$PROJECT_DIR$/A2/src/main/java/com/example/apiproject/service/AuthService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -159,7 +161,8 @@
       <workItem from="1685945650849" duration="5091000" />
       <workItem from="1685950846957" duration="294000" />
       <workItem from="1685970001130" duration="8016000" />
-      <workItem from="1686058315102" duration="5439000" />
+      <workItem from="1686058315102" duration="5756000" />
+      <workItem from="1686118723245" duration="3834000" />
     </task>
     <task id="LOCAL-00001" summary="修改部分A2">
       <created>1685180911110</created>
@@ -196,7 +199,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685977399834</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="完成寄件人管理模块（增删查）">
+      <created>1686069438203</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1686069438203</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -214,6 +224,7 @@
     <MESSAGE value="添加部分实体等" />
     <MESSAGE value="添加寄/收件人、添加订单相关框架" />
     <MESSAGE value="修改部分实体、完成保存寄/收件人请求" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改部分实体、完成保存寄/收件人请求" />
+    <MESSAGE value="完成寄件人管理模块（增删查）" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成寄件人管理模块（增删查）" />
   </component>
 </project>

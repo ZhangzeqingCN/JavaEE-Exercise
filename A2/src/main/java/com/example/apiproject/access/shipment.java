@@ -28,9 +28,13 @@ public class shipment {
 //    @JoinColumn(name = "to_user_id")
     String toUser;
 
-    String fromAddress;
+    String fromAddressSelect;
 
-    String toAddress;
+    String fromAddressDetail;
+
+    String toAddressSelect;
+
+    String toAddressDetail;
 
     String toPhone;//根据电话查包裹
 
@@ -38,9 +42,9 @@ public class shipment {
 
     String parcelTrace; // 包裹状态（待发货、已发货、已签收）
 
-    Float weight;
+    String placeAnOrderTime;//下单时间
 
-    Float volume;//体积
+    String paymentMethod;//付款方式
 
-    Float cost;//运费
+    Float estimatedCost;//运费
 }

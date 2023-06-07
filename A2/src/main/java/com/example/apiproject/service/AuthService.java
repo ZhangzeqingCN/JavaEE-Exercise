@@ -77,15 +77,17 @@ public class AuthService {
             return Result.error(message).addErrors(registerDomain.getUsername());
         }
 
-        if (!Objects.equals(registerDomain.getPassword1(), registerDomain.getPassword2())) {
-            String message = "inconsistent two passwords";
-            log.info(message);
-            return Result.error(message);
-        }
+//        if (!Objects.equals(registerDomain.getPassword1(), registerDomain.getPassword2())) {
+//            String message = "inconsistent two passwords";
+//            log.info(message);
+//            return Result.error(message);
+//        }
 
         userRepository.save(User.builder()
                 .name(registerDomain.getUsername())
-                .password(registerDomain.getPassword1())
+                .password(registerDomain.getPassword())
+                .phone(registerDomain.getPhone())
+                .email(registerDomain.getEmail())
                 .gender(registerDomain.getGender())
                 .build());
 
