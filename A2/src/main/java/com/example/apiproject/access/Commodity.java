@@ -17,9 +17,10 @@ import lombok.*;
 @Table(name = "t_Commodity")
 public class Commodity {
     @Id
-    Integer id;//运单号
-    String type;
-    Float weight;
-    boolean insuranceOrNot;
-    String notes;
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    Integer id;//记录号
+    String type;//类型
+    Float weight;//重量
+    boolean insuranceOrNot;//是否保价
+    String notes;//备注
 }

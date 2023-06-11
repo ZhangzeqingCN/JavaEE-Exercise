@@ -22,10 +22,8 @@ public class shipment {
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     Integer id; // 包裹ID
 
-//    @JoinColumn(name = "from_user_id")
     String fromUser;//姓名
 
-//    @JoinColumn(name = "to_user_id")
     String toUser;
 
     String fromAddressSelect;
@@ -40,11 +38,15 @@ public class shipment {
 
     String fromPhone;
 
-    String parcelTrace; // 包裹状态（待发货、已发货、已签收）
+    @OneToOne
+    Commodity commodity;//一个包裹对应一件物品
 
-    String placeAnOrderTime;//下单时间
+    String parcelTrace; // 包裹状态（待寄件、待发货、已发货、已签收）
 
+    String placeAnOrderTime;//创建时间
+    String chooseCourier;//快递员
     String paymentMethod;//付款方式
+    String estimatedCost;//运费
 
-    Float estimatedCost;//运费
+    String shippingCode;//寄件码
 }

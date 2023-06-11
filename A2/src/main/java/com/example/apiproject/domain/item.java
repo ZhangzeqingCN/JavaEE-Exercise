@@ -19,4 +19,8 @@ public class item {
     private String weight;
     private boolean insuranceOrNot;
     private String notes;
+
+    public boolean getInsuranceOrNot() {
+        return insuranceOrNot;
+    }
 }
