@@ -1,0 +1,25 @@
+spring:
+  profiles:
+    active: dev
+
+  devtools:
+    restart:
+      exclude: static
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+    tags-sorter: alpha
+    operations-sorter: alpha
+  api-docs:
+    path: /v3/api-docs
+  group-configs:
+    - group: 'zzq'
+      paths-to-match: '/**'
+      packages-to-scan: com.example.ex3_2_back
+
+
+interceptor: false
+
+knife4j:
+  enable: true
