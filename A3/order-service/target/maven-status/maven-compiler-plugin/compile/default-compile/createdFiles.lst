@@ -1,0 +1,10 @@
+com\example\order_service\entity\Order$OrderBuilder.class
+com\example\order_service\OrderController.class
+com\example\order_service\entity\User$UserBuilder.class
+com\example\order_service\entity\User.class
+com\example\order_service\dto\Result$ResultBuilder.class
+com\example\order_service\OrderServiceApplication.class
+com\example\order_service\dao\OrderRepository.class
+com\example\order_service\entity\Order.class
+com\example\order_service\MyRestTemplateConfiguration.class
+com\example\order_service\dto\Result.class

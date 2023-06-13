@@ -1,0 +1,12 @@
+com\example\user_service\dto\Result.class
+com\example\user_service\MyRestTemplateConfiguration.class
+com\example\user_service\UserServiceApplication.class
+com\example\user_service\dto\GetOrderByNameDto.class
+com\example\user_service\entity\User.class
+com\example\user_service\UserController.class
+com\example\user_service\entity\Order$OrderBuilder.class
+com\example\user_service\dao\UserRepository.class
+com\example\user_service\entity\User$UserBuilder.class
+com\example\user_service\dto\Result$ResultBuilder.class
+com\example\user_service\dto\GetOrderByNameDto$GetOrderByNameDtoBuilder.class
+com\example\user_service\entity\Order.class
