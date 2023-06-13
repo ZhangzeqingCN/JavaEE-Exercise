@@ -1,5 +1,6 @@
 package com.example.apiproject.access;
 
+import com.example.apiproject.access.gender.Gender;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -10,7 +11,6 @@ import lombok.*;
 @AllArgsConstructor
 @NoArgsConstructor
 @ToString
-@EqualsAndHashCode
 @Entity
 @Table(name = "t_User")
 public class User {
