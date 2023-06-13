@@ -1,4 +1,7 @@
-# 系统设计报告
+# 运行截图
+
+![2023-06-13 234126.png](2023-06-13%20234126.png)
+![2023-06-13 234313.png](2023-06-13%20234313.png)
 
 # 1. 系统概述
 
@@ -30,7 +33,7 @@ graph RL
     Thymeleaf -->|Response| Browser
     User(User) --- Browser
 ```
-
+![mermaid-diagram-2023-06-13-234627.png](mermaid-diagram-2023-06-13-234627.png)
 ```mermaid
 ---
 title: Frame
@@ -49,7 +52,7 @@ graph
         Session
     end
 ```
-
+![mermaid-diagram-2023-06-13-234610.png](mermaid-diagram-2023-06-13-234610.png)
 # 3. 技术选型
 
 > 列出你在系统设计中使用的技术和工具，包括数据库、编程语言、框架等等。解释你选择这些技术的原因和优势。
@@ -108,7 +111,7 @@ C-->D;
 D-->E;
 C---F;
 ```
-
+![mermaid-diagram-2023-06-13-234546.png](mermaid-diagram-2023-06-13-234546.png)
 ```mermaid
 ---
 title: Animal example
@@ -138,6 +141,8 @@ classDiagram
     }
 
 ```
+
+![mermaid-diagram-2023-06-13-234518.png](mermaid-diagram-2023-06-13-234518.png)
 
 # 5. 系统模块设计
 

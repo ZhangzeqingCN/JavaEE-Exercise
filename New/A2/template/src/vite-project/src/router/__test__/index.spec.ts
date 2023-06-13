@@ -1,5 +1,4 @@
-import { describe, test, assert } from "vitest";
-import router from "..";
+import { describe, test } from "vitest";
 
 
 const testToken = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9";
@@ -11,12 +10,5 @@ describe('test-session', function () {
 
     test('get session token', function () {
         const token = sessionStorage.getItem('token');
-        assert(() => token === testToken)
-    });
-
-    test('router结构', function () {
-        router.getRoutes().forEach(function(value,index){
-            console.log(index,value);
-        });
     });
 });

@@ -4,162 +4,255 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="96528817-b786-4ce5-8761-2fc899131a1b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/A2/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/src/main/java/com/example/apiproject/ApiProjectApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/src/main/java/com/example/apiproject/access/Commodity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/src/main/java/com/example/apiproject/access/Gender.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/src/main/java/com/example/apiproject/access/GenderConverter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/src/main/java/com/example/apiproject/access/Purchasing.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/src/main/java/com/example/apiproject/access/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/src/main/java/com/example/apiproject/configuration/MyCorsConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/src/main/java/com/example/apiproject/configuration/MyInterceptorConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/src/main/java/com/example/apiproject/configuration/MyUtilsConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/src/main/java/com/example/apiproject/controller/AuthController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/src/main/java/com/example/apiproject/controller/CommodityController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/src/main/java/com/example/apiproject/controller/MyTestController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/src/main/java/com/example/apiproject/controller/dev/DevCommodityController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/src/main/java/com/example/apiproject/controller/dev/DevUserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/src/main/java/com/example/apiproject/controller/dev/DevelopmentController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/src/main/java/com/example/apiproject/domain/DevMessage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/src/main/java/com/example/apiproject/domain/Result.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/src/main/java/com/example/apiproject/domain/auth/LoginDomain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/src/main/java/com/example/apiproject/domain/auth/RegisterDomain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/src/main/java/com/example/apiproject/exception/MyUnauthorizedException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/src/main/java/com/example/apiproject/exceptionhandler/MyExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/src/main/java/com/example/apiproject/initializer/DataSourceInitializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/src/main/java/com/example/apiproject/interceptor/AuthInterceptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/src/main/java/com/example/apiproject/repository/CommodityRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/src/main/java/com/example/apiproject/repository/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/src/main/java/com/example/apiproject/service/AuthService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/src/main/java/com/example/apiproject/utils/MyJwtUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/src/test/java/com/example/apiproject/ApiProjectApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/src/test/java/com/example/apiproject/repository/CommodityRepositoryTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/src/test/java/com/example/apiproject/repository/UserRepositoryTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/src/test/java/com/example/apiproject/utils/JwtUtilTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/src/vite-project/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/src/vite-project/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/src/vite-project/env.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/src/vite-project/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/src/vite-project/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/src/vite-project/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/src/vite-project/public/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/src/vite-project/src/App.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/src/vite-project/src/assets/base.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/src/vite-project/src/assets/logo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/src/vite-project/src/assets/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/src/vite-project/src/components/HelloWorld.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/src/vite-project/src/components/TheWelcome.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/src/vite-project/src/components/WelcomeItem.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/src/vite-project/src/components/__tests__/HelloWorld.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/src/vite-project/src/components/icons/IconCommunity.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/src/vite-project/src/components/icons/IconDocumentation.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/src/vite-project/src/components/icons/IconEcosystem.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/src/vite-project/src/components/icons/IconSupport.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/src/vite-project/src/components/icons/IconTooling.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/src/vite-project/src/main.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/src/vite-project/src/router/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/src/vite-project/src/stores/counter.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/src/vite-project/src/views/AboutView.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/src/vite-project/src/views/HomeView.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/src/vite-project/src/views/LoginView.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/src/vite-project/tsconfig.app.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/src/vite-project/tsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/src/vite-project/tsconfig.node.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/src/vite-project/tsconfig.vitest.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/src/vite-project/vite.config.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/src/vite-project/vitest.config.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/A2/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/A2/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/A2/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/mvnw" beforeDir="false" afterPath="$PROJECT_DIR$/A2/mvnw" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/A2/mvnw.cmd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/A2/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/src/main/java/com/example/a2/A2Application.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/src/main/java/com/example/a2/config/MyCorsConfiguration.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/src/main/java/com/example/a2/config/MyInterceptorConfiguration.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/src/main/java/com/example/a2/config/MySecurityConfiguration.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/src/main/java/com/example/a2/config/MyUtilConfiguration.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/src/main/java/com/example/a2/controller/AuthController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/src/main/java/com/example/a2/controller/TestsController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/src/main/java/com/example/a2/data/Result.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/src/main/java/com/example/a2/entity/Gender.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/src/main/java/com/example/a2/entity/GenderConverter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/src/main/java/com/example/a2/entity/Image.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/src/main/java/com/example/a2/entity/Shipment.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/src/main/java/com/example/a2/entity/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/src/main/java/com/example/a2/initializer/DataSourceInitializer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/src/main/java/com/example/a2/interceptor/AuthInterceptor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/src/main/java/com/example/a2/repository/ImageRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/src/main/java/com/example/a2/repository/ShipmentRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/src/main/java/com/example/a2/repository/UserRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/src/main/java/com/example/a2/security/MySecurity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/src/main/resources/application-h2dev.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/src/main/resources/application-h2mendev.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/src/main/resources/application-mysqldev.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/src/main/resources/application-release.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/A2/src/main/resources/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/src/main/resources/static/css/common.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/src/main/resources/static/css/home.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/src/main/resources/static/css/login.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/src/main/resources/static/css/register.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/src/main/resources/static/css/trace.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/src/main/resources/templates/common.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/src/main/resources/templates/home.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/src/main/resources/templates/image.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/src/main/resources/templates/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/src/main/resources/templates/login.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/src/main/resources/templates/nothing.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/src/main/resources/templates/register.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/src/main/resources/templates/shipment.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/src/main/resources/templates/test.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/src/main/resources/templates/trace.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/src/main/vite-project/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/src/main/vite-project/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/src/main/vite-project/env.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/src/main/vite-project/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/src/main/vite-project/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/src/main/vite-project/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/src/main/vite-project/public/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/src/main/vite-project/src/App.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/src/main/vite-project/src/assets/base.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/src/main/vite-project/src/assets/logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/src/main/vite-project/src/assets/main.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/src/main/vite-project/src/components/HelloWorld.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/src/main/vite-project/src/components/TheWelcome.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/src/main/vite-project/src/components/WelcomeItem.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/src/main/vite-project/src/components/__tests__/HelloWorld.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/src/main/vite-project/src/components/icons/IconCommunity.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/src/main/vite-project/src/components/icons/IconDocumentation.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/src/main/vite-project/src/components/icons/IconEcosystem.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/src/main/vite-project/src/components/icons/IconSupport.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/src/main/vite-project/src/components/icons/IconTooling.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/src/main/vite-project/src/main.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/src/main/vite-project/src/router/index.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/src/main/vite-project/src/stores/counter.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/src/main/vite-project/src/views/AboutView.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/src/main/vite-project/src/views/HomeView.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/src/main/vite-project/tsconfig.app.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/src/main/vite-project/tsconfig.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/src/main/vite-project/tsconfig.node.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/src/main/vite-project/tsconfig.vitest.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/src/main/vite-project/vite.config.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/src/main/vite-project/vitest.config.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/src/test/java/com/example/a2/A2ApplicationTests.java" beforeDir="false" />
+    <list default="true" id="96528817-b786-4ce5-8761-2fc899131a1b" name="Changes" comment="Changes">
+      <change afterPath="$PROJECT_DIR$/2023-06-13 234126.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2023-06-13 234313.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2023-06-13 234853.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2023-06-13 235901.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2023-06-14 000013.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2023-06-14 002424.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2023-06-14 003147.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2023-06-14 003203.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/.jdk8" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/.mvn/jvm.config" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/.mvn/maven.config" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/.settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/README.adoc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/docs/.jdk8" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/docs/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/docs/src/main/asciidoc/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/docs/src/main/asciidoc/Guardfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/docs/src/main/asciidoc/README.adoc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/docs/src/main/asciidoc/_configprops.adoc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/docs/src/main/asciidoc/appendix.adoc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/docs/src/main/asciidoc/building.adoc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/docs/src/main/asciidoc/contributing.adoc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/docs/src/main/asciidoc/dlq.adoc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/docs/src/main/asciidoc/ghpages.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/docs/src/main/asciidoc/images/kafka-binder.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/docs/src/main/asciidoc/images/kafka-streams-initializr.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/docs/src/main/asciidoc/images/spring-initializr-kafka-streams.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/docs/src/main/asciidoc/index-docinfo.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/docs/src/main/asciidoc/kafka-streams.adoc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/docs/src/main/asciidoc/overview.adoc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/docs/src/main/asciidoc/partitions.adoc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/docs/src/main/asciidoc/spring-cloud-stream-binder-kafka-aggregate.adoc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/docs/src/main/asciidoc/spring-cloud-stream-binder-kafka.adoc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/docs/src/main/asciidoc/tips.adoc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/docs/src/main/ruby/generate_readme.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/spring-cloud-starter-stream-kafka/.jdk8" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/spring-cloud-starter-stream-kafka/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/spring-cloud-stream-binder-kafka-core/.jdk8" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/spring-cloud-stream-binder-kafka-core/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/spring-cloud-stream-binder-kafka-core/src/main/java/org/springframework/cloud/stream/binder/kafka/properties/JaasLoginModuleConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/spring-cloud-stream-binder-kafka-core/src/main/java/org/springframework/cloud/stream/binder/kafka/properties/KafkaBinderConfigurationProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/spring-cloud-stream-binder-kafka-core/src/main/java/org/springframework/cloud/stream/binder/kafka/properties/KafkaBindingProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/spring-cloud-stream-binder-kafka-core/src/main/java/org/springframework/cloud/stream/binder/kafka/properties/KafkaConsumerProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/spring-cloud-stream-binder-kafka-core/src/main/java/org/springframework/cloud/stream/binder/kafka/properties/KafkaExtendedBindingProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/spring-cloud-stream-binder-kafka-core/src/main/java/org/springframework/cloud/stream/binder/kafka/properties/KafkaProducerProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/spring-cloud-stream-binder-kafka-core/src/main/java/org/springframework/cloud/stream/binder/kafka/properties/KafkaTopicProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/spring-cloud-stream-binder-kafka-core/src/main/java/org/springframework/cloud/stream/binder/kafka/provisioning/AdminClientConfigCustomizer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/spring-cloud-stream-binder-kafka-core/src/main/java/org/springframework/cloud/stream/binder/kafka/provisioning/KafkaTopicProvisioner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/spring-cloud-stream-binder-kafka-core/src/main/java/org/springframework/cloud/stream/binder/kafka/utils/DlqDestinationResolver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/spring-cloud-stream-binder-kafka-core/src/main/java/org/springframework/cloud/stream/binder/kafka/utils/DlqPartitionFunction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/spring-cloud-stream-binder-kafka-core/src/main/java/org/springframework/cloud/stream/binder/kafka/utils/KafkaTopicUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/spring-cloud-stream-binder-kafka-core/src/test/java/org/springframework/cloud/stream/binder/kafka/properties/KafkaBinderConfigurationPropertiesTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/spring-cloud-stream-binder-kafka-core/src/test/java/org/springframework/cloud/stream/binder/kafka/provisioning/KafkaTopicProvisionerTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/spring-cloud-stream-binder-kafka-core/src/test/resources/test.truststore.ks" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/spring-cloud-stream-binder-kafka-core/src/test/resources/testclient.keystore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/spring-cloud-stream-binder-kafka-core/src/test/resources/testclient.truststore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/spring-cloud-stream-binder-kafka-streams/.jdk8" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/spring-cloud-stream-binder-kafka-streams/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/spring-cloud-stream-binder-kafka-streams/src/main/java/org/springframework/cloud/stream/binder/kafka/streams/AbstractKafkaStreamsBinderProcessor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/spring-cloud-stream-binder-kafka-streams/src/main/java/org/springframework/cloud/stream/binder/kafka/streams/DeserializationExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/spring-cloud-stream-binder-kafka-streams/src/main/java/org/springframework/cloud/stream/binder/kafka/streams/EncodingDecodingBindAdviceHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/spring-cloud-stream-binder-kafka-streams/src/main/java/org/springframework/cloud/stream/binder/kafka/streams/ExtendedBindingHandlerMappingsProviderAutoConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/spring-cloud-stream-binder-kafka-streams/src/main/java/org/springframework/cloud/stream/binder/kafka/streams/GlobalKTableBinder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/spring-cloud-stream-binder-kafka-streams/src/main/java/org/springframework/cloud/stream/binder/kafka/streams/GlobalKTableBinderConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/spring-cloud-stream-binder-kafka-streams/src/main/java/org/springframework/cloud/stream/binder/kafka/streams/GlobalKTableBoundElementFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/spring-cloud-stream-binder-kafka-streams/src/main/java/org/springframework/cloud/stream/binder/kafka/streams/InteractiveQueryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/spring-cloud-stream-binder-kafka-streams/src/main/java/org/springframework/cloud/stream/binder/kafka/streams/KStreamBinder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/spring-cloud-stream-binder-kafka-streams/src/main/java/org/springframework/cloud/stream/binder/kafka/streams/KStreamBinderConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/spring-cloud-stream-binder-kafka-streams/src/main/java/org/springframework/cloud/stream/binder/kafka/streams/KStreamBoundElementFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/spring-cloud-stream-binder-kafka-streams/src/main/java/org/springframework/cloud/stream/binder/kafka/streams/KTableBinder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/spring-cloud-stream-binder-kafka-streams/src/main/java/org/springframework/cloud/stream/binder/kafka/streams/KTableBinderConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/spring-cloud-stream-binder-kafka-streams/src/main/java/org/springframework/cloud/stream/binder/kafka/streams/KTableBoundElementFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/spring-cloud-stream-binder-kafka-streams/src/main/java/org/springframework/cloud/stream/binder/kafka/streams/KafkaStreamsBinderHealthIndicator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/spring-cloud-stream-binder-kafka-streams/src/main/java/org/springframework/cloud/stream/binder/kafka/streams/KafkaStreamsBinderHealthIndicatorConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/spring-cloud-stream-binder-kafka-streams/src/main/java/org/springframework/cloud/stream/binder/kafka/streams/KafkaStreamsBinderMetrics.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/spring-cloud-stream-binder-kafka-streams/src/main/java/org/springframework/cloud/stream/binder/kafka/streams/KafkaStreamsBinderSupportAutoConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/spring-cloud-stream-binder-kafka-streams/src/main/java/org/springframework/cloud/stream/binder/kafka/streams/KafkaStreamsBinderUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/spring-cloud-stream-binder-kafka-streams/src/main/java/org/springframework/cloud/stream/binder/kafka/streams/KafkaStreamsBindingInformationCatalogue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/spring-cloud-stream-binder-kafka-streams/src/main/java/org/springframework/cloud/stream/binder/kafka/streams/KafkaStreamsFunctionProcessor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/spring-cloud-stream-binder-kafka-streams/src/main/java/org/springframework/cloud/stream/binder/kafka/streams/KafkaStreamsJaasConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/spring-cloud-stream-binder-kafka-streams/src/main/java/org/springframework/cloud/stream/binder/kafka/streams/KafkaStreamsMessageConversionDelegate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/spring-cloud-stream-binder-kafka-streams/src/main/java/org/springframework/cloud/stream/binder/kafka/streams/KafkaStreamsRegistry.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/spring-cloud-stream-binder-kafka-streams/src/main/java/org/springframework/cloud/stream/binder/kafka/streams/KeyValueSerdeResolver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/spring-cloud-stream-binder-kafka-streams/src/main/java/org/springframework/cloud/stream/binder/kafka/streams/MultiBinderPropertiesConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/spring-cloud-stream-binder-kafka-streams/src/main/java/org/springframework/cloud/stream/binder/kafka/streams/SendToDlqAndContinue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/spring-cloud-stream-binder-kafka-streams/src/main/java/org/springframework/cloud/stream/binder/kafka/streams/SkipAndContinueExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/spring-cloud-stream-binder-kafka-streams/src/main/java/org/springframework/cloud/stream/binder/kafka/streams/StreamsBuilderFactoryManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/spring-cloud-stream-binder-kafka-streams/src/main/java/org/springframework/cloud/stream/binder/kafka/streams/endpoint/KafkaStreamsTopologyEndpoint.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/spring-cloud-stream-binder-kafka-streams/src/main/java/org/springframework/cloud/stream/binder/kafka/streams/endpoint/KafkaStreamsTopologyEndpointAutoConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/spring-cloud-stream-binder-kafka-streams/src/main/java/org/springframework/cloud/stream/binder/kafka/streams/function/FunctionDetectorCondition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/spring-cloud-stream-binder-kafka-streams/src/main/java/org/springframework/cloud/stream/binder/kafka/streams/function/KafkaStreamsBindableProxyFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/spring-cloud-stream-binder-kafka-streams/src/main/java/org/springframework/cloud/stream/binder/kafka/streams/function/KafkaStreamsFunctionAutoConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/spring-cloud-stream-binder-kafka-streams/src/main/java/org/springframework/cloud/stream/binder/kafka/streams/function/KafkaStreamsFunctionBeanPostProcessor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/spring-cloud-stream-binder-kafka-streams/src/main/java/org/springframework/cloud/stream/binder/kafka/streams/function/KafkaStreamsFunctionProcessorInvoker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/spring-cloud-stream-binder-kafka-streams/src/main/java/org/springframework/cloud/stream/binder/kafka/streams/properties/KafkaStreamsBinderConfigurationProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/spring-cloud-stream-binder-kafka-streams/src/main/java/org/springframework/cloud/stream/binder/kafka/streams/properties/KafkaStreamsBindingProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/spring-cloud-stream-binder-kafka-streams/src/main/java/org/springframework/cloud/stream/binder/kafka/streams/properties/KafkaStreamsConsumerProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/spring-cloud-stream-binder-kafka-streams/src/main/java/org/springframework/cloud/stream/binder/kafka/streams/properties/KafkaStreamsExtendedBindingProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/spring-cloud-stream-binder-kafka-streams/src/main/java/org/springframework/cloud/stream/binder/kafka/streams/properties/KafkaStreamsProducerProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/spring-cloud-stream-binder-kafka-streams/src/main/java/org/springframework/cloud/stream/binder/kafka/streams/serde/CollectionSerde.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/spring-cloud-stream-binder-kafka-streams/src/main/resources/META-INF/spring.binders" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/spring-cloud-stream-binder-kafka-streams/src/main/resources/META-INF/spring.factories" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/spring-cloud-stream-binder-kafka-streams/src/test/java/org/springframework/cloud/stream/binder/kafka/streams/ExtendedBindingHandlerMappingsProviderAutoConfigurationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/spring-cloud-stream-binder-kafka-streams/src/test/java/org/springframework/cloud/stream/binder/kafka/streams/KafkaStreamsEventTypeRoutingTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/spring-cloud-stream-binder-kafka-streams/src/test/java/org/springframework/cloud/stream/binder/kafka/streams/KafkaStreamsFunctionCompositionTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/spring-cloud-stream-binder-kafka-streams/src/test/java/org/springframework/cloud/stream/binder/kafka/streams/KafkaStreamsInteractiveQueryIntegrationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/spring-cloud-stream-binder-kafka-streams/src/test/java/org/springframework/cloud/stream/binder/kafka/streams/MultipleFunctionsInSameAppTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/spring-cloud-stream-binder-kafka-streams/src/test/java/org/springframework/cloud/stream/binder/kafka/streams/bootstrap/KafkaStreamsBinderBootstrapTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/spring-cloud-stream-binder-kafka-streams/src/test/java/org/springframework/cloud/stream/binder/kafka/streams/bootstrap/KafkaStreamsBinderJaasInitTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/spring-cloud-stream-binder-kafka-streams/src/test/java/org/springframework/cloud/stream/binder/kafka/streams/function/KafkaStreamsBinderWordCountBranchesFunctionTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/spring-cloud-stream-binder-kafka-streams/src/test/java/org/springframework/cloud/stream/binder/kafka/streams/function/KafkaStreamsBinderWordCountFunctionTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/spring-cloud-stream-binder-kafka-streams/src/test/java/org/springframework/cloud/stream/binder/kafka/streams/function/KafkaStreamsComponentBeansTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/spring-cloud-stream-binder-kafka-streams/src/test/java/org/springframework/cloud/stream/binder/kafka/streams/function/KafkaStreamsFunctionStateStoreTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/spring-cloud-stream-binder-kafka-streams/src/test/java/org/springframework/cloud/stream/binder/kafka/streams/function/KafkaStreamsRetryTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/spring-cloud-stream-binder-kafka-streams/src/test/java/org/springframework/cloud/stream/binder/kafka/streams/function/SerdesProvidedAsBeansTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/spring-cloud-stream-binder-kafka-streams/src/test/java/org/springframework/cloud/stream/binder/kafka/streams/function/StreamToGlobalKTableFunctionTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/spring-cloud-stream-binder-kafka-streams/src/test/java/org/springframework/cloud/stream/binder/kafka/streams/function/StreamToTableJoinFunctionTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/spring-cloud-stream-binder-kafka-streams/src/test/java/org/springframework/cloud/stream/binder/kafka/streams/integration/DlqDestinationResolverTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/spring-cloud-stream-binder-kafka-streams/src/test/java/org/springframework/cloud/stream/binder/kafka/streams/integration/KafkaStreamsBinderDestinationIsPatternTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/spring-cloud-stream-binder-kafka-streams/src/test/java/org/springframework/cloud/stream/binder/kafka/streams/integration/KafkaStreamsBinderHealthIndicatorTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/spring-cloud-stream-binder-kafka-streams/src/test/java/org/springframework/cloud/stream/binder/kafka/streams/integration/KafkaStreamsBinderMultipleInputTopicsTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/spring-cloud-stream-binder-kafka-streams/src/test/java/org/springframework/cloud/stream/binder/kafka/streams/integration/KafkaStreamsBinderPojoInputAndPrimitiveTypeOutputTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/spring-cloud-stream-binder-kafka-streams/src/test/java/org/springframework/cloud/stream/binder/kafka/streams/integration/KafkaStreamsBinderTombstoneTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/spring-cloud-stream-binder-kafka-streams/src/test/java/org/springframework/cloud/stream/binder/kafka/streams/integration/KafkaStreamsStateStoreIntegrationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/spring-cloud-stream-binder-kafka-streams/src/test/java/org/springframework/cloud/stream/binder/kafka/streams/integration/KafkastreamsBinderPojoInputStringOutputIntegrationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/spring-cloud-stream-binder-kafka-streams/src/test/java/org/springframework/cloud/stream/binder/kafka/streams/serde/CollectionSerdeTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/spring-cloud-stream-binder-kafka-streams/src/test/resources/logback.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/spring-cloud-stream-binder-kafka/.jdk8" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/spring-cloud-stream-binder-kafka/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/spring-cloud-stream-binder-kafka/src/main/java/org/springframework/cloud/stream/binder/kafka/BinderHeaderMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/spring-cloud-stream-binder-kafka/src/main/java/org/springframework/cloud/stream/binder/kafka/KafkaBinderEnvironmentPostProcessor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/spring-cloud-stream-binder-kafka/src/main/java/org/springframework/cloud/stream/binder/kafka/KafkaBinderHealth.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/spring-cloud-stream-binder-kafka/src/main/java/org/springframework/cloud/stream/binder/kafka/KafkaBinderHealthIndicator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/spring-cloud-stream-binder-kafka/src/main/java/org/springframework/cloud/stream/binder/kafka/KafkaBinderMetrics.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/spring-cloud-stream-binder-kafka/src/main/java/org/springframework/cloud/stream/binder/kafka/KafkaBindingRebalanceListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/spring-cloud-stream-binder-kafka/src/main/java/org/springframework/cloud/stream/binder/kafka/KafkaExpressionEvaluatingInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/spring-cloud-stream-binder-kafka/src/main/java/org/springframework/cloud/stream/binder/kafka/KafkaMessageChannelBinder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/spring-cloud-stream-binder-kafka/src/main/java/org/springframework/cloud/stream/binder/kafka/KafkaNullConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/spring-cloud-stream-binder-kafka/src/main/java/org/springframework/cloud/stream/binder/kafka/ListenerContainerWithDlqAndRetryCustomizer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/spring-cloud-stream-binder-kafka/src/main/java/org/springframework/cloud/stream/binder/kafka/config/ClientFactoryCustomizer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/spring-cloud-stream-binder-kafka/src/main/java/org/springframework/cloud/stream/binder/kafka/config/ConsumerConfigCustomizer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/spring-cloud-stream-binder-kafka/src/main/java/org/springframework/cloud/stream/binder/kafka/config/ExtendedBindingHandlerMappingsProviderConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/spring-cloud-stream-binder-kafka/src/main/java/org/springframework/cloud/stream/binder/kafka/config/KafkaBinderConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/spring-cloud-stream-binder-kafka/src/main/java/org/springframework/cloud/stream/binder/kafka/config/KafkaBinderHealthIndicatorConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/spring-cloud-stream-binder-kafka/src/main/java/org/springframework/cloud/stream/binder/kafka/config/ProducerConfigCustomizer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/spring-cloud-stream-binder-kafka/src/main/resources/META-INF/spring.binders" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/spring-cloud-stream-binder-kafka/src/main/resources/META-INF/spring.factories" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/spring-cloud-stream-binder-kafka/src/test/java/org/springframework/cloud/stream/binder/kafka/AbstractKafkaTestBinder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/spring-cloud-stream-binder-kafka/src/test/java/org/springframework/cloud/stream/binder/kafka/AdminConfigTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/spring-cloud-stream-binder-kafka/src/test/java/org/springframework/cloud/stream/binder/kafka/AutoCreateTopicDisabledTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/spring-cloud-stream-binder-kafka/src/test/java/org/springframework/cloud/stream/binder/kafka/KafkaBinderAutoConfigurationPropertiesTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/spring-cloud-stream-binder-kafka/src/test/java/org/springframework/cloud/stream/binder/kafka/KafkaBinderConfigurationPropertiesTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/spring-cloud-stream-binder-kafka/src/test/java/org/springframework/cloud/stream/binder/kafka/KafkaBinderConfigurationTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/spring-cloud-stream-binder-kafka/src/test/java/org/springframework/cloud/stream/binder/kafka/KafkaBinderHealthIndicatorTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/spring-cloud-stream-binder-kafka/src/test/java/org/springframework/cloud/stream/binder/kafka/KafkaBinderJaasInitializerListenerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/spring-cloud-stream-binder-kafka/src/test/java/org/springframework/cloud/stream/binder/kafka/KafkaBinderMetricsTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/spring-cloud-stream-binder-kafka/src/test/java/org/springframework/cloud/stream/binder/kafka/KafkaBinderTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/spring-cloud-stream-binder-kafka/src/test/java/org/springframework/cloud/stream/binder/kafka/KafkaBinderUnitTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/spring-cloud-stream-binder-kafka/src/test/java/org/springframework/cloud/stream/binder/kafka/KafkaTestBinder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/spring-cloud-stream-binder-kafka/src/test/java/org/springframework/cloud/stream/binder/kafka/KafkaTransactionTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/spring-cloud-stream-binder-kafka/src/test/java/org/springframework/cloud/stream/binder/kafka/RawKafkaPartitionTestSupport.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/spring-cloud-stream-binder-kafka/src/test/java/org/springframework/cloud/stream/binder/kafka/TestKafkaProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/spring-cloud-stream-binder-kafka/src/test/java/org/springframework/cloud/stream/binder/kafka/bootstrap/KafkaBinderBootstrapTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/spring-cloud-stream-binder-kafka/src/test/java/org/springframework/cloud/stream/binder/kafka/bootstrap/KafkaBinderCustomHealthCheckTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/spring-cloud-stream-binder-kafka/src/test/java/org/springframework/cloud/stream/binder/kafka/bootstrap/KafkaBinderMeterRegistryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/spring-cloud-stream-binder-kafka/src/test/java/org/springframework/cloud/stream/binder/kafka/integration/KafkaBinderActuatorTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/spring-cloud-stream-binder-kafka/src/test/java/org/springframework/cloud/stream/binder/kafka/integration/KafkaBinderExtendedPropertiesTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/spring-cloud-stream-binder-kafka/src/test/java/org/springframework/cloud/stream/binder/kafka/integration/KafkaConfigCustomizationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/spring-cloud-stream-binder-kafka/src/test/java/org/springframework/cloud/stream/binder/kafka/integration/KafkaNullConverterTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/spring-cloud-stream-binder-kafka/src/test/java/org/springframework/cloud/stream/binder/kafka/integration/KafkaRetryDlqBinderOrContainerTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/spring-cloud-stream-binder-kafka/src/test/java/org/springframework/cloud/stream/binder/kafka/integration/ProducerOnlyTransactionTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/spring-cloud-stream-binder-kafka/src/test/java/org/springframework/cloud/stream/binder/kafka/integration/topic/configs/BaseKafkaBinderTopicPropertiesUpdateTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/spring-cloud-stream-binder-kafka/src/test/java/org/springframework/cloud/stream/binder/kafka/integration/topic/configs/DisabledKafkaBinderTopicPropertiesUpdateTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/spring-cloud-stream-binder-kafka/src/test/java/org/springframework/cloud/stream/binder/kafka/integration/topic/configs/KafkaBinderTopicPropertiesUpdateTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/spring-cloud-stream-binder-kafka/src/test/java/org/springframework/cloud/stream/binder/kafka/integration2/ConsumerProducerTransactionTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/spring-cloud-stream-binder-kafka/src/test/resources/binder-config-autoconfig.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/spring-cloud-stream-binder-kafka/src/test/resources/binder-config.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/spring-cloud-stream-binder-kafka/src/test/resources/jaas-sample-kafka-only.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/spring-cloud-stream-binder-kafka/src/test/resources/jaas-sample-with-zk.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/spring-cloud-stream-binder-kafka/src/test/resources/logback.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A4/spring-cloud-stream-binder-kafka/update-version.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/New/A2/template/src/vite-project/src/router/__test__/index.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/A1/2023-06-13 234853.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/A1/2023-06-13 235901.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/A1/2023-06-14 000013.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/A1/mermaid-diagram-2023-06-13-234518.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/A1/mermaid-diagram-2023-06-13-234546.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/A1/mermaid-diagram-2023-06-13-234610.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/A1/mermaid-diagram-2023-06-13-234627.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/A2/2023-06-13 234126.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/A2/2023-06-13 234313.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/A2/main.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/A2/mermaid-diagram-2023-06-13-234518.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/A2/mermaid-diagram-2023-06-13-234546.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/A2/mermaid-diagram-2023-06-13-234610.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/A2/mermaid-diagram-2023-06-13-234627.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/A3/2023-06-13 234126.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/A3/2023-06-13 234313.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/A3/2023-06-14 002424.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/A3/2023-06-14 003147.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/A3/2023-06-14 003203.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/A3/img1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/A3/main.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/A3/mermaid-diagram-2023-06-13-234518.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/A3/mermaid-diagram-2023-06-13-234546.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/A3/mermaid-diagram-2023-06-13-234610.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/A3/mermaid-diagram-2023-06-13-234627.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/A3/mermaid-diagram-2023-06-14-002332.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mermaid-diagram-2023-06-13-234518.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mermaid-diagram-2023-06-13-234546.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mermaid-diagram-2023-06-13-234610.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mermaid-diagram-2023-06-13-234627.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mermaid-diagram-2023-06-14-002332.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/A1/src/main/java/com/example/a2/initializer/DataSourceInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/A1/src/main/java/com/example/a2/initializer/DataSourceInitializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/A1/target/classes/com/example/a2/initializer/DataSourceInitializer.class" beforeDir="false" afterPath="$PROJECT_DIR$/A1/target/classes/com/example/a2/initializer/DataSourceInitializer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New/A2/template/src/vite-project/src/router/__test__/test-session.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/Assignment 1/main.md" beforeDir="false" afterPath="$PROJECT_DIR$/doc/A1/main.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="Git.Settings">
-    <option name="RECENT_BRANCH_BY_REPOSITORY">
-      <map>
-        <entry key="$PROJECT_DIR$" value="hyt" />
-      </map>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
     </option>
+  </component>
+  <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="5" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -167,9 +260,14 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
+        <option name="localRepository" value="F:\maven\apache-maven-3.8.1\maven_repository" />
         <option name="useMavenConfig" value="true" />
+        <option name="userSettingsFile" value="F:\maven\apache-maven-3.8.1\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="2QCaDV0QrThpIMOrRJ1DfWkiiug" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -179,23 +277,40 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/IdeaProjects/JavaEE-Exercise1",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "MavenSettings",
+    "spring.configuration.checksum": "36092030e8fa120cd30e02d72724bdf1",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\IdeaProjects\JavaEE-Exercise1" />
+      <recent name="D:\IdeaProjects\JavaEE-Exercise1\doc\A3" />
+      <recent name="D:\IdeaProjects\JavaEE-Exercise1\doc\A1" />
+      <recent name="D:\IdeaProjects\JavaEE-Exercise1\doc\A2" />
+      <recent name="D:\IdeaProjects\JavaEE-Exercise1\doc" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.example.a2.controller" />
+      <recent name="com.example.a2.repository" />
+      <recent name="com.example.a2.domain" />
+      <recent name="com.example.a2.utils" />
+      <recent name="com.example.a2.condition" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -205,20 +320,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.A1Application">
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="user-service" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="user-service" />
-      <option name="filePath" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Spring Boot.A2Application">
     <configuration name="A1Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="A1" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.a2.A1Application" />
@@ -229,6 +331,13 @@
     <configuration name="A2Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="A2" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.a2.A2Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DemoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="JavaEE-Exercise" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.ex3_2_back.DemoApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -262,6 +371,7 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Spring Boot.DemoApplication" />
       <item itemvalue="Spring Boot.A2Application" />
       <item itemvalue="Spring Boot.UserServiceApplication" />
       <item itemvalue="Spring Boot.A1Application" />
@@ -279,11 +389,32 @@
       <option name="presentableId" value="Default" />
       <updated>1684859900233</updated>
       <workItem from="1684859901472" duration="413000" />
+      <workItem from="1685178785017" duration="185000" />
+      <workItem from="1685178991246" duration="1648000" />
+      <workItem from="1685195744670" duration="3648000" />
+      <workItem from="1685201814785" duration="3040000" />
+      <workItem from="1685263855869" duration="2904000" />
+      <workItem from="1685341566764" duration="2929000" />
+      <workItem from="1686656906675" duration="3000" />
+      <workItem from="1686667474332" duration="151000" />
+      <workItem from="1686668661129" duration="529000" />
+      <workItem from="1686670855866" duration="3527000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
