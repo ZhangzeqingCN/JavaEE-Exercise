@@ -42,7 +42,7 @@ public class DataSourceInitializer implements CommandLineRunner {
             userRepository.save(user);
         }
 
-        userRepository.save(User.builder().id(1).name("ZZQ").build());
+        userRepository.save(User.builder().name("ZZQ").password("123").build());
 
         var user = User.builder().name("hyt").password("123").build();
         userRepository.save(user);
