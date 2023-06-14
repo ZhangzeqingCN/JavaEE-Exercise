@@ -1,23 +1,23 @@
-# vue-front
+# individual
 
 ## Project setup
 ```
-pnpm install
+npm install
 ```
 
 ### Compiles and hot-reloads for development
 ```
-pnpm run serve
+npm run serve
 ```
 
 ### Compiles and minifies for production
 ```
-pnpm run build
+npm run build
 ```
 
-### Run your unit tests
+### Lints and fixes files
 ```
-pnpm run test:unit
+npm run lint
 ```
 
 ### Customize configuration
