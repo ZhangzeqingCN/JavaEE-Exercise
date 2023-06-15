@@ -10,9 +10,18 @@
                 </div>
             </div>
             <div class="header-right">
-                <div class="header-user-con" >
+              <div class="header-user-con" >
                     <!-- 客服聊天 -->
-                    <div style="cursor: pointer; font-size: 16px" @click="contact" class="text text-shadow">联系客服</div>
+                    <div style="cursor: pointer; font-size: 16px" @click="dialogVisible_contract = true" class="text text-shadow">联系客服</div>
+                    <el-dialog width="35%" title="联系客服" :visible.sync="dialogVisible_contract">
+                      <el-form >
+                        <el-form-item label="客服电话:">13308291127</el-form-item>
+                        <el-form-item label="工作时间:">工作日8：00 - 17：00</el-form-item>
+                      </el-form>
+                      <div slot="footer">
+                        <el-button type="primary" @click="dialogVisible_contract = false">确 定</el-button>
+                      </div>
+                    </el-dialog>
                     <!-- 用户头像 -->
                     <div class="user-avator"><img src="@/assets/images/R.jpg" /></div>
                     <!-- 用户名下拉菜单 -->
@@ -22,10 +31,10 @@
                             <i class="el-icon-caret-bottom"></i>
                         </span>
                         <el-dropdown-menu slot="dropdown">
-                            <el-dropdown-item  class="text-shadow2">修改密码</el-dropdown-item>
-                            <el-dropdown-item @click.native="personal" class="text-shadow2">个人中心</el-dropdown-item>
+<!--                            <el-dropdown-item  class="text-shadow2">修改密码</el-dropdown-item>-->
+<!--                            <el-dropdown-item @click.native="personal" class="text-shadow2">个人中心</el-dropdown-item>-->
                             <el-dropdown-item @click.native="personal" class="text-shadow2">管理寄/收件人信息</el-dropdown-item>
-                            <el-dropdown-item command="loginout" class="text-shadow2">退出登录</el-dropdown-item>
+                            <el-dropdown-item command="loginout()" class="text-shadow2">退出登录</el-dropdown-item>
                         </el-dropdown-menu>
                     </el-dropdown>
                 </div>
@@ -143,7 +152,19 @@
                           <el-card style="float: left; width:41%; margin-left: 5%;">
                             <div slot="header" class="clearfix">
                               <span>寄件人信息</span>
-                              <el-button @click= "saveFrom()" style="float: right; padding: 3px 0" type="text">保存寄件人</el-button>
+                              <el-button @click= "dialogVisible_from = true" style="float: right; padding: 3px 0" type="text">保存寄件人</el-button>
+                              <el-dialog width="35%" title="保存寄件人信息" :visible.sync="dialogVisible_from">
+                                <el-form :model="parcel">
+                                  <el-form-item label="寄件人姓名:">{{parcel.fromPeople}}</el-form-item>
+                                  <el-form-item label="寄件人电话:">{{parcel.fromPhone}}</el-form-item>
+                                  <el-form-item label="寄件人省市区:">{{parcel.fromAddrSelect}}</el-form-item>
+                                  <el-form-item label="寄件人详细地址:">{{parcel.fromAddrDetail}}</el-form-item>
+                                </el-form>
+                                <div slot="footer">
+                                  <el-button @click="dialogVisible_from = false">取 消</el-button>
+                                  <el-button type="primary" @click="saveFrom()">确 定</el-button>
+                                </div>
+                              </el-dialog>
                             </div>
                             <el-form-item label="发货人"  style="margin: 13px;">
                               <el-input v-model="parcel.fromPeople"  placeholder="姓名（校验是否要中文）" autocomplete="off"></el-input>
@@ -166,7 +187,19 @@
                           <el-card style="float:right; width:41%; margin-right: 5%;">
                             <div slot="header" class="clearfix">
                               <span>收件人信息</span>
-                              <el-button style="float: right; padding: 3px 0" type="text">保存收件人</el-button>
+                              <el-button @click= "dialogVisible_to = true" style="float: right; padding: 3px 0" type="text">保存收件人</el-button>
+                              <el-dialog width="35%" title="保存寄件人信息" :visible.sync="dialogVisible_to">
+                                <el-form :model="parcel">
+                                  <el-form-item label="收件人姓名:">{{parcel.toPeople}}</el-form-item>
+                                  <el-form-item label="收件人电话:">{{parcel.toPhone}}</el-form-item>
+                                  <el-form-item label="收件人省市区:">{{parcel.toAddrSelect}}</el-form-item>
+                                  <el-form-item label="收件人详细地址:">{{parcel.toAddrDetail}}</el-form-item>
+                                </el-form>
+                                <div slot="footer">
+                                  <el-button @click="dialogVisible_to = false">取 消</el-button>
+                                  <el-button type="primary" @click="saveTo()">确 定</el-button>
+                                </div>
+                              </el-dialog>
                             </div>
                             <el-form-item label=" 收货人"  style="margin: 13px;">
                               <el-input v-model="parcel.toPeople" placeholder="姓名（校验是否要中文）" autocomplete="off"></el-input>
@@ -182,7 +215,7 @@
                                   @change="handleChange">
                               </el-cascader>
                             </el-form-item>
-                            <el-form-item label="详细地址"  style="margin: 13px;margin-top: 18px;">
+                            <el-form-item label="详细地址"  style="margin: 13px; margin-top: 18px;">
                               <el-input v-model="parcel.toAddrDetail"  autocomplete="off" type="textarea"></el-input>
                             </el-form-item>
                           </el-card>
@@ -190,7 +223,7 @@
                           <el-card style="float: left; width:90%; margin-left:5%; margin-top: 10px">
                             <div slot="header" class="clearfix">
                               <span>物品信息</span>
-                              <el-button style="float: right; padding: 3px 0" type="danger" @click="dialogVisible_item = true">禁寄物品</el-button>
+                              <el-button style="float: right; padding: 10px 5px" type="danger" @click="dialogVisible_item = true">禁寄物品</el-button>
                             </div>
                             <!-- 违寄物品 -->
                             <el-dialog
@@ -288,7 +321,6 @@
                                   </div>
                                 </div>
                               </template>
-
                             </el-form-item>
                             <el-form-item label-width="10%" label="备注:" style="margin: 30px;">
                               <el-input v-model="parcel.notes" placeholder="带文件袋/带包装袋/带纸箱/要爬楼/上门前请先联系"></el-input>
@@ -326,7 +358,16 @@
                           <!-- 下单 -->
                           <el-card style="float: left; width:90%; margin-left:5%; margin-top: 10px">
                             <el-form-item label=" " style="float: right;margin: 13px;">
-                              <el-button type="primary" @click="addOrder(parcel)">下单</el-button>
+                              <el-button type="primary" @click="calculate()">下单</el-button>
+                              <el-dialog width="35%" title="寄出快递" :visible.sync="dialogVisible_placeAnOrder">
+                                <el-form :model="parcel">
+                                  <el-form-item label="支付费用:">{{ parcel.estimatedCost }}</el-form-item>
+                                </el-form>
+                                <div slot="footer">
+                                  <el-button @click="dialogVisible_placeAnOrder = false">取 消</el-button>
+                                  <el-button type="primary" @click="addOrder()">确 定</el-button>
+                                </div>
+                              </el-dialog>
                             </el-form-item>
                           </el-card>
                         </div>
@@ -341,17 +382,17 @@
             </div>
             <!-- 确认寄件弹窗 -->
             </div>
-            <el-dialog
-            title="确认订单"
-            :visible.sync="dialogVisible"
-            width="30%"
-            :before-close="handleClose">
-            <span>是否确认订单</span>
-            <span slot="footer" class="dialog-footer">
-                <el-button @click="dialogVisible = false">取 消</el-button>
-                <el-button type="primary" @click="addOrder">确 定</el-button>
-            </span>
-            </el-dialog>
+<!--            <el-dialog-->
+<!--            title="确认订单"-->
+<!--            :visible.sync="dialogVisible"-->
+<!--            width="30%"-->
+<!--            :before-close="handleClose">-->
+<!--            <span>是否确认订单</span>-->
+<!--            <span slot="footer" class="dialog-footer">-->
+<!--                <el-button @click="dialogVisible = false">取 消</el-button>-->
+<!--                <el-button type="primary" @click="addOrder">确 定</el-button>-->
+<!--            </span>-->
+<!--            </el-dialog>-->
             <!-- <transition name="slide-fade">
                 <router-view v-if="isRouterAlive"></router-view>
             </transition> -->
@@ -380,6 +421,10 @@ export default{
         dialogVisible: false,
         dialogVisible_item: false,
         parcelID:'',//查询Param
+        dialogVisible_contract:false,
+        dialogVisible_from:false,
+        dialogVisible_to:false,
+        dialogVisible_placeAnOrder:false, // 下单
         optionsMoney: [{
           value_money:'￥1',
           label:'价值500元及以下'
@@ -509,6 +554,15 @@ export default{
           }
         })
       },
+      // 保存寄件人信息
+      saveFrom(){
+        this.dialogVisible_form = false
+
+      },
+      saveTo(){
+        this.dialogVisible_to = false
+
+      },
       // 关闭dialog
       handleClose(done) {
         this.$confirm('确认关闭？')
@@ -518,7 +572,7 @@ export default{
             .catch(_ => {
             });
       },
-      // 报价与否
+      // 保价与否
       isSuranceOrNot(val){
         console.log(val)
         this.parcel.insuranceOrNot = val;
@@ -558,24 +612,30 @@ export default{
         }
       },
       // 联系客服
-      contact() {
-        this.$router.push('/contact');//跳转
-      },
-      personal(){
-        this.$router.push('/personalPage')
-      },
+      // contact() {
+      //   this.$router.push('/contact');//跳转
+      // },
+      // personal(){
+      //   this.$router.push('/personalPage')
+      // },
       //添加订单
-      sureAdd(formName){
-        //表单验证
-        //计算费用
-        this.dialogVisible = true
+      // sureAdd(formName){
+      //   //表单验证
+      //   //计算费用
+      //   this.dialogVisible = true
+      // },
+      // 算钱
+      calculate(){
+        this.dialogVisible_placeAnOrder = true
+
       },
-      //支付后添加,新增订单
-      addOrder(formName){
-        //发送请求
-        //成功后跳转到首页
-        this.activeName='first'
-        this.dialogVisible=false
+      addOrder(){
+        // 计算预估费用
+
+        // 支付
+        // 成功后跳转到首页
+        this.dialogVisible_placeAnOrder = false
+        // this.activeName='first'
       },
     },
     created(){
@@ -608,43 +668,6 @@ export default{
     align-items: center;
 
 }
-/**动画 */
-// .text-shadow2:hover{
-//     transform: scale(107%,107%);
-//     // text-shadow: 3px 5px 5px #8f929a;
-// }
-// .text-shadow:hover{
-//     transform: scale(110%,110%);
-//     text-shadow: 3px 5px 5px #8f929a;
-// }
-// .test:hover,
-// .el-menu-item:hover{
-//     transform: scale(110%,110%);
-//     box-shadow:5px 5px 10px rgba(0,0,0,0.5);
-// }
-//  .slide-fade {
-//   position: fixed;
-//   left: 0;
-//   right: 0;
-//   width: 100%;
-// }
-// .slide-fade-enter,
-// .slide-fade-leave-to {
-//   left: 0;
-//   top: 0;
-//   right: 0;
-//   position:relative;
-//   transform: translateY(100%);
-// }
-// .slide-fade-enter-active {
-//   transition: all 0.5s linear;
-// }
-// .slide-fade-leave-active {
-//   transition: all 0.5s linear;
-//   transform: translateY(-100%);
-//   z-index: 9;
-// } 
-/**------------------总------------------------ */
 .whole {
     height: 100%;
     width: 100%;
