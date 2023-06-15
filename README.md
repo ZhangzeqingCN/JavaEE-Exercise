@@ -1,15 +1,14 @@
 # JavaEE-Exercise
 
-# Requirements
+# Team
 
-| JDK        | Maven |
-|------------|-------|
-| OpenJDK 20 | 3     |
-
-
+| Name | Student ID |
+|------|------------|
+| 张泽清  | 20301030   |
+| 贺依婷  | 20301039   |
+| 叶颖芝  | 20301029   |
 
 # **Assignment 1, A Shipping and Transportation Web application Development with Spring MVC and More**
-
 
 # 运行截图
 
@@ -41,7 +40,6 @@
 
 # 1. 系统概述
 
-
 > 简要介绍你要设计的系统，包括系统的目的、目标用户、使用场景、系统需求等等。
 
 + 用户账户管理系统：用户注册、登录、密码重置、个人信息维护等功能。
@@ -59,17 +57,18 @@ graph RL
     Entity --- JpaRepository
     Entity --- Database
     JpaRepository --- Database[(Database)]
-    UserRepository --> |Extends|JpaRepository
-    ShipmentRepository --> |Extends| JpaRepository
+    UserRepository -->|Extends| JpaRepository
+    ShipmentRepository -->|Extends| JpaRepository
     Interceptor --> Controller
-    AuthInterceptor --> |Extends| Interceptor
-    Controller --> |Contains| JpaRepository
+    AuthInterceptor -->|Extends| Interceptor
+    Controller -->|Contains| JpaRepository
     Browser -->|Request| Interceptor
     Controller --> ServiceLogic{ServiceLogic}
     ServiceLogic{ServiceLogic} --> Thymeleaf
     Thymeleaf -->|Response| Browser
     User(User) --- Browser
 ```
+
 <div style="text-align: center;">
 
 ![mermaid-diagram-2023-06-13-234627.png](doc/mermaid-diagram-2023-06-13-234627.png)
@@ -94,6 +93,7 @@ graph
         Session
     end
 ```
+
 <div style="text-align: center;">
 
 ![mermaid-diagram-2023-06-13-234610.png](doc/mermaid-diagram-2023-06-13-234610.png)
@@ -150,13 +150,14 @@ create table user
 
 ```mermaid
 graph LR
-A-->B;
-A-->C;
-B-->D;
-C-->D;
-D-->E;
-C---F;
+    A --> B;
+    A --> C;
+    B --> D;
+    C --> D;
+    D --> E;
+    C --- F;
 ```
+
 <div style="text-align: center;">
 
 ![mermaid-diagram-2023-06-13-234546.png](doc/mermaid-diagram-2023-06-13-234546.png)
@@ -173,20 +174,20 @@ classDiagram
     note for Duck "can fly\ncan swim\ncan dive\ncan help in debugging"
     Animal <|-- Fish
     Zebra --|> Animal
-    Animal : +int age
-    Animal : +String gender
+    Animal: +int age
+    Animal: +String gender
     Animal: +isMammal()
     Animal: +mate()
-    class Duck{
+    class Duck {
         +String beakColor
         +swim()
         +quack()
     }
-    class Fish{
+    class Fish {
         -int sizeInFeet
         -canEat()
     }
-    class Zebra{
+    class Zebra {
         +bool is_wild
         +run()
     }
@@ -203,9 +204,7 @@ classDiagram
 
 > 描述系统的各个模块的设计，包括各个模块的功能、模块之间的关系和通信方式、模块的实现方法等等。使用图表、图示等方式展示各个模块之间的关系和通信方式。
 
-
 # **Assignment 2, Re-design of assignment1 with REST API and More**
-
 
 # 运行截图
 
@@ -239,17 +238,18 @@ graph RL
     Entity --- JpaRepository
     Entity --- Database
     JpaRepository --- Database[(Database)]
-    UserRepository --> |Extends|JpaRepository
-    ShipmentRepository --> |Extends| JpaRepository
+    UserRepository -->|Extends| JpaRepository
+    ShipmentRepository -->|Extends| JpaRepository
     Interceptor --> Controller
-    AuthInterceptor --> |Extends| Interceptor
-    Controller --> |Contains| JpaRepository
+    AuthInterceptor -->|Extends| Interceptor
+    Controller -->|Contains| JpaRepository
     Browser -->|Request| Interceptor
     Controller --> ServiceLogic{ServiceLogic}
     ServiceLogic{ServiceLogic} --> Thymeleaf
     Thymeleaf -->|Response| Browser
     User(User) --- Browser
 ```
+
 <div style="text-align: center;">
 
 ![mermaid-diagram-2023-06-13-234627.png](doc/mermaid-diagram-2023-06-13-234627.png)
@@ -332,13 +332,14 @@ create table user
 
 ```mermaid
 graph LR
-A-->B;
-A-->C;
-B-->D;
-C-->D;
-D-->E;
-C---F;
+    A --> B;
+    A --> C;
+    B --> D;
+    C --> D;
+    D --> E;
+    C --- F;
 ```
+
 <div style="text-align: center;">
 
 ![mermaid-diagram-2023-06-13-234546.png](doc/mermaid-diagram-2023-06-13-234546.png)
@@ -355,20 +356,20 @@ classDiagram
     note for Duck "can fly\ncan swim\ncan dive\ncan help in debugging"
     Animal <|-- Fish
     Zebra --|> Animal
-    Animal : +int age
-    Animal : +String gender
+    Animal: +int age
+    Animal: +String gender
     Animal: +isMammal()
     Animal: +mate()
-    class Duck{
+    class Duck {
         +String beakColor
         +swim()
         +quack()
     }
-    class Fish{
+    class Fish {
         -int sizeInFeet
         -canEat()
     }
-    class Zebra{
+    class Zebra {
         +bool is_wild
         +run()
     }
@@ -388,9 +389,11 @@ classDiagram
 # **Assignment 3, A shipping and transportation services development with Micro-services Architecture and Spring-Cloud**
 
 # 运行截图
+
 ## Eureka
 
 ### 控制界面
+
 <div style="text-align: center;">
 
 
@@ -407,7 +410,9 @@ classDiagram
 </div>
 
 ### 负载均衡
+
 ```java
+
 @RestController
 public class TestRestController {
 
@@ -511,31 +516,30 @@ public class TestRestController {
            │                   │        │                   │
            └───────────────────┘        └───────────────────┘
 
-
 ```mermaid
 graph LR
 
-subgraph Eureka
-    A["Eureka Server<br/>(Port: 10086)"]
-end
+    subgraph Eureka
+        A["Eureka Server<br/>(Port: 10086)"]
+    end
 
-subgraph Gateway
-    B["Gateway Service<br/>(Port: 10010)"]
-end
+    subgraph Gateway
+        B["Gateway Service<br/>(Port: 10010)"]
+    end
 
-subgraph OrderService
-    C["Order Service<br/>(Port: 8081)"]
-end
+    subgraph OrderService
+        C["Order Service<br/>(Port: 8081)"]
+    end
 
-subgraph UserService
-    D["User Service 1<br/>(Port: 8082)"]
-    E["User Service 2<br/>(Port: 8083)"]
-end
+    subgraph UserService
+        D["User Service 1<br/>(Port: 8082)"]
+        E["User Service 2<br/>(Port: 8083)"]
+    end
 
-A --> B
-B --> C
-B --> D
-B --> E
+    A --> B
+    B --> C
+    B --> D
+    B --> E
 
 
 ```
@@ -546,9 +550,13 @@ B --> E
 
 </div>
 
-- 包含了Eureka服务器、Gateway服务、Order服务和两个User服务。Eureka服务器用于服务发现和注册，Gateway服务作为系统的入口点处理所有的外部请求，Order服务负责订单相关的功能，User服务处理用户相关的功能。
+-
 
-- 每个服务都运行在不同的端口上，例如Gateway服务运行在10010端口，Order服务运行在8081端口，User服务分别运行在8082和8083端口。通过Eureka服务器进行服务注册和发现，Gateway服务作为路由器将请求转发到相应的微服务。这种架构可以提供灵活性和可扩展性，每个微服务可以独立开发、部署和扩展。
+包含了Eureka服务器、Gateway服务、Order服务和两个User服务。Eureka服务器用于服务发现和注册，Gateway服务作为系统的入口点处理所有的外部请求，Order服务负责订单相关的功能，User服务处理用户相关的功能。
+
+-
+
+每个服务都运行在不同的端口上，例如Gateway服务运行在10010端口，Order服务运行在8081端口，User服务分别运行在8082和8083端口。通过Eureka服务器进行服务注册和发现，Gateway服务作为路由器将请求转发到相应的微服务。这种架构可以提供灵活性和可扩展性，每个微服务可以独立开发、部署和扩展。
 
 - 微服务架构在物流网站的系统中可以提供灵活性、可扩展性和可维护性。下面是一个基于微服务的物流网站的系统架构示例：
 
@@ -564,6 +572,7 @@ B --> E
 
 - 负责处理用户相关的功能，如用户注册、登录、个人信息管理等。
   管理用户数据并与身份验证服务进行交互。
+
 ## 货物服务（Cargo Service）：
 
 - 处理货物相关的功能，如货物查询、货物状态更新、货物跟踪等。
@@ -585,7 +594,6 @@ B --> E
 - 处理订单支付功能，与第三方支付网关集成，支持各种支付方式。
   处理支付请求、支付确认和支付状态更新。
 
-
 > 描述系统的整体架构，包括系统的分层、组成部分、组件之间的关系、系统流程等等。使用图表、图示等方式展示系统的架构，方便读者理解。
 
 ```mermaid
@@ -596,17 +604,18 @@ graph RL
     Entity --- JpaRepository
     Entity --- Database
     JpaRepository --- Database[(Database)]
-    UserRepository --> |Extends|JpaRepository
-    ShipmentRepository --> |Extends| JpaRepository
+    UserRepository -->|Extends| JpaRepository
+    ShipmentRepository -->|Extends| JpaRepository
     Interceptor --> Controller
-    AuthInterceptor --> |Extends| Interceptor
-    Controller --> |Contains| JpaRepository
+    AuthInterceptor -->|Extends| Interceptor
+    Controller -->|Contains| JpaRepository
     Browser -->|Request| Interceptor
     Controller --> ServiceLogic{ServiceLogic}
     ServiceLogic{ServiceLogic} --> Thymeleaf
     Thymeleaf -->|Response| Browser
     User(User) --- Browser
 ```
+
 <div style="text-align: center;">
 
 ![mermaid-diagram-2023-06-13-234627.png](doc/mermaid-diagram-2023-06-13-234627.png)
@@ -631,6 +640,7 @@ graph
         Session
     end
 ```
+
 <div style="text-align: center;">
 
 ![mermaid-diagram-2023-06-13-234610.png](doc/mermaid-diagram-2023-06-13-234610.png)
@@ -727,13 +737,14 @@ create table user
 
 ```mermaid
 graph LR
-A-->B;
-A-->C;
-B-->D;
-C-->D;
-D-->E;
-C---F;
+    A --> B;
+    A --> C;
+    B --> D;
+    C --> D;
+    D --> E;
+    C --- F;
 ```
+
 <div style="text-align: center;">
 
 ![mermaid-diagram-2023-06-13-234546.png](doc/mermaid-diagram-2023-06-13-234546.png)
@@ -750,20 +761,20 @@ classDiagram
     note for Duck "can fly\ncan swim\ncan dive\ncan help in debugging"
     Animal <|-- Fish
     Zebra --|> Animal
-    Animal : +int age
-    Animal : +String gender
+    Animal: +int age
+    Animal: +String gender
     Animal: +isMammal()
     Animal: +mate()
-    class Duck{
+    class Duck {
         +String beakColor
         +swim()
         +quack()
     }
-    class Fish{
+    class Fish {
         -int sizeInFeet
         -canEat()
     }
-    class Zebra{
+    class Zebra {
         +bool is_wild
         +run()
     }
@@ -779,7 +790,7 @@ classDiagram
 # 5. 系统模块设计
 
 > 描述系统的各个模块的设计，包括各个模块的功能、模块之间的关系和通信方式、模块的实现方法等等。使用图表、图示等方式展示各个模块之间的关系和通信方式。
-基于提供的微服务架构和数据库表设计，下面是一个简单的系统模块设计示例：
+> 基于提供的微服务架构和数据库表设计，下面是一个简单的系统模块设计示例：
 
 1. 用户模块：
     - 注册模块：用户可以通过用户服务（UserService）的接口进行注册，提供用户名、密码、邮箱和手机号等信息。
@@ -806,13 +817,14 @@ classDiagram
 
 以上是一个简化的系统模块设计示例，具体的模块设计和接口定义需要根据业务需求和系统功能来确定。每个模块可以有不同的接口和服务，通过微服务架构实现解耦和独立部署，提高系统的灵活性和可扩展性。
 
-
 # **Assignment 4, Event-notification for microservices**
 
 # 运行截图
+
 ## kafka
 
 ### 控制界面
+
 <div style="text-align: center;">
 
 ![overview.png](doc/overview.png)
@@ -894,31 +906,30 @@ classDiagram
            │                   │        │                   │
            └───────────────────┘        └───────────────────┘
 
-
 ```mermaid
 graph LR
 
-subgraph Eureka
-    A["Eureka Server<br/>(Port: 10086)"]
-end
+    subgraph Eureka
+        A["Eureka Server<br/>(Port: 10086)"]
+    end
 
-subgraph Gateway
-    B["Gateway Service<br/>(Port: 10010)"]
-end
+    subgraph Gateway
+        B["Gateway Service<br/>(Port: 10010)"]
+    end
 
-subgraph OrderService
-    C["Order Service<br/>(Port: 8081)"]
-end
+    subgraph OrderService
+        C["Order Service<br/>(Port: 8081)"]
+    end
 
-subgraph UserService
-    D["User Service 1<br/>(Port: 8082)"]
-    E["User Service 2<br/>(Port: 8083)"]
-end
+    subgraph UserService
+        D["User Service 1<br/>(Port: 8082)"]
+        E["User Service 2<br/>(Port: 8083)"]
+    end
 
-A --> B
-B --> C
-B --> D
-B --> E
+    A --> B
+    B --> C
+    B --> D
+    B --> E
 
 
 ```
@@ -929,9 +940,13 @@ B --> E
 
 </div>
 
-- 包含了Eureka服务器、Gateway服务、Order服务和两个User服务。Eureka服务器用于服务发现和注册，Gateway服务作为系统的入口点处理所有的外部请求，Order服务负责订单相关的功能，User服务处理用户相关的功能。
+-
 
-- 每个服务都运行在不同的端口上，例如Gateway服务运行在10010端口，Order服务运行在8081端口，User服务分别运行在8082和8083端口。通过Eureka服务器进行服务注册和发现，Gateway服务作为路由器将请求转发到相应的微服务。这种架构可以提供灵活性和可扩展性，每个微服务可以独立开发、部署和扩展。
+包含了Eureka服务器、Gateway服务、Order服务和两个User服务。Eureka服务器用于服务发现和注册，Gateway服务作为系统的入口点处理所有的外部请求，Order服务负责订单相关的功能，User服务处理用户相关的功能。
+
+-
+
+每个服务都运行在不同的端口上，例如Gateway服务运行在10010端口，Order服务运行在8081端口，User服务分别运行在8082和8083端口。通过Eureka服务器进行服务注册和发现，Gateway服务作为路由器将请求转发到相应的微服务。这种架构可以提供灵活性和可扩展性，每个微服务可以独立开发、部署和扩展。
 
 - 微服务架构在物流网站的系统中可以提供灵活性、可扩展性和可维护性。下面是一个基于微服务的物流网站的系统架构示例：
 
@@ -947,6 +962,7 @@ B --> E
 
 - 负责处理用户相关的功能，如用户注册、登录、个人信息管理等。
   管理用户数据并与身份验证服务进行交互。
+
 ## 货物服务（Cargo Service）：
 
 - 处理货物相关的功能，如货物查询、货物状态更新、货物跟踪等。
@@ -968,7 +984,6 @@ B --> E
 - 处理订单支付功能，与第三方支付网关集成，支持各种支付方式。
   处理支付请求、支付确认和支付状态更新。
 
-
 > 描述系统的整体架构，包括系统的分层、组成部分、组件之间的关系、系统流程等等。使用图表、图示等方式展示系统的架构，方便读者理解。
 
 ```mermaid
@@ -979,17 +994,18 @@ graph RL
     Entity --- JpaRepository
     Entity --- Database
     JpaRepository --- Database[(Database)]
-    UserRepository --> |Extends|JpaRepository
-    ShipmentRepository --> |Extends| JpaRepository
+    UserRepository -->|Extends| JpaRepository
+    ShipmentRepository -->|Extends| JpaRepository
     Interceptor --> Controller
-    AuthInterceptor --> |Extends| Interceptor
-    Controller --> |Contains| JpaRepository
+    AuthInterceptor -->|Extends| Interceptor
+    Controller -->|Contains| JpaRepository
     Browser -->|Request| Interceptor
     Controller --> ServiceLogic{ServiceLogic}
     ServiceLogic{ServiceLogic} --> Thymeleaf
     Thymeleaf -->|Response| Browser
     User(User) --- Browser
 ```
+
 <div style="text-align: center;">
 
 ![mermaid-diagram-2023-06-13-234627.png](doc/mermaid-diagram-2023-06-13-234627.png)
@@ -1014,6 +1030,7 @@ graph
         Session
     end
 ```
+
 <div style="text-align: center;">
 
 ![mermaid-diagram-2023-06-13-234610.png](doc/mermaid-diagram-2023-06-13-234610.png)
@@ -1110,13 +1127,14 @@ create table user
 
 ```mermaid
 graph LR
-A-->B;
-A-->C;
-B-->D;
-C-->D;
-D-->E;
-C---F;
+    A --> B;
+    A --> C;
+    B --> D;
+    C --> D;
+    D --> E;
+    C --- F;
 ```
+
 <div style="text-align: center;">
 
 ![mermaid-diagram-2023-06-13-234546.png](doc/mermaid-diagram-2023-06-13-234546.png)
@@ -1133,20 +1151,20 @@ classDiagram
     note for Duck "can fly\ncan swim\ncan dive\ncan help in debugging"
     Animal <|-- Fish
     Zebra --|> Animal
-    Animal : +int age
-    Animal : +String gender
+    Animal: +int age
+    Animal: +String gender
     Animal: +isMammal()
     Animal: +mate()
-    class Duck{
+    class Duck {
         +String beakColor
         +swim()
         +quack()
     }
-    class Fish{
+    class Fish {
         -int sizeInFeet
         -canEat()
     }
-    class Zebra{
+    class Zebra {
         +bool is_wild
         +run()
     }
@@ -1162,7 +1180,7 @@ classDiagram
 # 5. 系统模块设计
 
 > 描述系统的各个模块的设计，包括各个模块的功能、模块之间的关系和通信方式、模块的实现方法等等。使用图表、图示等方式展示各个模块之间的关系和通信方式。
-基于提供的微服务架构和数据库表设计，下面是一个简单的系统模块设计示例：
+> 基于提供的微服务架构和数据库表设计，下面是一个简单的系统模块设计示例：
 
 1. 用户模块：
     - 注册模块：用户可以通过用户服务（UserService）的接口进行注册，提供用户名、密码、邮箱和手机号等信息。
