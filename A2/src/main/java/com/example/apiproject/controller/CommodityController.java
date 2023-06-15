@@ -26,9 +26,9 @@ public class CommodityController {
     @PostMapping("/price")
     public Result findByPrice(@RequestBody @NotNull Float price) {
         var result = new Result();
-        List<Commodity> commodityList = commodityRepository.findByPrice(price);
+      //  List<Commodity> commodityList = commodityRepository.findByPrice(price);
         result.setSuccess(true);
-        result.setData(commodityList);
+     //   result.setData(commodityList);
         return result;
     }
 

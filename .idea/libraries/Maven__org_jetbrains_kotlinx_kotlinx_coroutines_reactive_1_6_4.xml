@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Maven: org.jetbrains.kotlinx:kotlinx-coroutines-reactive:1.6.4" type="java-imported" external-system-id="Maven">
+    <properties groupId="org.jetbrains.kotlinx" artifactId="kotlinx-coroutines-reactive" version="1.6.4" />
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/jetbrains/kotlinx/kotlinx-coroutines-reactive/1.6.4/kotlinx-coroutines-reactive-1.6.4.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/jetbrains/kotlinx/kotlinx-coroutines-reactive/1.6.4/kotlinx-coroutines-reactive-1.6.4-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/jetbrains/kotlinx/kotlinx-coroutines-reactive/1.6.4/kotlinx-coroutines-reactive-1.6.4-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

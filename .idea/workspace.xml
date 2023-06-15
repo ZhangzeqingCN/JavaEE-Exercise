@@ -4,76 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="96528817-b786-4ce5-8761-2fc899131a1b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/2023-06-13 234126.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2023-06-13 234313.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2023-06-13 234853.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2023-06-13 235901.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2023-06-14 000013.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2023-06-14 002424.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2023-06-14 003147.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2023-06-14 003203.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/A1/2023-06-13 234853.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/A1/2023-06-13 235901.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/A1/2023-06-14 000013.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/A1/main.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/A1/mermaid-diagram-2023-06-13-234518.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/A1/mermaid-diagram-2023-06-13-234546.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/A1/mermaid-diagram-2023-06-13-234610.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/A1/mermaid-diagram-2023-06-13-234627.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/A2/2023-06-13 234126.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/A2/2023-06-13 234313.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/A2/main.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/A2/mermaid-diagram-2023-06-13-234518.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/A2/mermaid-diagram-2023-06-13-234546.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/A2/mermaid-diagram-2023-06-13-234610.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/A2/mermaid-diagram-2023-06-13-234627.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/A3/2023-06-13 234126.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/A3/2023-06-13 234313.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/A3/2023-06-14 002424.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/A3/2023-06-14 003147.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/A3/2023-06-14 003203.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/A3/img1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/A3/main.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/A3/mermaid-diagram-2023-06-13-234518.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/A3/mermaid-diagram-2023-06-13-234546.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/A3/mermaid-diagram-2023-06-13-234610.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/A3/mermaid-diagram-2023-06-13-234627.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/A3/mermaid-diagram-2023-06-14-002332.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mermaid-diagram-2023-06-13-234518.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mermaid-diagram-2023-06-13-234546.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mermaid-diagram-2023-06-13-234610.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mermaid-diagram-2023-06-13-234627.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mermaid-diagram-2023-06-14-002332.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-    </list>
+    <list default="true" id="74d541d9-46c7-4df8-ab3d-d4b183980f82" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_BRANCH_BY_REPOSITORY">
-      <map>
-        <entry key="$PROJECT_DIR$" value="hyt" />
-      </map>
-    </option>
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/kafdrop" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="useMavenConfig" value="true" />
-      </MavenGeneralSettings>
-    </option>
-  </component>
-  <component name="ProjectId" id="2QCaDV0QrThpIMOrRJ1DfWkiiug" />
+  <component name="ProjectId" id="2REeSNbMYDwAN4Jv2LYAbxe1Ux7" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
@@ -81,138 +24,51 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/IdeaProjects/JavaEE-Exercise1",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "spring.configuration.checksum": "8d45abb6434ebdf13995a4dda6067ff6",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/学习/3.2/JavaEE&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\IdeaProjects\JavaEE-Exercise1" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.example.a2.controller" />
+      <recent name="D:\学习\3.2\JavaEE" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="configurationTypes">
-      <set>
-        <option value="SpringBootApplicationConfigurationType" />
-      </set>
-    </option>
-  </component>
-  <component name="RunManager" selected="Spring Boot.A1Application">
+  <component name="RunManager">
     <configuration default="true" type="JetRunConfigurationType">
-      <module name="user-service" />
+      <module name="eureka-server" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="user-service" />
+      <module name="eureka-server" />
       <option name="filePath" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="A1Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="A1" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.a2.A1Application" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="A2Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="A2" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.a2.A2Application" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ApiProjectApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="api-project" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.apiproject.ApiProjectApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="EurekaServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="eureka-server" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.eureka_server.EurekaServerApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="gateway" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.gateway.GatewayApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="OrderServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="order-service" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.order_service.OrderServiceApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="user-service" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.user_service.UserServiceApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <list>
-      <item itemvalue="Spring Boot.ApiProjectApplication" />
-      <item itemvalue="Spring Boot.A2Application" />
-      <item itemvalue="Spring Boot.UserServiceApplication" />
-      <item itemvalue="Spring Boot.A1Application" />
-      <item itemvalue="Spring Boot.OrderServiceApplication" />
-      <item itemvalue="Spring Boot.EurekaServerApplication" />
-      <item itemvalue="Spring Boot.GatewayApplication" />
-    </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="96528817-b786-4ce5-8761-2fc899131a1b" name="Changes" comment="" />
-      <created>1684859900233</created>
+      <changelist id="74d541d9-46c7-4df8-ab3d-d4b183980f82" name="Changes" comment="" />
+      <created>1686819666758</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1684859900233</updated>
-      <workItem from="1684859901472" duration="413000" />
-      <workItem from="1686716563400" duration="17000" />
+      <updated>1686819666758</updated>
+      <workItem from="1686819668177" duration="197000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>

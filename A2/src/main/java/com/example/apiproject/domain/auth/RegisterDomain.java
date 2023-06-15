@@ -1,6 +1,6 @@
 package com.example.apiproject.domain.auth;
 
-import com.example.apiproject.access.gender.Gender;
+import com.example.apiproject.access.Gender;
 import lombok.*;
 
 @Builder
@@ -12,8 +12,7 @@ import lombok.*;
 @EqualsAndHashCode
 public class RegisterDomain {
     private String username;
-    private String password1;
-    private String password2;
+    private String password;
     private String email;
     private String phone;
     @Builder.Default

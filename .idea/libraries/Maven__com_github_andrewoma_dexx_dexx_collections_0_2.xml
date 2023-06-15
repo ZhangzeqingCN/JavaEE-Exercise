@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Maven: com.github.andrewoma.dexx:dexx-collections:0.2" type="java-imported" external-system-id="Maven">
+    <properties groupId="com.github.andrewoma.dexx" artifactId="dexx-collections" version="0.2" />
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/github/andrewoma/dexx/dexx-collections/0.2/dexx-collections-0.2.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/github/andrewoma/dexx/dexx-collections/0.2/dexx-collections-0.2-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/github/andrewoma/dexx/dexx-collections/0.2/dexx-collections-0.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

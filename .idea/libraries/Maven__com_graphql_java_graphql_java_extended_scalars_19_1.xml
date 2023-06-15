@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Maven: com.graphql-java:graphql-java-extended-scalars:19.1" type="java-imported" external-system-id="Maven">
+    <properties groupId="com.graphql-java" artifactId="graphql-java-extended-scalars" version="19.1" />
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/graphql-java/graphql-java-extended-scalars/19.1/graphql-java-extended-scalars-19.1.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/graphql-java/graphql-java-extended-scalars/19.1/graphql-java-extended-scalars-19.1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/graphql-java/graphql-java-extended-scalars/19.1/graphql-java-extended-scalars-19.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -16,6 +16,6 @@ public class MyExceptionHandler {
     @ResponseBody
     public Result handleException(Exception e) {
         log.error(e.getMessage(), e);
-        return Result.error(e.getMessage()).addErrors(e);
+        return Result.error(e.getMessage());
     }
 }

@@ -1,6 +1,5 @@
 package com.example.apiproject.access;
 
-import com.example.apiproject.access.gender.Gender;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -11,6 +10,7 @@ import lombok.*;
 @AllArgsConstructor
 @NoArgsConstructor
 @ToString
+@EqualsAndHashCode
 @Entity
 @Table(name = "t_User")
 public class User {
@@ -20,6 +20,6 @@ public class User {
     @Builder.Default
     Gender gender = Gender.Unknown;
     String email;
-    String phone;
-    String address;
+    String phone;//根据电话查自己名下包裹
+    String address;//收货地址？
 }
