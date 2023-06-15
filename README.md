@@ -19,23 +19,23 @@
 
 <div style="text-align: center;">
 
-![mermaid-diagram-2023-06-13-234627.png](mermaid-diagram-2023-06-13-234627.png)
+![mermaid-diagram-2023-06-13-234627.png](doc/mermaid-diagram-2023-06-13-234627.png)
 
 </div>
 
 <div style="text-align: center;">
 
-![2023-06-13 235901.png](2023-06-13%20235901.png)
+![2023-06-13 235901.png](doc/2023-06-13%20235901.png)
 
 </div>
 <div style="text-align: center;">
 
-![2023-06-13 234853.png](2023-06-13%20234853.png)
+![2023-06-13 234853.png](doc/2023-06-13%20234853.png)
 
 </div>
 <div style="text-align: center;">
 
-![2023-06-14 000013.png](2023-06-14%20000013.png)
+![2023-06-14 000013.png](doc/2023-06-14%20000013.png)
 
 </div>
 
@@ -74,7 +74,7 @@ graph RL
 ```
 <div style="text-align: center;">
 
-![mermaid-diagram-2023-06-13-234627.png](mermaid-diagram-2023-06-13-234627.png)
+![mermaid-diagram-2023-06-13-234627.png](doc/mermaid-diagram-2023-06-13-234627.png)
 
 </div>
 
@@ -98,7 +98,7 @@ graph
 ```
 <div style="text-align: center;">
 
-![mermaid-diagram-2023-06-13-234610.png](mermaid-diagram-2023-06-13-234610.png)
+![mermaid-diagram-2023-06-13-234610.png](doc/mermaid-diagram-2023-06-13-234610.png)
 
 </div>
 # 3. 技术选型
@@ -161,7 +161,7 @@ C---F;
 ```
 <div style="text-align: center;">
 
-![mermaid-diagram-2023-06-13-234546.png](mermaid-diagram-2023-06-13-234546.png)
+![mermaid-diagram-2023-06-13-234546.png](doc/mermaid-diagram-2023-06-13-234546.png)
 
 </div>
 
@@ -197,7 +197,7 @@ classDiagram
 
 <div style="text-align: center;">
 
-![mermaid-diagram-2023-06-13-234518.png](mermaid-diagram-2023-06-13-234518.png)
+![mermaid-diagram-2023-06-13-234518.png](doc/mermaid-diagram-2023-06-13-234518.png)
 
 </div>
 
@@ -213,12 +213,12 @@ classDiagram
 
 <div style="text-align: center;">
 
-![2023-06-13 234126.png](2023-06-13%20234126.png)
+![2023-06-13 234126.png](doc/2023-06-13%20234126.png)
 
 </div>
 <div style="text-align: center;">
 
-![2023-06-13 234313.png](2023-06-13%20234313.png)
+![2023-06-13 234313.png](doc/2023-06-13%20234313.png)
 
 </div>
 
@@ -254,7 +254,7 @@ graph RL
 ```
 <div style="text-align: center;">
 
-![mermaid-diagram-2023-06-13-234627.png](mermaid-diagram-2023-06-13-234627.png)
+![mermaid-diagram-2023-06-13-234627.png](doc/mermaid-diagram-2023-06-13-234627.png)
 
 </div>
 
@@ -279,7 +279,7 @@ graph
 
 <div style="text-align: center;">
 
-![mermaid-diagram-2023-06-13-234610.png](mermaid-diagram-2023-06-13-234610.png)
+![mermaid-diagram-2023-06-13-234610.png](doc/mermaid-diagram-2023-06-13-234610.png)
 
 </div>
 
@@ -343,7 +343,7 @@ C---F;
 ```
 <div style="text-align: center;">
 
-![mermaid-diagram-2023-06-13-234546.png](mermaid-diagram-2023-06-13-234546.png)
+![mermaid-diagram-2023-06-13-234546.png](doc/mermaid-diagram-2023-06-13-234546.png)
 
 </div>
 
@@ -379,7 +379,7 @@ classDiagram
 
 <div style="text-align: center;">
 
-![mermaid-diagram-2023-06-13-234518.png](mermaid-diagram-2023-06-13-234518.png)
+![mermaid-diagram-2023-06-13-234518.png](doc/mermaid-diagram-2023-06-13-234518.png)
 
 </div>
 
@@ -397,7 +397,7 @@ classDiagram
 <div style="text-align: center;">
 
 
-![img1.png](img1.png)
+![img1.png](doc/img1.png)
 
 </div>
 
@@ -405,7 +405,7 @@ classDiagram
 
 <div style="text-align: center;">
 
-![2023-06-14 002424.png](2023-06-14%20002424.png)
+![2023-06-14 002424.png](doc/2023-06-14%20002424.png)
 
 </div>
 
@@ -437,7 +437,7 @@ public class TestRestController {
 
 <div style="text-align: center;">
 
-![2023-06-14 003203.png](2023-06-14%20003203.png)
+![2023-06-14 003203.png](doc/2023-06-14%20003203.png)
 
 </div>
 
@@ -445,7 +445,7 @@ public class TestRestController {
 
 <div style="text-align: center;">
 
-![2023-06-14 003147.png](2023-06-14%20003147.png)
+![2023-06-14 003147.png](doc/2023-06-14%20003147.png)
 
 </div>
 
@@ -453,13 +453,13 @@ public class TestRestController {
 
 <div style="text-align: center;">
 
-![2023-06-13 234126.png](2023-06-13%20234126.png)
+![2023-06-13 234126.png](doc/2023-06-13%20234126.png)
 
 </div>
 
 <div style="text-align: center;">
 
-![2023-06-13 234313.png](2023-06-13%20234313.png)
+![2023-06-13 234313.png](doc/2023-06-13%20234313.png)
 
 </div>
 
@@ -545,7 +545,7 @@ B --> E
 
 <div style="text-align: center;">
 
-![mermaid-diagram-2023-06-14-002332.png](mermaid-diagram-2023-06-14-002332.png)
+![mermaid-diagram-2023-06-14-002332.png](doc/mermaid-diagram-2023-06-14-002332.png)
 
 </div>
 
@@ -612,7 +612,7 @@ graph RL
 ```
 <div style="text-align: center;">
 
-![mermaid-diagram-2023-06-13-234627.png](mermaid-diagram-2023-06-13-234627.png)
+![mermaid-diagram-2023-06-13-234627.png](doc/mermaid-diagram-2023-06-13-234627.png)
 
 </div>
 
@@ -636,7 +636,7 @@ graph
 ```
 <div style="text-align: center;">
 
-![mermaid-diagram-2023-06-13-234610.png](mermaid-diagram-2023-06-13-234610.png)
+![mermaid-diagram-2023-06-13-234610.png](doc/mermaid-diagram-2023-06-13-234610.png)
 
 </div>
 
@@ -739,7 +739,7 @@ C---F;
 ```
 <div style="text-align: center;">
 
-![mermaid-diagram-2023-06-13-234546.png](mermaid-diagram-2023-06-13-234546.png)
+![mermaid-diagram-2023-06-13-234546.png](doc/mermaid-diagram-2023-06-13-234546.png)
 
 </div>
 
@@ -775,7 +775,7 @@ classDiagram
 
 <div style="text-align: center;">
 
-![mermaid-diagram-2023-06-13-234518.png](mermaid-diagram-2023-06-13-234518.png)
+![mermaid-diagram-2023-06-13-234518.png](doc/mermaid-diagram-2023-06-13-234518.png)
 
 </div>
 
@@ -820,7 +820,7 @@ classDiagram
 ### 控制界面
 <div style="text-align: center;">
 
-![overview.png](overview.png)
+![overview.png](doc/overview.png)
 
 </div>
 
@@ -828,7 +828,7 @@ classDiagram
 
 <div style="text-align: center;">
 
-![img.png](img.png)
+![img.png](doc/img.png)
 
 </div>
 
@@ -836,40 +836,40 @@ classDiagram
 
 <div style="text-align: center;">
 
-![2023-06-13 234126.png](2023-06-13%20234126.png)
+![2023-06-13 234126.png](doc/2023-06-13%20234126.png)
 </div>
 <div style="text-align: center;">
 
-![img3.png](img3.png)
+![img3.png](doc/img3.png)
 </div>
 <div style="text-align: center;">
 
-![img_3.png](img_3.png)
+![img_3.png](doc/img_3.png)
 </div>
 <div style="text-align: center;">
 
-![img_4.png](img_4.png)
+![img_4.png](doc/img_4.png)
 </div>
 
 ### 根据承运商查询包裹
 
 <div style="text-align: center;">
 
-![img_5.png](img_5.png)
+![img_5.png](doc/img_5.png)
 </div>
 
 ### 根据id查询包裹
 
 <div style="text-align: center;">
 
-![img_6.png](img_6.png)
+![img_6.png](doc/img_6.png)
 
 </div>
 
 <div style="text-align: center;">
 
-![2023-06-13 234313.png](2023-06-13%20234313.png)
-![img_2.png](img_2.png)
+![2023-06-13 234313.png](doc/2023-06-13%20234313.png)
+![img_2.png](doc/img_2.png)
 </div>
 
 设计报告：微服务事件通知
@@ -997,7 +997,7 @@ B --> E
 
 <div style="text-align: center;">
 
-![mermaid-diagram-2023-06-14-002332.png](mermaid-diagram-2023-06-14-002332.png)
+![mermaid-diagram-2023-06-14-002332.png](doc/mermaid-diagram-2023-06-14-002332.png)
 
 </div>
 
@@ -1064,7 +1064,7 @@ graph RL
 ```
 <div style="text-align: center;">
 
-![mermaid-diagram-2023-06-13-234627.png](mermaid-diagram-2023-06-13-234627.png)
+![mermaid-diagram-2023-06-13-234627.png](doc/mermaid-diagram-2023-06-13-234627.png)
 
 </div>
 
@@ -1088,7 +1088,7 @@ graph
 ```
 <div style="text-align: center;">
 
-![mermaid-diagram-2023-06-13-234610.png](mermaid-diagram-2023-06-13-234610.png)
+![mermaid-diagram-2023-06-13-234610.png](doc/mermaid-diagram-2023-06-13-234610.png)
 
 </div>
 
@@ -1191,7 +1191,7 @@ C---F;
 ```
 <div style="text-align: center;">
 
-![mermaid-diagram-2023-06-13-234546.png](mermaid-diagram-2023-06-13-234546.png)
+![mermaid-diagram-2023-06-13-234546.png](doc/mermaid-diagram-2023-06-13-234546.png)
 
 </div>
 
@@ -1227,7 +1227,7 @@ classDiagram
 
 <div style="text-align: center;">
 
-![mermaid-diagram-2023-06-13-234518.png](mermaid-diagram-2023-06-13-234518.png)
+![mermaid-diagram-2023-06-13-234518.png](doc/mermaid-diagram-2023-06-13-234518.png)
 
 </div>
 
