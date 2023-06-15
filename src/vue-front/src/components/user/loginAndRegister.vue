@@ -100,7 +100,7 @@
 </template>
 
 <script >
-import user from '@/api/user.js'
+import user from '@/api/auth.js'
 export default {
     data() {
         var username = (rule, value, callback) => {
