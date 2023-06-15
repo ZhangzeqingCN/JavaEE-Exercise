@@ -28,7 +28,7 @@ public class OrderController {
         return orderService.addNewOrder(addNewOrderDomain,request);
     }
 
-    @GetMapping("/checkOrderByShipmentCode/{ShipmentCode}")
+    @GetMapping("/checkOrder/{ShipmentCode}")
     public Result checkOrderByShipmentCode(@PathVariable("ShipmentCode") String ShipmentCode){
         return orderService.checkOrderByShipmentCode(ShipmentCode);
     }

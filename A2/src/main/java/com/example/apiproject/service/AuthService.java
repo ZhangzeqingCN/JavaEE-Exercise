@@ -14,20 +14,19 @@ import com.example.apiproject.utils.MyJwtUtil;
 import jakarta.servlet.http.Cookie;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import jakarta.transaction.Transactional;
 import lombok.extern.slf4j.Slf4j;
 import org.jetbrains.annotations.NotNull;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.Arrays;
-import java.util.List;
-import java.util.Objects;
-import java.util.Optional;
+import java.util.*;
 
 /**
  * @apiNote 用于用户权限的识别
  */
 @Service
+@Transactional
 @Slf4j
 public class AuthService {
     private UserRepository userRepository;
@@ -175,7 +174,7 @@ public class AuthService {
             toPeopleRepository.deleteById(Integer.valueOf(id));
             return Result.success();
         }else {
-            return Result.error("该寄件人不存在");
+            return Result.error("该收件人不存在");
         }
     }
 
@@ -193,7 +192,16 @@ public class AuthService {
                        // log.info(String.format("用户 %s",userOptional.get()));
                         if(userOptional.isPresent()){
                             List<FromPeople> fromList=fromPeopleRepository.findAll();
-                            return Result.success(fromList);//前端接收形式？
+                            List<saveFromPeople> saveFromPeople = new ArrayList<>();
+                            for (int i=0;i<fromList.size();i++){
+                                saveFromPeople save = new saveFromPeople();
+                                save.setFromPeople(fromList.get(i).getFromUser());
+                                save.setFromPhone(fromList.get(i).getFromPhone());
+                                save.setFromAddrSelect(fromList.get(i).getFromAddressSelect());
+                                save.setFromAddrDetail(fromList.get(i).getFromAddressDetail());
+                                saveFromPeople.add(save);
+                            }
+                            return Result.success(saveFromPeople);//前端接收形式？
                         } else {
                             return  Result.error("用户不存在");
                         }
@@ -221,7 +229,17 @@ public class AuthService {
                       //  log.info(String.format("用户 %s",userOptional.get()));
                         if(userOptional.isPresent()){
                             List<ToPeople> toList=toPeopleRepository.findAll();
-                            return Result.success(toList);//前端接收形式？
+                            List<saveToPeople> saveToPeople = new ArrayList<>();
+                            for (int i=0;i<toList.size();i++){
+                                log.info(String.valueOf(toList.get(i).getId()));
+                                saveToPeople save = new saveToPeople();
+                                save.setToPeople(toList.get(i).getToUser());
+                                save.setToPhone(toList.get(i).getToPhone());
+                                save.setToAddrSelect(toList.get(i).getToAddressSelect());
+                                save.setToAddrDetail(toList.get(i).getToAddressDetail());
+                                saveToPeople.add(save);
+                            }
+                            return Result.success(saveToPeople);//前端接收形式？
                         } else {
                             return Result.error("用户不存在");
                         }

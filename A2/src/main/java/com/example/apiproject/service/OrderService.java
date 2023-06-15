@@ -100,7 +100,8 @@ public class OrderService {
             return Result.error("插入异常，信息为"+e);
         }
     }
-    /**apiFox返回的时列表，应该时对象
+    /**
+     * apiFox返回的时列表，应该时对象
      */
     public Result checkOrderByShipmentCode(@NotNull String shipmentCode){
         if (shipRepository.existsById(Integer.valueOf(shipmentCode))){
