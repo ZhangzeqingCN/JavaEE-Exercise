@@ -20,6 +20,6 @@ public class User {
     @Builder.Default
     Gender gender = Gender.Unknown;
     String email;
-    String phone;
-    String address;
+    String phone;//根据电话查自己名下包裹
+    String address;//收货地址？
 }

@@ -1,9 +1,0 @@
-spring:
-  profiles:
-    active: mysqldev
-
-graphql:
-  servlet:
-    cors-enabled: true
-    enabled: true
-    mapping: /graphql
