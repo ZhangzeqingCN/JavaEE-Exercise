@@ -36,8 +36,7 @@ public class shipment {
 
     String toPhone;//根据电话查包裹
 
-    String fromPhone;
-
+    String fromPhone;//用电话查
     @OneToOne
     Commodity commodity;//一个包裹对应一件物品
 
@@ -47,6 +46,5 @@ public class shipment {
     String chooseCourier;//快递员
     String paymentMethod;//付款方式
     String estimatedCost;//运费
-
     String shippingCode;//寄件码
 }

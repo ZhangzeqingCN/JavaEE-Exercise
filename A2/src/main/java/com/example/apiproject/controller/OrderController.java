@@ -28,8 +28,8 @@ public class OrderController {
         return orderService.addNewOrder(addNewOrderDomain,request);
     }
 
-    @GetMapping("/checkOrderByShipmentCode")
-    public Result checkOrderByShipmentCode(@RequestParam(value = "ShipmentCode") String ShipmentCode){
+    @GetMapping("/checkOrderByShipmentCode/{ShipmentCode}")
+    public Result checkOrderByShipmentCode(@PathVariable("ShipmentCode") String ShipmentCode){
         return orderService.checkOrderByShipmentCode(ShipmentCode);
     }
 
@@ -38,8 +38,8 @@ public class OrderController {
         return orderService.getAllOrders(request);
     }
 
-    @GetMapping("/showOrderDetail")
-    public Result addOrder(@RequestParam(value = "shipmentCode") String shipmentCode){
+    @GetMapping("/showOrderDetail/{ShipmentCode}")
+    public Result addOrder(@PathVariable("ShipmentCode") String shipmentCode){
         return orderService.showOrderDetail(shipmentCode);
     }
 }

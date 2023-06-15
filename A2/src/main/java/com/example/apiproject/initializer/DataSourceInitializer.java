@@ -1,9 +1,9 @@
 package com.example.apiproject.initializer;
 
 import com.example.apiproject.access.Commodity;
-import com.example.apiproject.access.User;
+import com.example.apiproject.access.*;
 import com.example.apiproject.repository.CommodityRepository;
-import com.example.apiproject.repository.UserRepository;
+import com.example.apiproject.repository.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
@@ -19,6 +19,20 @@ public class DataSourceInitializer implements CommandLineRunner {
 
     private UserRepository userRepository;
 
+    private CourierRepository courierRepository;
+
+    private ShipRepository shipRepository;
+
+    private ParcelTraceRepository parcelTraceRepository;
+
+    @Autowired
+    public void setParcelTraceRepository(ParcelTraceRepository parcelTraceRepository) { this.parcelTraceRepository = parcelTraceRepository; }
+
+    @Autowired
+    public void setShipRepository(ShipRepository shipRepository) { this.shipRepository = shipRepository; }
+
+    @Autowired
+    public void setCourier(CourierRepository courierRepository) { this.courierRepository = courierRepository; }
     @Autowired
     public void setUserRepository(UserRepository userRepository) {
         this.userRepository = userRepository;
@@ -46,6 +60,48 @@ public class DataSourceInitializer implements CommandLineRunner {
         }
         userRepository.saveAll(users);
 
+        //快递员
+        courierRepository.save(Courier.builder()
+                .name("王力")
+                .phone("13977279785")
+                .build());
+        //初始化订单及物流
+        Commodity temp= commodityRepository.save(Commodity.builder()
+                .type("食物")
+                .weight(1.5F)
+                .insuranceOrNot(false)
+                .build());
+        shipment tempShip= shipRepository.save(shipment.builder()
+                .fromUser("张四")
+                .fromPhone("14793898634")
+                .fromAddressSelect("北京市直辖市海淀区")
+                .fromAddressDetail("北京交通大学")
+                .toUser("张三")
+                .toPhone("15988776524")
+                .toAddressDetail("柳州市第一中学")
+                .toAddressSelect("广西壮族自治区柳州市鱼峰区")
+                .commodity(temp)
+                .chooseCourier("王力")
+                .estimatedCost("10")
+                .parcelTrace("已发货")
+                .placeAnOrderTime("2023-06-10 12:09:12")
+                .paymentMethod("微信")
+                .shippingCode("9870")
+                .build());
+        parcelTraceRepository.save(ParcelTrace.builder()
+                .shipment(tempShip)
+                .siteName("北京市中关村二部")
+                .siteAttribute("起点")
+                .arriveTime("2023-06-10 16:39:12")
+                .leaveTime("2023-06-10 17:09:19")
+                .build());
+        parcelTraceRepository.save(ParcelTrace.builder()
+                .shipment(tempShip)
+                .siteName("武汉中转站")
+                .siteAttribute("中转站")
+                .arriveTime("2023-06-11 17:39:12")
+                .leaveTime("2023-06-11 19:09:34")
+                .build());
         // commodities
 //        commodityRepository.save(Commodity.builder().price(0.2F).name("Test").build());
 //

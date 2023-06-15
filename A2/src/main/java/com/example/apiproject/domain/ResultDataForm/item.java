@@ -1,4 +1,4 @@
-package com.example.apiproject.domain;
+package com.example.apiproject.domain.ResultDataForm;
 
 import lombok.*;
 

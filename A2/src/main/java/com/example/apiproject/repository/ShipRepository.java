@@ -10,7 +10,13 @@ import java.util.Optional;
 public interface ShipRepository extends JpaRepository<shipment, Integer> {
     Optional<shipment> findById(Integer id);
 
-    Optional<shipment> findByFromPhone(String fromPhone);
+  //  Optional<shipment> findByFromPhone(String fromPhone);
 
-    Optional<shipment> findByToPhone(String toPhone);
+    List<shipment> findByFromPhone(String phone);
+
+    List<shipment> findByToPhone(String phone);
+
+   // Optional<shipment> findByToPhone(String toPhone);
+
+    boolean existsById(Integer id);
 }

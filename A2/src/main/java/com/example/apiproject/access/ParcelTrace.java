@@ -29,5 +29,5 @@ public class ParcelTrace {
     String siteName;//站点名称
     String arriveTime;//到达时间
     String leaveTime;//离开时间
-    String attribute;//属于中转站还是起点终点
+    String siteAttribute;//属于中转站还是起点终点
 }

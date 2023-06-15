@@ -4,16 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="96528817-b786-4ce5-8761-2fc899131a1b" name="Changes" comment="完成寄件人管理模块（增删查），已通过测试">
-      <change afterPath="$PROJECT_DIR$/A2/src/main/java/com/example/apiproject/access/Courier.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/A2/src/main/java/com/example/apiproject/domain/item.java" afterDir="false" />
+    <list default="true" id="96528817-b786-4ce5-8761-2fc899131a1b" name="Changes" comment="完成寄收件人全部以及一半其它功能、并修改部分">
+      <change afterPath="$PROJECT_DIR$/A2/src/main/java/com/example/apiproject/domain/ResultDataForm/courier.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A2/src/main/java/com/example/apiproject/domain/ResultDataForm/shipCodeData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/A2/src/main/java/com/example/apiproject/repository/CourierRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/src/main/java/com/example/apiproject/access/Commodity.java" beforeDir="false" afterPath="$PROJECT_DIR$/A2/src/main/java/com/example/apiproject/access/Commodity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/A2/src/main/java/com/example/apiproject/access/ParcelTrace.java" beforeDir="false" afterPath="$PROJECT_DIR$/A2/src/main/java/com/example/apiproject/access/ParcelTrace.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/A2/src/main/java/com/example/apiproject/access/shipment.java" beforeDir="false" afterPath="$PROJECT_DIR$/A2/src/main/java/com/example/apiproject/access/shipment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/src/main/java/com/example/apiproject/domain/auth/RegisterDomain.java" beforeDir="false" afterPath="$PROJECT_DIR$/A2/src/main/java/com/example/apiproject/domain/auth/RegisterDomain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/A2/src/main/java/com/example/apiproject/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/A2/src/main/java/com/example/apiproject/controller/OrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/A2/src/main/java/com/example/apiproject/domain/item.java" beforeDir="false" afterPath="$PROJECT_DIR$/A2/src/main/java/com/example/apiproject/domain/ResultDataForm/item.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/A2/src/main/java/com/example/apiproject/domain/order/addNewOrderDomain.java" beforeDir="false" afterPath="$PROJECT_DIR$/A2/src/main/java/com/example/apiproject/domain/order/addNewOrderDomain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/A2/src/main/java/com/example/apiproject/service/AuthService.java" beforeDir="false" afterPath="$PROJECT_DIR$/A2/src/main/java/com/example/apiproject/service/AuthService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/A2/src/main/java/com/example/apiproject/initializer/DataSourceInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/A2/src/main/java/com/example/apiproject/initializer/DataSourceInitializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/A2/src/main/java/com/example/apiproject/repository/ParcelTraceRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/A2/src/main/java/com/example/apiproject/repository/ParcelTraceRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/A2/src/main/java/com/example/apiproject/repository/ShipRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/A2/src/main/java/com/example/apiproject/repository/ShipRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/A2/src/main/java/com/example/apiproject/service/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/A2/src/main/java/com/example/apiproject/service/OrderService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,8 +27,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -32,8 +36,21 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;
+  }
+}</component>
   <component name="GitToolBoxStore">
     <option name="projectConfigVersion" value="5" />
+  </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="70b8d470-c343-469f-b270-7079a97eb998" />
+        <option name="url" value="https://github.com/ZhangzeqingCN/JavaEE-Exercise.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -68,6 +85,9 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;模块&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
     &quot;spring.configuration.checksum&quot;: &quot;c49906a0ab4827a1e5a229e9a422506e&quot;,
     &quot;ts.external.directory.path&quot;: &quot;E:\\大三下\\JAVA-EE\\code\\JavaEE-Exercise\\A2\\src\\main\\vite-project\\node_modules\\typescript\\lib&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
@@ -162,7 +182,18 @@
       <workItem from="1685950846957" duration="294000" />
       <workItem from="1685970001130" duration="8016000" />
       <workItem from="1686058315102" duration="5756000" />
-      <workItem from="1686118723245" duration="3834000" />
+      <workItem from="1686118723245" duration="4441000" />
+      <workItem from="1686138036331" duration="22000" />
+      <workItem from="1686377738148" duration="1214000" />
+      <workItem from="1686387552372" duration="4607000" />
+      <workItem from="1686404839399" duration="4156000" />
+      <workItem from="1686491099847" duration="259000" />
+      <workItem from="1686553542803" duration="805000" />
+      <workItem from="1686556417186" duration="660000" />
+      <workItem from="1686571717728" duration="26000" />
+      <workItem from="1686730616406" duration="4191000" />
+      <workItem from="1686760594712" duration="6363000" />
+      <workItem from="1686810933734" duration="2990000" />
     </task>
     <task id="LOCAL-00001" summary="修改部分A2">
       <created>1685180911110</created>
@@ -206,7 +237,21 @@
       <option name="project" value="LOCAL" />
       <updated>1686069438203</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="修改新增部分表等">
+      <created>1686122861806</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1686122861806</updated>
+    </task>
+    <task id="LOCAL-00008" summary="完成寄收件人全部以及一半其它功能、并修改部分">
+      <created>1686491294879</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1686491294879</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -225,6 +270,8 @@
     <MESSAGE value="添加寄/收件人、添加订单相关框架" />
     <MESSAGE value="修改部分实体、完成保存寄/收件人请求" />
     <MESSAGE value="完成寄件人管理模块（增删查）" />
-    <option name="LAST_COMMIT_MESSAGE" value="完成寄件人管理模块（增删查）" />
+    <MESSAGE value="修改新增部分表等" />
+    <MESSAGE value="完成寄收件人全部以及一半其它功能、并修改部分" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成寄收件人全部以及一半其它功能、并修改部分" />
   </component>
 </project>
