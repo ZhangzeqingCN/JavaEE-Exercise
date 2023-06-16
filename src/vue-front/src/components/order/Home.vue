@@ -32,9 +32,9 @@
                         </span>
                         <el-dropdown-menu slot="dropdown">
 <!--                            <el-dropdown-item  class="text-shadow2">修改密码</el-dropdown-item>-->
-<!--                            <el-dropdown-item @click.native="personal" class="text-shadow2">个人中心</el-dropdown-item>-->
+                            <el-dropdown-item @click.native="personal" class="text-shadow2">个人中心</el-dropdown-item>
                             <el-dropdown-item @click.native="personal" class="text-shadow2">管理寄/收件人信息</el-dropdown-item>
-                            <el-dropdown-item command="loginout()" class="text-shadow2">退出登录</el-dropdown-item>
+                            <el-dropdown-item command="loginout" class="text-shadow2">退出登录</el-dropdown-item>
                         </el-dropdown-menu>
                     </el-dropdown>
                 </div>
@@ -64,15 +64,26 @@
                                   size='small'
                         >
                           <!-- 排序、操作按钮、下拉详情tableData.slice((currentPage-1)*pageSize,currentPage*pageSize) -->
-                          <el-table-column fixed type="expand">
-                            <template slot-scope="props">
-                              <el-form label-position="left" inline class="demo-table-expand">
-                                <el-form-item label="物流信息">
-                                  <span>{{ props.row.parcelTrace }}</span>
-                                </el-form-item>
-                              </el-form>
-                            </template>
-                          </el-table-column>
+                          <!-- 物流信息 -->
+<!--                          <el-table-column fixed type="expand" @click="getTrace(scope.row)">-->
+<!--                            <template slot-scope="props">-->
+<!--                              <el-form label-position="left" inline class="demo-table-expand">-->
+<!--                                <el-form-item label="站点名称" prop="siteName">-->
+<!--                                  <span>{{ trace.siteName }}</span>-->
+<!--                                </el-form-item>-->
+<!--                                <el-form-item label="站点性质" prop="siteAttribute">-->
+<!--                                  <span>{{ trace.siteAttribute}}</span>-->
+<!--                                </el-form-item>-->
+<!--                                <el-form-item label="到达时间" prop="arriveTime">-->
+<!--                                  <span>{{ trace.arriveTime}}</span>-->
+<!--                                </el-form-item>-->
+<!--                                <el-form-item label="离开时间" prop="leaveTime">-->
+<!--                                  <span>{{ trace.leaveTime}}</span>-->
+<!--                                </el-form-item>-->
+<!--                              </el-form>-->
+<!--                            </template>-->
+<!--                          </el-table-column>-->
+                          <!-- 表格信息 -->
                           <el-table-column fixed prop="shipmentCode" label="运输单号">
                           </el-table-column>
                           <el-table-column label="寄件人信息">
@@ -127,6 +138,19 @@
                             <template slot-scope="scope">
                               <i class="el-icon-time"></i>
                               <span style="margin-left: 10px">{{ scope.row.placeAnOrderTime }}</span>
+                            </template>
+                          </el-table-column>
+                          <el-table-column label="物流信息">
+                            <template slot-scope="scope">
+                              <el-popover trigger="click" placement="top">
+                                <el-table :data="trace">
+                                  <el-table-column property="siteName" label="站点名称"></el-table-column>
+                                  <el-table-column property="siteAttribute" label="站点性质"></el-table-column>
+                                  <el-table-column property="arriveTime" label="到达时间"></el-table-column>
+                                  <el-table-column property="leaveTime" label="离开时间"></el-table-column>
+                                </el-table>
+                                <el-button type="text" @click="getTrace(scope.row)" slot="reference">点击查看</el-button>
+                              </el-popover>
                             </template>
                           </el-table-column>
                         </el-table>
@@ -405,6 +429,7 @@
 <script>
 import { regionData, CodeToText, TextToCode } from 'element-china-area-data'
 import order from "@/api/order";
+import user from "@/api/user";
 
 export default{
     provide() {
@@ -421,6 +446,7 @@ export default{
         dialogVisible: false,
         dialogVisible_item: false,
         parcelID:'',//查询Param
+        shipmentCode:'', // 查物流
         dialogVisible_contract:false,
         dialogVisible_from:false,
         dialogVisible_to:false,
@@ -460,6 +486,8 @@ export default{
           label:'李才'
         }],
         pay:'1', // 选择支付方式
+        weight:'',// 重量
+        surance:'',// 保价金额
         money:'', // 最后支付价格
         value_courier:'',
         tableData:[{
@@ -514,18 +542,25 @@ export default{
           paymentMethod:"在线支付", //选择支付方式
           estimatedCost:"",// 支付费用
         },
-        // parcelSend:{
-        //     from_user: "",
-        //     from_phone: "",
-        //     from_addr: "",
-        //     to_user: "",
-        //     to_phone: "",
-        //     to_addr: "",
-        //     // carrier: "",
-        //     // cost: "",
-        //     weight: "",
-        //     volume:''
-        // },
+        // 物流
+        trace:[{
+          siteName: "北京市海淀区中转1站",
+          siteAttribute: "区级中转站",
+          arriveTime: "2023-06-11-17-08-07",
+          leaveTime: "2023-06-11-21-09-07"
+        },{
+          siteName: "北京市海淀区中转2站",
+          siteAttribute: "区级中转站",
+          arriveTime: "2023-06-12-11-08-07",
+          leaveTime: "2023-06-12-14-09-07"
+        }],
+        // 寄件/收件人
+        fromAndTo:{
+          people:"",
+          phone:"",
+          addrSelect:[],
+          addrDetail:""
+        },
         optionsCity: regionData,
         value: '',
         currentPage: 1, // 当前页码
@@ -534,7 +569,45 @@ export default{
       };
     },
     methods: {
-      // 查找包裹
+      // 最上端tab页切换
+      handleClick(tab,event){
+        console.log(tab,event)
+        if(tab.index == 1){
+          // 网络请求1，获取所有快递信息
+          order.showAll(this.username).then(res =>{
+            console.log("获取"+this.username+"名下的全部快递信息")
+            if(res.data.success == true) {
+              this.tableData == res.data.data
+              this.$message({
+                message: "查询成功",
+                type: "success"
+              })
+            } else {
+              this.$message({
+                message: res.data.message,
+                type: "error"
+              })
+              console.log("错误原因: " + res.data.message)
+            }
+          })
+        } else if(tab.index == 2){
+          // 网络请求2
+        } else{
+          // 网络请求3
+        }
+      },
+      // 用户名下拉菜单选择事件
+      handleCommand(command) {
+        if (command == 'loginout') {
+          localStorage.removeItem('ms_username');
+          this.$router.push('/login');
+        }
+      },
+      // 个人中心 + 管理收件人寄件人
+      personal() {
+        this.$router.push('/personalPage')
+      },
+      // 按照快递单号查找包裹
       checkOrder(parcelID) {
         console.log("parcelID: " + parcelID)
         order.addOrder(parcelID).then(res => {
@@ -554,14 +627,70 @@ export default{
           }
         })
       },
+      // 查看物流信息
+      getTrace(row){
+        this.shipmentCode = row.shipmentCode
+        console.log("shipmentCode:" + shipmentCode)
+        order.showOrderDetail(this.shipmentCode).then(res => {
+          if(res.data.success == true){
+            this.trace == res.data.data
+            this.$message({
+              message:"提交成功",
+              type:"success"
+            })
+          }else {
+            console.log(res.data.message)
+            this.$message({
+              message:"提交异常",
+              type:"error"
+            })
+          }
+        })
+      },
       // 保存寄件人信息
       saveFrom(){
-        this.dialogVisible_form = false
-
+        this.dialogVisible_from = false
+        this.fromAndTo.people = this.parcel.fromPeople
+        this.fromAndTo.phone = this.parcel.fromPhone
+        this.fromAndTo.addrSelect = this.parcel.fromAddrSelect
+        this.fromAndTo.addrDetail = this.parcel.fromAddrDetail
+        user.saveFrom(this.fromAndTo).then(res => {
+          if(res.data.success == true){
+            this.$message({
+              message:"提交成功",
+              type:"success"
+            })
+          }else {
+            console.log(res.data.message)
+            this.$message({
+              message:"提交异常",
+              type:"error"
+            })
+          }
+        })
       },
+      // 保存收件人
       saveTo(){
         this.dialogVisible_to = false
-
+        this.fromAndTo.people = this.parcel.toPeople
+        this.fromAndTo.phone = this.parcel.toPhone
+        this.fromAndTo.addrSelect = this.parcel.toAddrSelect
+        this.fromAndTo.addrDetail = this.parcel.toAddrDetail
+        console.log("fromAndTo:"+this.fromAndTo)
+        user.saveTo(this.fromAndTo).then(res => {
+          if(res.data.success == true){
+            this.$message({
+              message:"提交成功",
+              type:"success"
+            })
+          }else {
+            console.log(res.data.message)
+            this.$message({
+              message:"提交异常",
+              type:"error"
+            })
+          }
+        })
       },
       // 关闭dialog
       handleClose(done) {
@@ -604,19 +733,10 @@ export default{
       // handleClose(key, keyPath) {
       //   console.log(key, keyPath);
       // },
-      // 用户名下拉菜单选择事件
-      handleCommand(command) {
-        if (command == 'loginout') {
-          localStorage.removeItem('ms_username');
-          this.$router.push('/login');
-        }
-      },
+
       // 联系客服
       // contact() {
       //   this.$router.push('/contact');//跳转
-      // },
-      // personal(){
-      //   this.$router.push('/personalPage')
       // },
       //添加订单
       // sureAdd(formName){
@@ -624,10 +744,18 @@ export default{
       //   //计算费用
       //   this.dialogVisible = true
       // },
-      // 算钱
-      calculate(){
-        this.dialogVisible_placeAnOrder = true
 
+      // 计算预估费用(待改正
+      calculate(){
+        console.log("触发算钱")
+        this.weight = this.parcel.weight
+        if (this.parcel.insuranceOrNot == true){
+          this.surance = this.optionsMoney.keys()
+          console.log("this.surance:" + this.surance)
+        }
+        this.money =
+
+        this.dialogVisible_placeAnOrder = true
       },
       addOrder(){
         // 计算预估费用
@@ -640,6 +768,7 @@ export default{
     },
     created(){
         this.username = window.sessionStorage.getItem('username')
+
     }
 }
 </script>
@@ -749,5 +878,17 @@ export default{
 }
 .el-dropdown-menu__item {
     text-align: center;
+}
+.demo-table-expand {
+  font-size: 0;
+}
+.demo-table-expand label {
+  width: 90px;
+  color: #99a9bf;
+}
+.demo-table-expand .el-form-item {
+  margin-right: 0;
+  margin-bottom: 0;
+  width: 50%;
 }
 </style>

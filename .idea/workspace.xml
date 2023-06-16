@@ -1,19 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="74d541d9-46c7-4df8-ab3d-d4b183980f82" name="Changes" comment="" />
+    <list default="true" id="74d541d9-46c7-4df8-ab3d-d4b183980f82" name="Changes" comment="Changes">
+      <change afterPath="$PROJECT_DIR$/src/vue-front/src/components/user/personalPage.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/vue-front/A3-designmentReport.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/vue-front/src/api/address.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/vue-front/src/api/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/vue-front/src/api/auth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/vue-front/src/api/repo-address.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/vue-front/src/api/repo-user.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/vue-front/src/components/order/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/vue-front/src/components/order/Home.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue-front/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue-front/.npmrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue-front/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue-front/babel.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue-front/jest.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue-front/jsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue-front/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue-front/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue-front/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue-front/public/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue-front/src/App.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue-front/src/api/order.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue-front/src/api/user.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue-front/src/assets/css/global.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue-front/src/assets/images/R.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue-front/src/assets/images/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue-front/src/assets/images/signin.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue-front/src/assets/images/signup.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue-front/src/assets/images/团队-11.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue-front/src/assets/images/团队-15.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue-front/src/assets/images/团队-18-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue-front/src/assets/images/团队-18.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue-front/src/assets/images/团队-2-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue-front/src/assets/images/团队-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue-front/src/assets/images/快递运输.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue-front/src/assets/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue-front/src/components/HelloWorld.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue-front/src/components/order/Home.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue-front/src/components/user/loginAndRegister.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue-front/src/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue-front/src/requestAndSecurity/request.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue-front/src/router/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue-front/src/router/security.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue-front/tests/unit/example.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue-front/tests/unit/test-api.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue-front/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue-front/vue.config.js" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Vue Single File Component" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/kafdrop" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2REeSNbMYDwAN4Jv2LYAbxe1Ux7" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -23,10 +79,13 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/学习/3.2/JavaEE",
+    "last_opened_file_path": "F:/JAVAee3/JavaEE-Exercise",
     "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.standard": "true",
     "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.standard": "",
     "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -34,6 +93,27 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\学习\3.2\JavaEE" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\JAVAee3\JavaEE-Exercise" />
+      <recent name="F:\JAVAee3\JavaEE-Exercise\src\vue-front\src\components\user" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="serve" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/src/vue-front/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="serve" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.serve" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -44,10 +124,24 @@
       <option name="presentableId" value="Default" />
       <updated>1686819666758</updated>
       <workItem from="1686819668177" duration="197000" />
+      <workItem from="1686907152724" duration="14000" />
+      <workItem from="1686907206004" duration="248000" />
+      <workItem from="1686907508815" duration="8107000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
