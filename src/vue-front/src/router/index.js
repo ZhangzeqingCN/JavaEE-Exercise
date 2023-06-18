@@ -2,13 +2,15 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import loginAndRegister from '@/components/user/loginAndRegister.vue'
 import Home from '@/components/order/Home.vue'
+import personalPage from "@/components/user/personalPage.vue"
 
 Vue.use(VueRouter)
 
 const routes = [
   { path: '/Home', component: Home},
   { path: '/', redirect: '/loginAndRegister' },
-  { path: '/loginAndRegister', component: loginAndRegister}
+  { path: '/loginAndRegister', component: loginAndRegister},
+  { path: '/personalPage',component: personalPage }
 ]
 
 const router = new VueRouter({

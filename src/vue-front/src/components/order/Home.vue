@@ -32,8 +32,8 @@
                         </span>
                         <el-dropdown-menu slot="dropdown">
 <!--                            <el-dropdown-item  class="text-shadow2">修改密码</el-dropdown-item>-->
-                            <el-dropdown-item @click.native="personal" class="text-shadow2">个人中心</el-dropdown-item>
-                            <el-dropdown-item @click.native="personal" class="text-shadow2">管理寄/收件人信息</el-dropdown-item>
+<!--                            <el-dropdown-item @click.native="personal" class="text-shadow2">个人中心</el-dropdown-item>-->
+                            <el-dropdown-item @click.native="personal" class="text-shadow2">地址簿</el-dropdown-item>
                             <el-dropdown-item command="loginout" class="text-shadow2">退出登录</el-dropdown-item>
                         </el-dropdown-menu>
                     </el-dropdown>
@@ -768,7 +768,6 @@ export default{
     },
     created(){
         this.username = window.sessionStorage.getItem('username')
-
     }
 }
 </script>
