@@ -411,24 +411,12 @@ classDiagram
 
 ### 负载均衡
 ```java
-@RestController
-public class TestRestController {
-
-    KafkaTemplate<Object, Object> kafkaTemplate;
-
-    @Autowired
-    public void setKafkaTemplate(KafkaTemplate<Object, Object> kafkaTemplate) {
-        this.kafkaTemplate = kafkaTemplate;
-    }
-
-    @GetMapping("/send/{input}")
-    public void sendFoo(@PathVariable String input) {
-        kafkaTemplate.send("test_topic", input);
-    }
-
-    @KafkaListener(id = "webGroup", topics = "test_topic")
-    public void listen(String input) {
-        System.err.println(input);
+@Configuration
+public class MyRestTemplateConfiguration {
+    @Bean
+    @LoadBalanced
+    public RestTemplate getTestTemplate() {
+        return new RestTemplate();
     }
 }
 ```
@@ -813,6 +801,7 @@ classDiagram
 # **Assignment 4, Event-notification for microservices**
 
 # 运行截图
+
 ## kafka
 
 
@@ -824,7 +813,33 @@ classDiagram
 
 </div>
 
-### Idea运行
+### 消息传递
+
+```java
+@RestController
+@Slfj
+public class TestRestController {
+
+    KafkaTemplate<Object, Object> kafkaTemplate;
+
+    @Autowired
+    public void setKafkaTemplate(KafkaTemplate<Object, Object> kafkaTemplate) {
+        this.kafkaTemplate = kafkaTemplate;
+    }
+
+    @GetMapping("/send/{input}")
+    public void sendFoo(@PathVariable String input) {
+        kafkaTemplate.send("test_topic", input);
+    }
+
+    @KafkaListener(id = "webGroup", topics = "test_topic")
+    public void listen(String input) {
+        log.info(input);
+    }
+}
+```
+
+## 前端
 
 <div style="text-align: center;">
 
@@ -832,7 +847,7 @@ classDiagram
 
 </div>
 
-## 前端
+
 
 <div style="text-align: center;">
 
